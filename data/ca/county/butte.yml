@@ -1,0 +1,52 @@
+id: ocd-division/country:us/state:ca/county:butte
+name: Butte County
+type: county
+
+seat: Oroville
+website: https://www.buttecounty.net
+timezone: America/Los_Angeles
+
+summary: >
+  Butte County is in northern California's Sacramento Valley and Sierra
+  Nevada foothills. The county seat is Oroville; the largest city is Chico.
+
+governance:
+  form: board-of-supervisors
+  body_name: Board of Supervisors
+  seats: 5
+  partisan: false
+  elected_offices:
+    # California general-law county slate of elected officers. Verify each
+    # locally if unsure — some counties consolidate offices.
+    sheriff: true
+    district_attorney: true
+    assessor: true
+    clerk_recorder: true
+    treasurer_tax_collector: true
+    auditor_controller: true
+    superintendent_of_schools: true
+
+elections:
+  office_name: Butte County Clerk-Recorder / Registrar of Voters
+  office_url: https://clerk-recorder.buttecounty.net/elections
+  # TODO: verify phone, email, mailing address before publishing.
+
+ids:
+  wikidata: Q108046
+  wikipedia: Butte County, California
+  ballotpedia: Butte_County,_California
+  fips_state: "06"
+  fips_county: "007"
+  census_geoid: "05000US06007"
+
+links:
+  - url: https://www.buttecounty.net
+    note: county homepage
+  - url: https://clerk-recorder.buttecounty.net/elections
+    note: elections office
+
+sources:
+  - url: https://www.buttecounty.net
+    note: official county website
+  - url: https://en.wikipedia.org/wiki/Butte_County,_California
+    note: general reference

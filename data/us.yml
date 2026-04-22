@@ -1,0 +1,25 @@
+id: ocd-division/country:us
+name: United States of America
+type: country
+
+short_name: United States
+capital: Washington, D.C.
+demonym: American
+
+established: 1776-07-04
+website: https://www.usa.gov
+
+ids:
+  wikidata: Q30
+  wikipedia: United States
+  osm_relation: "148838"
+
+links:
+  - url: https://www.usa.gov
+    note: USAGov official portal
+
+sources:
+  - url: https://en.wikipedia.org/wiki/United_States
+    note: general reference
+  - url: https://github.com/opencivicdata/ocd-division-ids
+    note: OCD division id registry

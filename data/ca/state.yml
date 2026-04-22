@@ -1,0 +1,39 @@
+id: ocd-division/country:us/state:ca
+name: California
+type: state
+
+abbreviation: CA
+iso_3166_2: US-CA
+capital: Sacramento
+demonym: Californian
+nicknames:
+  - Golden State
+motto: Eureka
+
+established: 1850-09-09
+website: https://www.ca.gov
+timezone: America/Los_Angeles
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: Assembly
+  seats: 120               # 40 Senate + 80 Assembly
+  partisan: true
+
+ids:
+  wikidata: Q99
+  wikipedia: California
+  ballotpedia: California
+  census_geoid: "04000US06"
+  fips_state: "06"
+  osm_relation: "165475"
+
+links:
+  - url: https://www.ca.gov
+    note: state homepage
+  - url: https://www.sos.ca.gov
+    note: Secretary of State
+
+sources:
+  - url: https://en.wikipedia.org/wiki/California
+    note: general reference
