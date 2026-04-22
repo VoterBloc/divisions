@@ -18,7 +18,34 @@ governance:
   upper_chamber: Senate
   lower_chamber: Assembly
   seats: 120               # 40 Senate + 80 Assembly
+  is_unicameral: false
   partisan: true
+  has_term_limits: true    # Prop 28 (2012): 12 cumulative years total
+  term_limit: 12
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false   # CA: separately elected
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    controller: true
+    insurance_commissioner: true
+    superintendent_of_public_instruction: true
+    board_of_equalization: true
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true
+
+elections_policy:
+  runoff: false            # CA uses top-two open primary; no traditional runoff
+
+voter_registration:
+  automatic: true          # AB 1461 (2015) — DMV-triggered AVR
+  online: true
+  same_day: true           # conditional voter registration
 
 ids:
   wikidata: Q99

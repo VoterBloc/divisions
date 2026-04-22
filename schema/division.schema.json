@@ -207,6 +207,50 @@
       "title": "Contact",
       "type": "object"
     },
+    "DirectDemocracy": {
+      "additionalProperties": false,
+      "description": "Does the state permit citizens to place items on the ballot?",
+      "properties": {
+        "citizen_initiative": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Citizen Initiative"
+        },
+        "citizen_referendum": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Citizen Referendum"
+        },
+        "recall": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recall"
+        }
+      },
+      "title": "DirectDemocracy",
+      "type": "object"
+    },
     "Elections": {
       "additionalProperties": false,
       "properties": {
@@ -277,6 +321,58 @@
       "title": "Elections",
       "type": "object"
     },
+    "ElectionsPolicy": {
+      "additionalProperties": false,
+      "description": "State-wide election procedures (vs. `elections` which is admin contact).",
+      "properties": {
+        "runoff": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Runoff"
+        }
+      },
+      "title": "ElectionsPolicy",
+      "type": "object"
+    },
+    "ExecutiveStructure": {
+      "additionalProperties": false,
+      "description": "State / territory / district executive branch shape.",
+      "properties": {
+        "has_lt_governor": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Has Lt Governor"
+        },
+        "lt_gov_joint_ticket": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lt Gov Joint Ticket"
+        }
+      },
+      "title": "ExecutiveStructure",
+      "type": "object"
+    },
     "Governance": {
       "additionalProperties": true,
       "properties": {
@@ -319,6 +415,17 @@
           "default": null,
           "title": "Elected Offices"
         },
+        "executive": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ExecutiveStructure"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "form": {
           "anyOf": [
             {
@@ -330,6 +437,30 @@
           ],
           "default": null,
           "title": "Form"
+        },
+        "has_term_limits": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Has Term Limits"
+        },
+        "is_unicameral": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Is Unicameral"
         },
         "lower_chamber": {
           "anyOf": [
@@ -598,6 +729,50 @@
       ],
       "title": "Source",
       "type": "object"
+    },
+    "VoterRegistration": {
+      "additionalProperties": false,
+      "description": "State voter-registration policies.",
+      "properties": {
+        "automatic": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Automatic"
+        },
+        "online": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Online"
+        },
+        "same_day": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Same Day"
+        }
+      },
+      "title": "VoterRegistration",
+      "type": "object"
     }
   },
   "additionalProperties": false,
@@ -711,6 +886,17 @@
       "default": null,
       "title": "Demonym"
     },
+    "direct_democracy": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/DirectDemocracy"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
     "dissolved": {
       "anyOf": [
         {
@@ -740,6 +926,17 @@
       "anyOf": [
         {
           "$ref": "#/$defs/Elections"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "elections_policy": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ElectionsPolicy"
         },
         {
           "type": "null"
@@ -1062,6 +1259,17 @@
       ],
       "default": null,
       "title": "Valid Through"
+    },
+    "voter_registration": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/VoterRegistration"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
     },
     "website": {
       "anyOf": [

@@ -131,12 +131,20 @@ class Elections(_Base):
     office_address: str | None = None
 
 
+class ExecutiveStructure(_Base):
+    """State / territory / district executive branch shape."""
+
+    has_lt_governor: bool | None = None
+    lt_gov_joint_ticket: bool | None = None  # meaningful only if has_lt_governor
+
+
 class Governance(_BaseAllowExtra):
     form: str | None = None
     body_name: str | None = None
     seats: int | None = None
     term_years: int | None = None
     term_limit: int | None = None
+    has_term_limits: bool | None = None
     partisan: bool | None = None
     at_large: bool | None = None
     elected_offices: dict[str, bool] | None = None
@@ -144,9 +152,33 @@ class Governance(_BaseAllowExtra):
     # State-only niceties:
     upper_chamber: str | None = None
     lower_chamber: str | None = None
+    is_unicameral: bool | None = None
+    executive: ExecutiveStructure | None = None
 
     # Place-only niceties:
     mayor_elected: bool | None = None
+
+
+class DirectDemocracy(_Base):
+    """Does the state permit citizens to place items on the ballot?"""
+
+    citizen_initiative: bool | None = None
+    citizen_referendum: bool | None = None
+    recall: bool | None = None
+
+
+class ElectionsPolicy(_Base):
+    """State-wide election procedures (vs. `elections` which is admin contact)."""
+
+    runoff: bool | None = None
+
+
+class VoterRegistration(_Base):
+    """State voter-registration policies."""
+
+    automatic: bool | None = None  # AVR
+    online: bool | None = None
+    same_day: bool | None = None  # SDR / EDR
 
 
 class Population(_Base):
@@ -214,6 +246,9 @@ class Division(_Base):
 
     governance: Governance | None = None
     elections: Elections | None = None
+    direct_democracy: DirectDemocracy | None = None
+    elections_policy: ElectionsPolicy | None = None
+    voter_registration: VoterRegistration | None = None
     contacts: list[Contact] = Field(default_factory=list)
 
     population: Population | None = None

@@ -129,6 +129,9 @@ This rule may be revisited as ward/precinct data grows.
 | `jurisdiction` | string            | OCD **jurisdiction** id (`ocd-jurisdiction/...`) for the governing body — distinct from the division id.     |
 | `governance` | object              | Structure of government. See [governance](#governance). **High value — curate when known.**                  |
 | `elections`  | object              | Election-administration contact. See [elections](#elections). **High value — curate when known.**            |
+| `direct_democracy` | object        | State-level: does the state allow citizen initiative / referendum / recall. See [direct_democracy](#direct_democracy). |
+| `elections_policy` | object        | State-level election *procedures* (runoff rules, etc.). See [elections_policy](#elections_policy). Distinct from `elections` (admin contact). |
+| `voter_registration` | object      | State-level voter-registration policy (AVR, online, same-day). See [voter_registration](#voter_registration). |
 | `contacts`   | list\[object]       | General contacts. See [contacts](#contacts).                                                                 |
 | `population` | object              | Optional; census sources preferred. See [population](#population).                                           |
 | `area`       | object              | Optional; TIGER sources preferred. See [area](#area).                                                        |
@@ -181,7 +184,8 @@ governance:
   body_name: Board of Supervisors     # "Board of Supervisors", "City Council", "Commissioners Court"
   seats: 5
   term_years: 4
-  term_limit: null                    # or integer
+  term_limit: 12                      # integer years (cumulative) if limits apply; null when unknown
+  has_term_limits: true               # explicit — decouples "no limits" from "not yet curated"
   partisan: false                     # are local races partisan on the ballot?
   at_large: false                     # e.g. single at-large CD, or place electing councilmembers at-large
   elected_offices:
@@ -196,11 +200,54 @@ governance:
     auditor_controller: true
     superintendent_of_schools: true
     coroner: false                    # e.g. merged with sheriff
+    # State-level:
+    attorney_general: true
+    secretary_of_state: true
   # State-only niceties:
   upper_chamber: Senate
   lower_chamber: Assembly
+  is_unicameral: false                # true only for Nebraska
+  executive:
+    has_lt_governor: true             # false for AZ, ME, NH, NJ (no LG), etc.
+    lt_gov_joint_ticket: true         # governor + LG run on one ticket
   # Place-only niceties:
   mayor_elected: true
+```
+
+### direct_democracy
+
+State-level only. Does the state permit citizens to place items directly on
+the ballot? These are well-tracked state facts (NCSL, Ballotpedia).
+
+```yaml
+direct_democracy:
+  citizen_initiative: true            # citizens can put new laws on the ballot
+  citizen_referendum: true            # citizens can put existing laws to a referendum vote
+  recall: true                        # elected officials can be recalled by petition
+```
+
+Leave any field absent when unknown (don't set `false` for "not yet curated").
+
+### elections_policy
+
+State-wide election *procedures*. Distinct from `elections` (which is the
+admin-contact block). Currently narrow; intended to grow as contributors
+curate more policy dimensions (primary type, RCV, vote-by-mail, etc.).
+
+```yaml
+elections_policy:
+  runoff: false                       # does the state hold runoff elections when no candidate gets a majority?
+```
+
+### voter_registration
+
+State voter-registration policies — tracked by NCSL and the Brennan Center.
+
+```yaml
+voter_registration:
+  automatic: true                     # automatic voter registration (AVR) — typically via DMV
+  online: true                        # online voter registration available
+  same_day: true                      # same-day / election-day registration
 ```
 
 ### elections
