@@ -1,0 +1,67 @@
+id: ocd-division/country:us/state:al
+name: Alabama
+type: state
+
+abbreviation: AL
+iso_3166_2: US-AL
+capital: Montgomery
+motto: Audemus jura nostra defendere        # "We dare defend our rights"
+
+established: 1819-12-14                      # date of statehood
+website: https://www.alabama.gov/
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 140                                 # 35 Senate + 105 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # AL state legislators have no term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    agriculture_commissioner: true           # Commissioner of Agriculture and Industries
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # separately elected
+
+direct_democracy:
+  citizen_initiative: false                  # AL does not permit citizen-initiated statutes
+  citizen_referendum: false
+  recall: false                              # no recall of state elected officials
+
+elections_policy:
+  runoff: true                               # AL holds primary runoffs when no candidate wins a majority
+
+voter_registration:
+  automatic: false                           # AL does not have AVR
+  online: true                               # via AL Secretary of State
+  same_day: false                            # AL does not have SDR/EDR
+
+ids:
+  wikidata: Q173
+  wikipedia: Alabama
+  ballotpedia: Alabama
+  fips_state: "01"
+  census_geoid: "04000US01"
+  osm_relation: "161950"
+
+links:
+  - url: https://www.alabama.gov/
+    note: state homepage
+  - url: https://www.sos.alabama.gov
+    note: Secretary of State
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Alabama
+    note: general reference
+  - url: https://www.wikidata.org/wiki/Q173
+    note: Wikidata entry
+  - url: https://ballotpedia.org/Alabama
+    note: lt-gov elected separately from governor; no statewide recall
+  - url: https://www.multistate.us/
+    note: lt-gov election method (separate ticket)
+  - url: https://www.sos.alabama.gov/contact/online_voter_form_request
+    note: online voter registration availability
