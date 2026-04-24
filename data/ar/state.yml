@@ -1,0 +1,70 @@
+id: ocd-division/country:us/state:ar
+name: Arkansas
+type: state
+
+abbreviation: AR
+iso_3166_2: US-AR
+capital: Little Rock
+demonym: Arkansan
+motto: Regnat populus                        # "The people rule"
+
+established: 1836-06-15                      # date of statehood (25th state)
+website: https://portal.arkansas.gov/
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 135                                 # 35 Senate + 100 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true
+  # 12 CONSECUTIVE years for legislators elected 2021 or later (with the
+  # option to return after a 4-year break). Pre-2021 incumbents remain
+  # under the prior 16-year CUMULATIVE lifetime cap from Issue 3 (2014).
+  # Originally Amendment 73/Issue 4 (1992): 6 yrs House, 8 yrs Senate.
+  term_limit: 12
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    auditor: true
+    land_commissioner: true                  # Commissioner of State Lands
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false               # gov & LG run on separate tickets in AR
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: false                              # AR allows local recall only; no recall of state officials
+
+elections_policy:
+  runoff: true                               # AR uses majority-vote primary runoffs
+
+voter_registration:
+  automatic: false
+  online: false                              # AR SOS only offers a paper-form REQUEST, not end-to-end online registration
+  same_day: false
+
+ids:
+  wikidata: Q1612
+  wikipedia: Arkansas
+  ballotpedia: Arkansas
+  fips_state: "05"
+  census_geoid: "04000US05"
+  osm_relation: "161646"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Arkansas
+    note: general reference
+  - url: https://law.justia.com/constitution/arkansas/amendments/amendment-73/
+    note: Amendment 73 (Issue 4, 1992) established legislative term limits
+  - url: https://ballotpedia.org/Arkansas_Issue_2,_Change_State_Legislative_Term_Limits_Amendment_(2020)
+    note: Issue 2 (2020) — 12 consecutive years for anyone elected 2021+; prior 16 cumulative for pre-2021 incumbents (Issue 3, 2014)
+  - url: https://ballotpedia.org/Lieutenant_Governor_of_Arkansas
+    note: LG elected separately from Governor; Amendment 73-1 enumerates the 7 elected executive officers (Gov, LG, SOS, Treasurer, Auditor, AG, Commissioner of State Lands)
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Arkansas
+    note: local recall only; no recall of state officials
+  - url: https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/request-for-a-voter-registration-application
+    note: AR offers a paper-form request only; no end-to-end online voter registration
