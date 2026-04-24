@@ -38,17 +38,36 @@ direct_democracy:
 
 elections_policy:
   runoff: false                              # plurality general elections
+  ranked_choice: false
+  primary_type: semi-closed                  # partisans vote their own party's primary; independents/unaffiliated may pick one party's ballot (EAC form)
+  vote_by_mail: no-excuse                    # any AZ voter may vote early by mail; Active Early Voting List auto-mails ballots
+  early_voting: true                         # ~27 days of in-person early voting
 
 voter_registration:
   automatic: false                           # no AVR — AZ uses classic NVRA Motor Voter, not opt-out enrollment
   online: true                               # via ServiceArizona / AZ SOS
   same_day: false
+  min_age: 18
+  registration_deadline_days: 29             # per EAC form
+  voter_id_requirement: non_photo            # Ballotpedia — photo or two forms of non-photo ID accepted
+  felon_restoration: upon_completion         # rights restored automatically on completion of first felony sentence; application required for 2nd+
 
 elections:
   office_name: Arizona Secretary of State - Elections Services Division
+  office_url: https://azsos.gov/elections
+  office_phone: 1-877-843-8683                # 1-877-THE-VOTE
+  office_address: |
+    Arizona Secretary of State / Elections
+    1700 W. Washington, 7th Floor
+    Phoenix, AZ 85007-2888
 
 civic_urls:
-  register_to_vote: https://azsos.gov/elections/voters/registering-vote
+  register_to_vote: https://azmvdnow.gov/guest/customeranonymous/voterregistration
+  register_by_mail: https://azsos.gov/sites/default/files/voter_registration_form_092222-standard.pdf
+  check_registration: https://my.arizona.vote/WhereToVote.aspx?s=individual&language=en
+  find_polling_place: https://my.arizona.vote/WhereToVote.aspx?s=address&language=en
+  request_absentee_ballot: https://azsos.gov/elections/voters/early-voting   # same URL covers Active Early Voting List (AEVL) sign-up
+  track_ballot: https://www.azcleanelections.gov/election-and-ballot-tracking
 
 ids:
   wikidata: Q816
@@ -58,9 +77,19 @@ ids:
   census_geoid: "04000US04"
   osm_relation: "162018"
 
+links:
+  - url: https://azsos.gov/elections/voters/registering-vote
+    note: AZ SOS voter registration hub — explains OVR + paper options
+  - url: https://azsos.gov/webform/contact?department=1005
+    note: AZ SOS Elections contact webform
+
 sources:
   - url: https://en.wikipedia.org/wiki/Arizona
     note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 29-day deadline; semi-closed primary; SOS mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Arizona
+    note: non-photo ID required; two forms of non-photo ID accepted as alternative
   - url: https://azsos.gov/elections/voters/registering-vote
     note: AZ SOS — online voter registration; no AVR
   - url: https://ballotpedia.org/Voting_in_Arizona
