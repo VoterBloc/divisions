@@ -81,14 +81,10 @@ This repo builds on and complements
 
 ## License
 
-TBD — see the [open question](#open-questions) below.
-
-## Open questions
-
-- **License**: `openstates/people` uses [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
-  for its data. That's the recommended default for factual civic data and
-  matches OCDEP 2's own public-domain dedication. No license is currently
-  applied — see discussion in PRs / issues.
+Public domain under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) —
+see [LICENSE](LICENSE). Matches `openstates/people` and OCDEP 2's own
+public-domain dedication. By contributing you agree to waive all
+copyright claims.
 
 ## Acknowledgements
 

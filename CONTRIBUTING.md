@@ -115,11 +115,11 @@ pytest
 
 ## Data license
 
-All data in this repository is contributed under the license stated in
-[LICENSE](LICENSE) (TBD as of initial publication — contributors will be
-asked to re-confirm once the data license is chosen). `openstates/people`
-and OCDEP 2 both use [CC0](https://creativecommons.org/publicdomain/zero/1.0/);
-this repo is expected to follow suit.
+All data in this repository is released into the public domain under
+[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+— see [LICENSE](LICENSE). This matches `openstates/people` and OCDEP 2's
+own public-domain dedication. **By contributing you agree to waive all
+copyright claims.**
 
 ## Code of conduct
 

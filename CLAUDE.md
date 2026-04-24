@@ -94,5 +94,5 @@ soft warning when missing.
 
 ## License
 
-TBD — README notes CC0 is the recommended default (matching
-`openstates/people` and OCDEP 2).
+Public domain under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
+Matches `openstates/people` and OCDEP 2.
