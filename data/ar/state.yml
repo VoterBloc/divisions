@@ -47,6 +47,9 @@ voter_registration:
   online: false                              # AR SOS only offers a paper-form REQUEST, not end-to-end online registration
   same_day: false
 
+elections:
+  office_name: Arkansas Secretary of State - Elections Division
+
 ids:
   wikidata: Q1612
   wikipedia: Arkansas

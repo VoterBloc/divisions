@@ -47,6 +47,12 @@ voter_registration:
   online: true
   same_day: true           # conditional voter registration
 
+elections:
+  office_name: California Secretary of State - Elections Division
+
+civic_urls:
+  register_to_vote: https://registertovote.ca.gov/
+
 ids:
   wikidata: Q99
   wikipedia: California

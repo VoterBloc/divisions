@@ -132,6 +132,7 @@ This rule may be revisited as ward/precinct data grows.
 | `direct_democracy` | object        | State-level: does the state allow citizen initiative / referendum / recall. See [direct_democracy](#direct_democracy). |
 | `elections_policy` | object        | State-level election *procedures* (runoff rules, etc.). See [elections_policy](#elections_policy). Distinct from `elections` (admin contact). |
 | `voter_registration` | object      | State-level voter-registration policy (AVR, online, same-day). See [voter_registration](#voter_registration). |
+| `civic_urls` | object              | Deterministic keys for the most common voter-facing URLs (register, check registration, polling place, ballot tracker, sample ballot). See [civic_urls](#civic_urls). |
 | `contacts`   | list\[object]       | General contacts. See [contacts](#contacts).                                                                 |
 | `population` | object              | Optional; census sources preferred. See [population](#population).                                           |
 | `area`       | object              | Optional; TIGER sources preferred. See [area](#area).                                                        |
@@ -231,13 +232,29 @@ Leave any field absent when unknown (don't set `false` for "not yet curated").
 ### elections_policy
 
 State-wide election *procedures*. Distinct from `elections` (which is the
-admin-contact block). Currently narrow; intended to grow as contributors
-curate more policy dimensions (primary type, RCV, vote-by-mail, etc.).
+admin-contact block).
 
 ```yaml
 elections_policy:
-  runoff: false                       # does the state hold runoff elections when no candidate gets a majority?
+  runoff: false                       # majority-required runoff elections
+  primary_type: open                  # closed | semi-closed | open | top-two | top-four | blanket
+  vote_by_mail: no-excuse             # universal | no-excuse | excuse-required
+  early_voting: true                  # in-person early voting
+  ranked_choice: false                # RCV used in any state-level elections
 ```
+
+`primary_type` values:
+- `closed` — only registered party members can vote in that party's primary
+- `semi-closed` — party members + unaffiliated can vote
+- `open` — any voter can vote in any party's primary (pick on election day)
+- `top-two` — all candidates on one primary ballot, top 2 advance (CA, WA)
+- `top-four` — top 4 advance to an RCV general (AK)
+- `blanket` — voter picks candidates in any party for any office (rare)
+
+`vote_by_mail` values:
+- `universal` — every registered voter is automatically mailed a ballot
+- `no-excuse` — any voter can request a mail ballot for any reason
+- `excuse-required` — voter must provide a listed excuse (traditional absentee)
 
 ### voter_registration
 
@@ -248,7 +265,46 @@ voter_registration:
   automatic: true                     # automatic voter registration (AVR) — typically via DMV
   online: true                        # online voter registration available
   same_day: true                      # same-day / election-day registration
+  min_age: 18
+  pre_registration_age: 16            # null if the state doesn't allow pre-registration
+  voter_id_requirement: non_photo     # strict_photo | photo | non_strict_photo | non_photo | none
+  felon_restoration: automatic_upon_release
 ```
+
+`voter_id_requirement` values (per NCSL classification):
+- `strict_photo` — photo ID required; voters without ID are turned away or vote provisionally
+- `photo` — photo ID required but alternatives exist (affidavit, etc.)
+- `non_strict_photo` — photo ID requested but other IDs or signatures accepted
+- `non_photo` — any ID accepted, photo not required
+- `none` — no ID required to vote
+
+`felon_restoration` values:
+- `automatic_upon_release` — voting rights restored automatically on release from prison
+- `upon_completion` — rights restored after the full sentence is served (parole/probation ended)
+- `application_required` — must apply / petition for restoration
+- `never` — permanent disenfranchisement for some felonies
+- `no_disenfranchisement` — felons always retain the right to vote (ME, VT, DC)
+
+### civic_urls
+
+A small, deterministic map of voter-facing URLs. Consumers that want to
+answer "where do I register in CT?" shouldn't have to string-match on
+free-form notes in `links:`. Every key is optional; add what the state
+provides.
+
+```yaml
+civic_urls:
+  register_to_vote: https://voterregistration.ct.gov/
+  check_registration: https://portal.ct.gov/.../voter-lookup
+  find_polling_place: https://...
+  request_absentee_ballot: https://...
+  track_ballot: https://...
+  sample_ballot: https://...
+  voter_id_info: https://...           # what IDs are accepted at the polls
+  elections_calendar: https://...      # upcoming election dates / calendar
+```
+
+Put URLs that don't fit one of these keys in `links:`.
 
 ### elections
 

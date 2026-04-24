@@ -128,6 +128,134 @@
       "title": "Boundary",
       "type": "object"
     },
+    "CivicUrls": {
+      "additionalProperties": false,
+      "description": "Deterministic keys for the most common voter-facing URLs.\n\nConsumers can look for a specific voter task (e.g. \"where do I register?\")\nwithout string-matching on free-form notes in `links`. All fields optional.",
+      "properties": {
+        "check_registration": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Check Registration"
+        },
+        "elections_calendar": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Elections Calendar"
+        },
+        "find_polling_place": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Find Polling Place"
+        },
+        "register_to_vote": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Register To Vote"
+        },
+        "request_absentee_ballot": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Request Absentee Ballot"
+        },
+        "sample_ballot": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sample Ballot"
+        },
+        "track_ballot": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Track Ballot"
+        },
+        "voter_id_info": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Voter Id Info"
+        }
+      },
+      "title": "CivicUrls",
+      "type": "object"
+    },
     "Contact": {
       "additionalProperties": false,
       "properties": {
@@ -325,6 +453,50 @@
       "additionalProperties": false,
       "description": "State-wide election procedures (vs. `elections` which is admin contact).",
       "properties": {
+        "early_voting": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Early Voting"
+        },
+        "primary_type": {
+          "anyOf": [
+            {
+              "enum": [
+                "closed",
+                "semi-closed",
+                "open",
+                "top-two",
+                "top-four",
+                "blanket"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Primary Type"
+        },
+        "ranked_choice": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ranked Choice"
+        },
         "runoff": {
           "anyOf": [
             {
@@ -336,6 +508,23 @@
           ],
           "default": null,
           "title": "Runoff"
+        },
+        "vote_by_mail": {
+          "anyOf": [
+            {
+              "enum": [
+                "universal",
+                "no-excuse",
+                "excuse-required"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Vote By Mail"
         }
       },
       "title": "ElectionsPolicy",
@@ -746,6 +935,37 @@
           "default": null,
           "title": "Automatic"
         },
+        "felon_restoration": {
+          "anyOf": [
+            {
+              "enum": [
+                "automatic_upon_release",
+                "upon_completion",
+                "application_required",
+                "never",
+                "no_disenfranchisement"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Felon Restoration"
+        },
+        "min_age": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Min Age"
+        },
         "online": {
           "anyOf": [
             {
@@ -758,6 +978,18 @@
           "default": null,
           "title": "Online"
         },
+        "pre_registration_age": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pre Registration Age"
+        },
         "same_day": {
           "anyOf": [
             {
@@ -769,6 +1001,25 @@
           ],
           "default": null,
           "title": "Same Day"
+        },
+        "voter_id_requirement": {
+          "anyOf": [
+            {
+              "enum": [
+                "strict_photo",
+                "photo",
+                "non_strict_photo",
+                "non_photo",
+                "none"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Voter Id Requirement"
         }
       },
       "title": "VoterRegistration",
@@ -830,6 +1081,17 @@
       ],
       "default": null,
       "title": "Capital"
+    },
+    "civic_urls": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CivicUrls"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
     },
     "contacts": {
       "items": {

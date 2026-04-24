@@ -41,6 +41,12 @@ voter_registration:
   online: true                               # via CO SOS GoVoteColorado
   same_day: true                             # Voter Access and Modernized Elections Act (HB13-1303)
 
+elections:
+  office_name: Colorado Secretary of State - Elections Division
+
+civic_urls:
+  register_to_vote: https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml
+
 ids:
   wikidata: Q1261
   wikipedia: Colorado

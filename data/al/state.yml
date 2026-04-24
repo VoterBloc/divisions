@@ -40,6 +40,12 @@ voter_registration:
   online: true                               # via AL Secretary of State
   same_day: false                            # AL does not have SDR/EDR
 
+elections:
+  office_name: Alabama Secretary of State - Elections Division
+
+civic_urls:
+  register_to_vote: https://www.sos.alabama.gov/contact/online_voter_form_request
+
 ids:
   wikidata: Q173
   wikipedia: Alabama

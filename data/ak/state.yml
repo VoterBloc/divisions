@@ -49,6 +49,12 @@ voter_registration:
   online: true                               # AK Division of Elections voterregistration.alaska.gov
   same_day: true                             # LIMITED: president/vice-president only (per federal NVRA); not available for state/local races
 
+elections:
+  office_name: Alaska Division of Elections   # standalone agency (AK has no Secretary of State)
+
+civic_urls:
+  register_to_vote: https://voterregistration.alaska.gov/
+
 ids:
   wikidata: Q797
   wikipedia: Alaska

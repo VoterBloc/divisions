@@ -1,0 +1,56 @@
+id: ocd-division/country:us/state:ct
+name: Connecticut
+type: state
+
+abbreviation: CT
+iso_3166_2: US-CT
+capital: Hartford
+motto: Qui transtulit sustinet               # "He who transplanted still sustains"
+
+established: 1788-01-09                      # 5th state to ratify the U.S. Constitution
+website: https://portal.ct.gov/
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # CT has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true                 # formally "Secretary of the State"
+    treasurer: true
+    comptroller: true                        # CT has an elected State Comptroller
+  executive:
+    has_lt_governor: true
+
+direct_democracy:
+  citizen_initiative: false                  # CT does not permit citizen initiative
+  citizen_referendum: false
+  recall: false                              # CT does not permit recall of state officials
+
+elections_policy:
+  runoff: false                              # plurality general elections
+
+voter_registration:
+  online: true                               # CT SOTS online voter registration
+  same_day: true                             # Election Day Registration available
+
+elections:
+  office_name: Connecticut Secretary of the State - Elections Division
+
+civic_urls:
+  register_to_vote: https://voterregistration.ct.gov/
+
+ids:
+  wikidata: Q779
+  wikipedia: Connecticut
+  ballotpedia: Connecticut
+  fips_state: "09"
+  census_geoid: "04000US09"
+  osm_relation: "165794"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Connecticut
+    note: general reference

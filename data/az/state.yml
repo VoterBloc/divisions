@@ -44,6 +44,12 @@ voter_registration:
   online: true                               # via ServiceArizona / AZ SOS
   same_day: false
 
+elections:
+  office_name: Arizona Secretary of State - Elections Services Division
+
+civic_urls:
+  register_to_vote: https://azsos.gov/elections/voters/registering-vote
+
 ids:
   wikidata: Q816
   wikipedia: Arizona

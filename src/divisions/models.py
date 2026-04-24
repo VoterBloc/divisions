@@ -7,7 +7,7 @@ This is the canonical definition of the schema. The JSON Schema committed at
 from __future__ import annotations
 
 from datetime import date
-from typing import Any
+from typing import Any, Literal
 
 from pydantic import (
     BaseModel,
@@ -167,10 +167,32 @@ class DirectDemocracy(_Base):
     recall: bool | None = None
 
 
+PrimaryType = Literal["closed", "semi-closed", "open", "top-two", "top-four", "blanket"]
+VoteByMail = Literal["universal", "no-excuse", "excuse-required"]
+VoterIdRequirement = Literal[
+    "strict_photo",        # photo ID required; no alternatives for non-presenters
+    "photo",               # photo ID required but alternatives exist
+    "non_strict_photo",    # photo ID requested; alternatives offered
+    "non_photo",           # any ID accepted, photo not required
+    "none",                # no ID required to vote
+]
+FelonRestoration = Literal[
+    "automatic_upon_release",  # rights restored automatically on release from prison
+    "upon_completion",         # rights restored after full sentence (parole/probation ended)
+    "application_required",    # must apply / petition for restoration
+    "never",                   # permanent disenfranchisement for certain felonies
+    "no_disenfranchisement",   # felons retain the right to vote (ME, VT, DC)
+]
+
+
 class ElectionsPolicy(_Base):
     """State-wide election procedures (vs. `elections` which is admin contact)."""
 
     runoff: bool | None = None
+    primary_type: PrimaryType | None = None
+    vote_by_mail: VoteByMail | None = None
+    early_voting: bool | None = None  # in-person early voting available
+    ranked_choice: bool | None = None  # RCV used in state-level elections
 
 
 class VoterRegistration(_Base):
@@ -179,6 +201,27 @@ class VoterRegistration(_Base):
     automatic: bool | None = None  # AVR
     online: bool | None = None
     same_day: bool | None = None  # SDR / EDR
+    min_age: int | None = None  # age at which someone can register to vote
+    pre_registration_age: int | None = None  # age at which 16/17-year-olds can pre-register (null if not allowed)
+    voter_id_requirement: VoterIdRequirement | None = None
+    felon_restoration: FelonRestoration | None = None
+
+
+class CivicUrls(_Base):
+    """Deterministic keys for the most common voter-facing URLs.
+
+    Consumers can look for a specific voter task (e.g. "where do I register?")
+    without string-matching on free-form notes in `links`. All fields optional.
+    """
+
+    register_to_vote: HttpUrl | None = None
+    check_registration: HttpUrl | None = None
+    find_polling_place: HttpUrl | None = None
+    request_absentee_ballot: HttpUrl | None = None
+    track_ballot: HttpUrl | None = None
+    sample_ballot: HttpUrl | None = None
+    voter_id_info: HttpUrl | None = None
+    elections_calendar: HttpUrl | None = None
 
 
 class Population(_Base):
@@ -249,6 +292,7 @@ class Division(_Base):
     direct_democracy: DirectDemocracy | None = None
     elections_policy: ElectionsPolicy | None = None
     voter_registration: VoterRegistration | None = None
+    civic_urls: CivicUrls | None = None
     contacts: list[Contact] = Field(default_factory=list)
 
     population: Population | None = None
