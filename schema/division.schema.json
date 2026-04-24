@@ -177,6 +177,21 @@
           "default": null,
           "title": "Find Polling Place"
         },
+        "register_by_mail": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Register By Mail"
+        },
         "register_to_vote": {
           "anyOf": [
             {
@@ -989,6 +1004,18 @@
           ],
           "default": null,
           "title": "Pre Registration Age"
+        },
+        "registration_deadline_days": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Registration Deadline Days"
         },
         "same_day": {
           "anyOf": [

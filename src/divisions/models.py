@@ -203,6 +203,7 @@ class VoterRegistration(_Base):
     same_day: bool | None = None  # SDR / EDR
     min_age: int | None = None  # age at which someone can register to vote
     pre_registration_age: int | None = None  # age at which 16/17-year-olds can pre-register (null if not allowed)
+    registration_deadline_days: int | None = None  # days before election (mail/postmark deadline; ignore if same_day is true)
     voter_id_requirement: VoterIdRequirement | None = None
     felon_restoration: FelonRestoration | None = None
 
@@ -214,7 +215,8 @@ class CivicUrls(_Base):
     without string-matching on free-form notes in `links`. All fields optional.
     """
 
-    register_to_vote: HttpUrl | None = None
+    register_to_vote: HttpUrl | None = None        # online voter registration (OVR) entry point
+    register_by_mail: HttpUrl | None = None        # downloadable paper form or "request a form" page
     check_registration: HttpUrl | None = None
     find_polling_place: HttpUrl | None = None
     request_absentee_ballot: HttpUrl | None = None

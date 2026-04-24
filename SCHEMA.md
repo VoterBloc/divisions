@@ -267,6 +267,7 @@ voter_registration:
   same_day: true                      # same-day / election-day registration
   min_age: 18
   pre_registration_age: 16            # null if the state doesn't allow pre-registration
+  registration_deadline_days: 15      # days before election (mail/postmark); moot if same_day is true
   voter_id_requirement: non_photo     # strict_photo | photo | non_strict_photo | non_photo | none
   felon_restoration: automatic_upon_release
 ```
@@ -294,7 +295,8 @@ provides.
 
 ```yaml
 civic_urls:
-  register_to_vote: https://voterregistration.ct.gov/
+  register_to_vote: https://voterregistration.ct.gov/       # OVR entry point
+  register_by_mail: https://.../voter-registration-form.pdf # paper form or "request a form" page
   check_registration: https://portal.ct.gov/.../voter-lookup
   find_polling_place: https://...
   request_absentee_ballot: https://...
@@ -303,6 +305,10 @@ civic_urls:
   voter_id_info: https://...           # what IDs are accepted at the polls
   elections_calendar: https://...      # upcoming election dates / calendar
 ```
+
+`register_to_vote` is for true online registration (fill out and submit on
+the site). `register_by_mail` is for downloadable paper forms or "request
+a form" portals. A few states (AL, AR) have the latter without the former.
 
 Put URLs that don't fit one of these keys in `links:`.
 
