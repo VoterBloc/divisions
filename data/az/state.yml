@@ -1,0 +1,75 @@
+id: ocd-division/country:us/state:az
+name: Arizona
+type: state
+
+abbreviation: AZ
+iso_3166_2: US-AZ
+capital: Phoenix
+demonym: Arizonan
+motto: Ditat Deus                            # "God enriches"
+
+established: 1912-02-14                      # date of statehood (48th state)
+website: https://az.gov/
+timezone: America/Phoenix                    # AZ does NOT observe DST (except the Navajo Nation)
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 90                                  # 30 Senate + 60 House (2 reps per district)
+  term_years: 2
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # Prop 107 (1992): 8 consecutive years per chamber
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true                 # also next in line for the governorship
+    treasurer: true
+    superintendent_of_public_instruction: true
+    mine_inspector: true                     # unique AZ elected office
+    corporation_commissioner: true           # 5-member elected body (utilities etc.)
+  executive:
+    has_lt_governor: false                   # Arizona has no LG; SOS is first in succession
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true                               # used most famously in 2011 against state senators
+
+elections_policy:
+  runoff: false                              # plurality general elections
+
+voter_registration:
+  automatic: false                           # no AVR — AZ uses classic NVRA Motor Voter, not opt-out enrollment
+  online: true                               # via ServiceArizona / AZ SOS
+  same_day: false
+
+ids:
+  wikidata: Q816
+  wikipedia: Arizona
+  ballotpedia: Arizona
+  fips_state: "04"
+  census_geoid: "04000US04"
+  osm_relation: "162018"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Arizona
+    note: general reference
+  - url: https://azsos.gov/elections/voters/registering-vote
+    note: AZ SOS — online voter registration; no AVR
+  - url: https://ballotpedia.org/Voting_in_Arizona
+    note: no AVR; no same-day registration; online registration available
+  - url: https://ballotpedia.org/Arizona_Proposition_107,_Term_Limits_Amendment_(1992)
+    note: legislative term limits — 8 consecutive years per chamber
+  - url: https://ballotpedia.org/Laws_governing_the_initiative_process_in_Arizona
+    note: citizen initiative permitted
+  - url: https://ballotpedia.org/Laws_governing_ballot_measures_in_Arizona
+    note: citizen referendum permitted
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Arizona
+    note: recall of state elected officials permitted
+  - url: https://ballotpedia.org/Line_of_succession_for_Governor_of_Arizona
+    note: no Lt. Governor; SOS is first in line for the governorship
+  - url: https://ballotpedia.org/Arizona_State_Mine_Inspector
+    note: elected State Mine Inspector (unique to Arizona)
+  - url: https://ballotpedia.org/Arizona_Corporation_Commission
+    note: elected 5-member Corporation Commission
