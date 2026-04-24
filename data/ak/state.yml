@@ -1,0 +1,76 @@
+id: ocd-division/country:us/state:ak
+name: Alaska
+type: state
+
+abbreviation: AK
+iso_3166_2: US-AK
+capital: Juneau
+demonym: Alaskan
+motto: North to the Future
+
+established: 1959-01-03                      # date of statehood (49th state)
+website: https://alaska.gov/
+timezones:
+  - America/Anchorage                        # most of the state
+  - America/Adak                             # Aleutian Islands west of 169°30'W
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 60                                  # 20 Senate + 40 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # no legislative term limits (Ballotpedia)
+  elected_offices:
+    # In Alaska, the Attorney General and heads of the revenue department
+    # are APPOINTED by the governor. The Lieutenant Governor performs the
+    # duties that a Secretary of State does in most other states — there
+    # is no separate elected Secretary of State.
+    attorney_general: false
+    secretary_of_state: false                # position doesn't exist; LG handles those duties
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # governor & LG elected together since 1970
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true
+
+elections_policy:
+  # Alaska adopted top-four open primary + ranked-choice general elections
+  # (Ballot Measure 2, 2020). No traditional majority-runoff rule.
+  runoff: false
+
+voter_registration:
+  # Alaska's AVR is tied to the Permanent Fund Dividend application
+  # (Ballot Measure 1, 2016).
+  automatic: true
+  online: true                               # AK Division of Elections voterregistration.alaska.gov
+  same_day: true                             # LIMITED: president/vice-president only (per federal NVRA); not available for state/local races
+
+ids:
+  wikidata: Q797
+  wikipedia: Alaska
+  ballotpedia: Alaska
+  fips_state: "02"
+  census_geoid: "04000US02"
+  osm_relation: "1116270"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Alaska
+    note: general reference
+  - url: https://voterregistration.alaska.gov/Registration/RegistrationDetails?haveValidAKDL=true
+    note: online voter registration (AK Division of Elections)
+  - url: https://ballotpedia.org/Voting_in_Alaska
+    note: same-day registration limited to president/VP; no legislative term limits
+  - url: https://ballotpedia.org/Alaska_Ballot_Measure_2,_Top-Four_Ranked-Choice_Voting_and_Campaign_Finance_Laws_Initiative_(2020)
+    note: top-four open primary + ranked-choice general (no traditional runoff)
+  - url: https://ballotpedia.org/Alaska_Ballot_Measure_1,_Automatic_Voter_Registration_Initiative_(2016)
+    note: AVR tied to Permanent Fund Dividend application
+  - url: https://ballotpedia.org/Attorney_General_of_Alaska
+    note: Attorney General is appointed by the governor
+  - url: https://ballotpedia.org/Lieutenant_Governor_of_Alaska
+    note: Lt. Governor elected on joint ticket with governor; performs SOS duties
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Alaska
+    note: recall of state elected officials permitted
