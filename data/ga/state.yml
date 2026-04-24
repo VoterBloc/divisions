@@ -1,0 +1,96 @@
+id: ocd-division/country:us/state:ga
+name: Georgia
+type: state
+
+abbreviation: GA
+iso_3166_2: US-GA
+capital: Atlanta
+demonym: Georgian
+motto: Wisdom, Justice, Moderation
+
+established: 1788-01-02                      # 4th state to ratify the U.S. Constitution
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 236                                 # 56 Senate + 180 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # GA has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    agriculture_commissioner: true
+    insurance_commissioner: true
+    labor_commissioner: true
+    school_superintendent: true              # elected State School Superintendent
+    public_service_commissioner: true        # elected 5-member Public Service Commission
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false               # GA LG elected separately
+
+direct_democracy:
+  citizen_initiative: false                  # GA does not permit citizen initiative
+  citizen_referendum: false                  # only legislatively-referred referenda
+  recall: true                               # GA permits recall of state elected officials
+
+elections_policy:
+  runoff: true                               # GA is known for its runoff system (majority-vote)
+  ranked_choice: false
+  primary_type: open                         # per EAC form: GA voters do not register by party; voters choose a primary ballot at the polling place
+  vote_by_mail: no-excuse                    # any voter may request absentee by mail (tightened but still no-excuse per SB 202, 2021)
+  early_voting: true                         # GA has ~3 weeks of in-person early voting
+
+voter_registration:
+  automatic: true                            # HB 885 (2016) — AVR via Department of Driver Services
+  online: true
+  same_day: false
+  min_age: 18
+  registration_deadline_days: 29             # per EAC form — 5th Monday before any election
+  voter_id_requirement: photo                # Ballotpedia — photo ID required; no alternatives for general in-person voters
+  felon_restoration: upon_completion         # rights restored after completion of sentence including probation/parole
+
+elections:
+  office_name: Georgia Secretary of State - Elections Division
+  office_url: https://sos.ga.gov/elections-division-georgia-secretary-states-office
+  office_phone: 404-656-2881                  # main GA SOS line (M-F 8:00am-4:00pm)
+  office_address: |
+    Elections Division
+    Office of the Secretary of State
+    2 Martin Luther King Jr. Drive
+    Suite 802, Floyd West Tower
+    Atlanta, GA 30334
+
+civic_urls:
+  register_to_vote: https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true
+  register_by_mail: https://mvp.sos.ga.gov/s/olvr-home
+  check_registration: https://mvp.sos.ga.gov/s/
+  request_absentee_ballot: https://georgia.gov/vote-absentee-ballot
+  find_polling_place: https://mvp.sos.ga.gov/s/
+  track_ballot: https://mvp.sos.ga.gov/s/
+  sample_ballot: https://mvp.sos.ga.gov/s/
+  voter_id_info: https://sos.ga.gov/page/georgia-voter-identification-requirements
+  elections_calendar: https://sos.ga.gov/page/election-calendar-and-events
+
+ids:
+  wikidata: Q1428
+  wikipedia: Georgia (U.S. state)
+  ballotpedia: Georgia
+  fips_state: "13"
+  census_geoid: "04000US13"
+  osm_relation: "161957"
+
+links:
+  - url: https://sos.ga.gov/form/contact-us
+    note: GA SOS contact form
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Georgia_(U.S._state)
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 5th Monday before election deadline; open primary (no party registration); SOS Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Georgia
+    note: photo ID required at the polls; no general alternative
+  - url: https://www.house.ga.gov/budget/Documents/2019_Session/2019_Policy_Brief_Felon_Voting_Rights.pdf
+    note: GA House policy brief — felon rights restored after prison + probation + (in some cases) restitution
