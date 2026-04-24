@@ -1,0 +1,66 @@
+id: ocd-division/country:us/state:co
+name: Colorado
+type: state
+
+abbreviation: CO
+iso_3166_2: US-CO
+capital: Denver
+demonym: Coloradan
+motto: Nil sine Numine                       # "Nothing without providence"
+
+established: 1876-08-01                      # date of statehood (38th state, "Centennial State")
+website: https://co.colorado.gov/
+timezone: America/Denver
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 100                                 # 35 Senate + 65 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # Amendment 17 (1990): 8 consecutive years per chamber
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # gov & LG run on a joint ticket
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true                               # famously used in 2013 against two state senators over gun-control votes
+
+elections_policy:
+  runoff: false                              # plurality general elections
+
+voter_registration:
+  automatic: true                            # AVR enacted by HB19-1278
+  online: true                               # via CO SOS GoVoteColorado
+  same_day: true                             # Voter Access and Modernized Elections Act (HB13-1303)
+
+ids:
+  wikidata: Q1261
+  wikipedia: Colorado
+  ballotpedia: Colorado
+  fips_state: "08"
+  census_geoid: "04000US08"
+  osm_relation: "161961"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Colorado
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Colorado
+    note: AVR, OVR, and same-day registration all available
+  - url: https://ballotpedia.org/Colorado_Amendment_17,_Term_Limits_Amendment_(1990)
+    note: legislative term limits — 8 consecutive years per chamber
+  - url: https://ballotpedia.org/Lieutenant_Governor_of_Colorado
+    note: LG elected on joint ticket with Governor
+  - url: https://ballotpedia.org/Laws_governing_the_initiative_process_in_Colorado
+    note: citizen initiative permitted
+  - url: https://ballotpedia.org/Laws_governing_ballot_measures_in_Colorado
+    note: citizen referendum permitted
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Colorado
+    note: recall of state elected officials permitted (used 2013 vs. two state senators)
