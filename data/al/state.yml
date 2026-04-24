@@ -34,17 +34,40 @@ direct_democracy:
 
 elections_policy:
   runoff: true                               # AL holds primary runoffs when no candidate wins a majority
+  ranked_choice: false
+  primary_type: open                         # AL does not register voters by party (EAC form: "Alabama voters do not register by political party affiliation")
+  vote_by_mail: excuse-required              # NCSL Table 2 — AL requires an excuse (Ala. Code § 17-11-3)
+  early_voting: false                        # AL has no in-person early voting (US Vote Foundation)
 
 voter_registration:
   automatic: false                           # AL does not have AVR
   online: true                               # via AL Secretary of State
   same_day: false                            # AL does not have SDR/EDR
+  min_age: 18
+  registration_deadline_days: 15             # per EAC form: postmarked or delivered by the 15th day before election
+  voter_id_requirement: photo                # photo ID required; non-strict — two election officials may attest to voter identity (Ala. Code § 17-10-1)
+  felon_restoration: application_required    # moral-turpitude felonies require restoration of civil & political rights
 
 elections:
   office_name: Alabama Secretary of State - Elections Division
+  office_url: https://www.sos.alabama.gov/alabama-votes
+  office_phone: 1-800-274-8683
+  office_address: |
+    Office of the Secretary of State
+    Elections Division
+    P.O. Box 5616
+    Montgomery, AL 36103-5616
 
 civic_urls:
-  register_to_vote: https://www.sos.alabama.gov/contact/online_voter_form_request
+  register_to_vote: https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action
+  register_by_mail: https://www.sos.alabama.gov/contact/online_voter_form_request
+  check_registration: https://myinfo.alabamavotes.gov/VoterView
+  find_polling_place: https://myinfo.alabamavotes.gov/VoterView
+  request_absentee_ballot: https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting
+  track_ballot: https://myinfo.alabamavotes.gov/VoterView
+  sample_ballot: https://www.sos.alabama.gov/alabama-votes/2026-primary-election-sample-ballots
+  voter_id_info: https://www.sos.alabama.gov/alabama-votes/photo-voter-id/valid-ids
+  elections_calendar: https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026
 
 ids:
   wikidata: Q173
@@ -71,3 +94,9 @@ sources:
     note: lt-gov election method (separate ticket)
   - url: https://www.sos.alabama.gov/contact/online_voter_form_request
     note: online voter registration availability
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — open primary (no party registration); felony restoration requires application for moral-turpitude felonies; SOS mailing address
+  - url: https://www.ncsl.org/elections-and-campaigns/table-2-excuses-to-vote-absentee
+    note: NCSL Table 2 — AL is excuse-required for absentee voting
+  - url: https://www.usvotefoundation.org/early-voting-dates
+    note: US Vote Foundation — AL has no in-person early voting
