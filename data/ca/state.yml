@@ -41,17 +41,40 @@ direct_democracy:
 
 elections_policy:
   runoff: false            # CA uses top-two open primary; no traditional runoff
+  primary_type: top-two    # Prop 14 (2010): all candidates on one primary ballot, top 2 advance
+  vote_by_mail: universal  # every active registered voter is automatically mailed a ballot (AB 37, 2021, permanent)
+  early_voting: true
+  ranked_choice: false     # CA does not use RCV in state-level elections (some CA cities do locally)
 
 voter_registration:
   automatic: true          # AB 1461 (2015) — DMV-triggered AVR
   online: true
-  same_day: true           # conditional voter registration
+  same_day: true           # conditional voter registration (through Election Day)
+  min_age: 18
+  pre_registration_age: 16 # AB 1817 (2014)
+  registration_deadline_days: 15            # standard deadline; CVR available up to and including Election Day
+  voter_id_requirement: none                # CA does not require ID to vote except as mandated by HAVA for first-time voters who registered by mail
+  felon_restoration: automatic_upon_release # Prop 17 (2020) — restored on release from prison
 
 elections:
   office_name: California Secretary of State - Elections Division
+  office_url: https://www.sos.ca.gov/elections
+  office_phone: 1-800-345-8683              # 1-800-345-VOTE (CA SOS voter hotline)
+  office_address: |
+    Secretary of State
+    Elections Division
+    1500 11th Street, 5th Floor
+    Sacramento, CA 95814
 
 civic_urls:
   register_to_vote: https://registertovote.ca.gov/
+  check_registration: https://voterstatus.sos.ca.gov/
+  find_polling_place: https://www.sos.ca.gov/elections/polling-place
+  request_absentee_ballot: https://www.sos.ca.gov/elections/voter-registration/vote-mail
+  track_ballot: https://www.sos.ca.gov/elections/ballot-status/wheres-my-ballot
+  sample_ballot: https://voterguide.sos.ca.gov/
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_California
+  elections_calendar: https://www.sos.ca.gov/elections/upcoming-elections
 
 ids:
   wikidata: Q99
@@ -66,7 +89,13 @@ links:
     note: state homepage
   - url: https://www.sos.ca.gov
     note: Secretary of State
+  - url: https://www.sos.ca.gov/elections/voter-registration
+    note: CA SOS voter registration hub — OVR, paper form, DMV, pre-registration info
 
 sources:
   - url: https://en.wikipedia.org/wiki/California
     note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 15-day deadline; conditional voter registration up to Election Day; SOS Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_California
+    note: no voter ID requirement at the polls (HAVA exception for first-time mail registrants only)
