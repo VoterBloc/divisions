@@ -1,0 +1,100 @@
+id: ocd-division/country:us/state:de
+name: Delaware
+type: state
+
+abbreviation: DE
+iso_3166_2: US-DE
+capital: Dover
+demonym: Delawarean
+motto: Liberty and Independence
+
+established: 1787-12-07                      # 1st state to ratify the U.S. Constitution ("The First State")
+website: https://delaware.gov/
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 62                                  # 21 Senate + 41 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # DE has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: false                # DE SOS is appointed by the governor
+    treasurer: true
+    auditor: true
+    insurance_commissioner: true
+  executive:
+    has_lt_governor: true
+
+direct_democracy:
+  citizen_initiative: false                  # DE does not permit citizen initiative
+  citizen_referendum: false
+  recall: false                              # DE does not permit recall of state elected officials
+
+elections_policy:
+  runoff: false                              # plurality general elections
+  ranked_choice: false
+  primary_type: closed                       # per EAC form: must register with a party to vote in its primary
+  vote_by_mail: excuse-required              # DE Constitution Art V § 4A enumerates specific excuses; 2022 DE Supreme Court struck down a no-excuse statute
+  early_voting: true                         # reinstated 5-0 by DE Supreme Court in June 2024
+
+voter_registration:
+  automatic: true                            # DE AVR (Automatic Voter Registration Act via DMV)
+  same_day: false
+  min_age: 18
+  registration_deadline_days: 24             # per EAC form: 4th Saturday before primary or general (24 days for the 2026 general: Oct 10 → Nov 3)
+  voter_id_requirement: non_photo            # Title 15 § 4937 — non-photo ID or affidavit; provisional ballots only for federal offices
+  felon_restoration: upon_completion         # automatic after sentence completion for non-disqualifying felonies; pardon required for a narrow list (murder/manslaughter, public-admin bribery, sexual offenses) per DE DoE
+
+elections:
+  office_name: Delaware Department of Elections
+  office_url: https://elections.delaware.gov/locations.shtml
+  office_phone: (302) 739-4277
+  office_email: coe_vote@delaware.gov
+  office_address: |
+    State Election Commissioner
+    905 S. Governors Ave, Suite 170
+    Dover, DE 19904
+
+civic_urls:
+  register_to_vote: https://ivote.de.gov/VoterView/registrant/newregistrant
+  register_by_mail: https://elections.delaware.gov/voter/pdfs/VoterRegApplication.pdf
+  check_registration: https://ivote.de.gov/VoterView
+  find_polling_place: https://ivote.de.gov/VoterView
+  request_absentee_ballot: https://elections.delaware.gov/voter/absentee/
+  track_ballot: https://ivote.de.gov/VoterView
+  sample_ballot: https://ivote.de.gov/VoterView
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Delaware
+  elections_calendar: https://elections.delaware.gov/public/calendar/calendars.shtml
+
+ids:
+  wikidata: Q1393
+  wikipedia: Delaware
+  ballotpedia: Delaware
+  fips_state: "10"
+  census_geoid: "04000US10"
+  osm_relation: "162110"
+
+links:
+  - url: https://elections.delaware.gov/
+    note: DE Department of Elections homepage
+  - url: https://elections.delaware.gov/voter/votereg.shtml
+    note: DE voter registration hub
+  - url: https://elections.delaware.gov/voter/pdfs/AVR_FAQs.pdf
+    note: DE AVR FAQ
+  - url: https://delaware.gov/guides/voting-in-delaware/
+    note: DE state portal — official voting guide
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Delaware
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — closed primary; registration deadline the 4th Saturday before primary/general; felony rules include disqualifying-felony categories
+  - url: https://ballotpedia.org/Voter_ID_in_Delaware
+    note: non-photo ID requested; voter can sign affidavit if ID unavailable
+  - url: https://codes.findlaw.com/de/title-15-elections/de-code-sect-15-4937.html
+    note: Title 15 § 4937 — primary-source voting-procedure statute (non-photo ID or affidavit)
+  - url: https://ballotpedia.org/Voting_in_Delaware
+    note: comprehensive DE voting policy summary — excuse-required mail-in (Art V § 4A); in-person early voting restored by DE Supreme Court June 2024; 24-day registration deadline
