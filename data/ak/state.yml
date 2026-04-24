@@ -41,6 +41,10 @@ elections_policy:
   # Alaska adopted top-four open primary + ranked-choice general elections
   # (Ballot Measure 2, 2020). No traditional majority-runoff rule.
   runoff: false
+  primary_type: top-four
+  ranked_choice: true
+  vote_by_mail: no-excuse                    # any AK voter may request an absentee ballot without an excuse
+  early_voting: true                         # in-person early voting available at DoE offices
 
 voter_registration:
   # Alaska's AVR is tied to the Permanent Fund Dividend application
@@ -48,12 +52,30 @@ voter_registration:
   automatic: true
   online: true                               # AK Division of Elections voterregistration.alaska.gov
   same_day: true                             # LIMITED: president/vice-president only (per federal NVRA); not available for state/local races
+  min_age: 18
+  registration_deadline_days: 30             # per EAC form
+  voter_id_requirement: non_photo            # Ballotpedia — non-photo ID accepted; provisional ("questioned") ballot available without ID
+  felon_restoration: upon_completion         # rights restored upon "unconditional discharge" (end of parole/probation)
 
 elections:
   office_name: Alaska Division of Elections   # standalone agency (AK has no Secretary of State)
+  office_url: https://www.elections.alaska.gov/
+  office_phone: (907) 465-4611                # toll-free: (866) 952-8683
+  office_address: |
+    Division of Elections
+    PO Box 110017
+    Juneau, AK 99811-0017
 
 civic_urls:
   register_to_vote: https://voterregistration.alaska.gov/
+  register_by_mail: https://voterregistration.alaska.gov/Registration/RegistrationDetails?haveValidAKDL=false
+  check_registration: https://myvoterportal.alaska.gov/
+  find_polling_place: https://www.elections.alaska.gov/election-polls/
+  request_absentee_ballot: https://absenteeballotapplication.alaska.gov/
+  track_ballot: https://myvoterportal.alaska.gov/
+  sample_ballot: https://myvoterportal.alaska.gov/
+  voter_id_info: https://www.elections.alaska.gov/voter-information/#AlaskavoterID
+  elections_calendar: https://www.elections.alaska.gov/calendar/
 
 ids:
   wikidata: Q797
@@ -80,3 +102,9 @@ sources:
     note: Lt. Governor elected on joint ticket with governor; performs SOS duties
   - url: https://ballotpedia.org/Laws_governing_recall_in_Alaska
     note: recall of state elected officials permitted
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 30-day registration deadline; mailing address; felony restoration upon unconditional discharge
+  - url: https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/
+    note: AK DoE — no-excuse absentee by mail; in-person early voting available
+  - url: https://ballotpedia.org/Voter_ID_in_Alaska
+    note: non-photo ID required; provisional ("questioned") ballot allowed without ID (Alaska Stat. § 15.15.225)
