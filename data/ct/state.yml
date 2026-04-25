@@ -42,6 +42,7 @@ elections:
 
 civic_urls:
   register_to_vote: https://voterregistration.ct.gov/
+  military_overseas_voting: https://portal.ct.gov/sots/election-services/voter-information/military-and-overseas-voters
 
 ids:
   wikidata: Q779

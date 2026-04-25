@@ -50,6 +50,9 @@ voter_registration:
 elections:
   office_name: Arkansas Secretary of State - Elections Division
 
+civic_urls:
+  military_overseas_voting: https://www.sos.arkansas.gov/elections/military-and-overseas-citizens
+
 ids:
   wikidata: Q1612
   wikipedia: Arkansas
