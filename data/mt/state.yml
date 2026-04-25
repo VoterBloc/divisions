@@ -1,0 +1,88 @@
+id: ocd-division/country:us/state:mt
+name: Montana
+type: state
+
+abbreviation: MT
+iso_3166_2: US-MT
+capital: Helena
+demonym: Montanan
+motto: Oro y plata                           # "Gold and silver"
+
+established: 1889-11-08                      # date of statehood (41st state)
+timezone: America/Denver
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 150                                 # 50 Senate + 100 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # Constitutional Initiative 64 (1992) — 8 years per chamber, 16 total in legislature
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    auditor: true                            # Commissioner of Securities and Insurance / State Auditor
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # MT gov & LG on joint ticket
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true                               # MT permits recall of state and local elected officials
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: open                         # MT does not register voters by party
+  vote_by_mail: no-excuse                    # MT allows no-excuse absentee voting; some local elections held entirely by mail
+  early_voting: true                         # in-person absentee voting available
+
+voter_registration:
+  automatic: false
+  online: false                              # MT does not have online voter registration
+  same_day: true                             # late registration through noon the day before Election Day at county election office
+  min_age: 18
+  registration_deadline_days: 30             # regular registration closes 30 days before; late registration up through noon day before Election Day
+  voter_id_requirement: photo                # photo ID required (HB 176, 2021); affidavit alternative
+  felon_restoration: upon_completion         # rights restored after sentence (incarceration) completed
+
+elections:
+  office_name: Montana Secretary of State - Elections Division
+  office_url: https://sosmt.gov/elections/
+  office_phone: 406-444-2034
+  office_email: soselections@mt.gov
+  office_address: |
+    Montana Secretary of State
+    Montana Capitol Building, Rm 260
+    P.O. Box 202801
+    Helena, MT 59620-2801
+
+civic_urls:
+  register_by_mail: https://sosmt.gov/elections/forms/#37-46-for-montana-voters
+  check_registration: https://voterportal.mt.gov/WhereToVote.aspx
+  find_polling_place: https://voterportal.mt.gov/WhereToVote.aspx
+  request_absentee_ballot: https://sosmt.gov/elections/forms/#37-46-for-montana-voters
+  track_ballot: https://voterportal.mt.gov/WhereToVote.aspx
+  sample_ballot: https://voterportal.mt.gov/WhereToVote.aspx
+  voter_id_info: https://votemt.gov/voter-identification/
+  elections_calendar: https://sosmt.gov/elections/calendars/
+  election_results: https://electionresults.mt.gov/
+  military_overseas_voting: https://sosmt.gov/elections/military-overseas/
+
+ids:
+  wikidata: Q1212
+  wikipedia: Montana
+  ballotpedia: Montana
+  fips_state: "30"
+  census_geoid: "04000US30"
+  osm_relation: "162115"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Montana
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 30-day deadline; late registration through noon day before Election Day; MT SOS mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Montana
+    note: photo ID required at the polls (HB 176, 2021)
