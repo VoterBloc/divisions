@@ -1,0 +1,97 @@
+id: ocd-division/country:us/state:ky
+name: Kentucky
+type: state
+
+abbreviation: KY
+iso_3166_2: US-KY
+capital: Frankfort
+demonym: Kentuckian
+motto: United we stand, divided we fall
+
+established: 1792-06-01                      # date of statehood (15th state); officially the "Commonwealth of Kentucky"
+timezones:
+  - America/New_York                         # eastern KY (Eastern)
+  - America/Chicago                          # ~40 western counties (Central)
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 138                                 # 38 Senate + 100 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # KY has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    auditor: true
+    agriculture_commissioner: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # KY gov & LG on joint ticket since 1992
+
+direct_democracy:
+  citizen_initiative: false                  # KY does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: false                              # KY does not permit statewide recall
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: closed                       # per EAC form: must register with a party to vote in its primary
+  vote_by_mail: excuse-required              # KY requires an excuse for absentee voting
+  early_voting: true                         # KY added in-person early voting in 2021 (HB 574)
+
+voter_registration:
+  automatic: false
+  online: true                               # KY OVR
+  same_day: false
+  min_age: 18
+  registration_deadline_days: 29             # per EAC form
+  voter_id_requirement: photo                # KY requires photo ID; HB 139 (2026) removed the personal-knowledge alternative
+  felon_restoration: application_required    # KY requires individual restoration via the governor's office (executive action)
+
+elections:
+  office_name: Kentucky State Board of Elections
+  office_url: https://elect.ky.gov/Pages/default.aspx
+  office_phone: 502-573-7100
+  office_address: |
+    Kentucky State Board of Elections
+    140 Walnut Street
+    Frankfort, KY 40601-3240
+
+civic_urls:
+  register_to_vote: https://vrsws.sos.ky.gov/ovrweb
+  register_by_mail: https://elect.ky.gov/Resources/Documents/SBE%2001%20-%20KY%20Voter%20Registration%20Application%20FILLABLE%20406.pdf
+  check_registration: https://vrsws.sos.ky.gov/vic/
+  find_polling_place: https://vrsws.sos.ky.gov/vic/
+  request_absentee_ballot: https://vrsws.sos.ky.gov/abrweb
+  track_ballot: https://vrsws.sos.ky.gov/vic/
+  sample_ballot: https://web.sos.ky.gov/electionballots/
+  voter_id_info: https://elect.ky.gov/Voters/Pages/Absentee-Excused-In-Person.aspx
+  elections_calendar: https://elect.ky.gov/Resources/Pages/Election-Calendar.aspx
+  election_results: https://elect.ky.gov/results/Pages/default.aspx
+
+ids:
+  wikidata: Q1603
+  wikipedia: Kentucky
+  ballotpedia: Kentucky
+  fips_state: "21"
+  census_geoid: "04000US21"
+  osm_relation: "161655"
+
+links:
+  - url: https://elect.ky.gov/About-Us/Pages/State-Board-of-Elections.aspx
+    note: KY State Board of Elections — about the board
+  - url: https://elect.ky.gov/Voters/Pages/Absentee-Voting.aspx
+    note: KY State Board of Elections — absentee voting info hub
+  - url: https://elect.ky.gov/Voters/Pages/Polling-Locations.aspx
+    note: KY State Board of Elections — polling locations info hub
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Kentucky
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 29-day deadline; closed primary; KY State Board of Elections mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Kentucky
+    note: photo ID required at the polls; HB 139 (2026) removed the personal-knowledge identification alternative
