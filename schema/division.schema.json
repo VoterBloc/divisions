@@ -192,6 +192,21 @@
           "default": null,
           "title": "Find Polling Place"
         },
+        "military_overseas_voting": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Military Overseas Voting"
+        },
         "register_by_mail": {
           "anyOf": [
             {
