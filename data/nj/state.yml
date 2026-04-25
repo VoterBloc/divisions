@@ -1,0 +1,96 @@
+id: ocd-division/country:us/state:nj
+name: New Jersey
+type: state
+
+abbreviation: NJ
+iso_3166_2: US-NJ
+capital: Trenton
+demonym: New Jerseyan
+nicknames:
+  - Garden State
+motto: Liberty and Prosperity
+
+established: 1787-12-18                      # 3rd state to ratify the U.S. Constitution
+website: https://www.nj.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: General Assembly            # NJ uses "General Assembly" for its lower chamber
+  seats: 120                                 # 40 Senate + 80 General Assembly
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # NJ has no legislative term limits
+  elected_offices:
+    # NJ Attorney General, Secretary of State, and Treasurer are appointed
+    # by the Governor with Senate confirmation — not elected statewide.
+    attorney_general: false
+    secretary_of_state: false
+    treasurer: false
+  executive:
+    has_lt_governor: true                    # office created by 2005 amendment, first election 2009
+    lt_gov_joint_ticket: true
+
+direct_democracy:
+  citizen_initiative: false                  # NJ does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: true                               # Uniform Recall Election Law (P.L.1995, c.105) — applies to elected state and local officials
+
+elections_policy:
+  runoff: false
+  primary_type: semi-closed                  # affiliated voters vote in their party; unaffiliated voters can declare at the polls
+  vote_by_mail: no-excuse                    # no-excuse VBM since 2009 (P.L.2009, c.79); permanent VBM list is opt-in, not universal/all-mail
+  early_voting: true                         # in-person early voting since 2021 (P.L.2021, c.40)
+  ranked_choice: false
+
+voter_registration:
+  automatic: true                            # AVR via P.L.2018, c.10, effective Nov 2018
+  online: true
+  same_day: false                            # no Election Day Registration
+  min_age: 18
+  pre_registration_age: 17                   # 17-year-olds may pre-register; cannot vote until 18
+  registration_deadline_days: 21             # N.J.S.A. 19:31-6.4
+  voter_id_requirement: none                 # NJ does not require ID at the polls (HAVA first-time-mail exception only)
+  felon_restoration: automatic_upon_release  # P.L.2019, c.270, effective 2020-03-17
+
+elections:
+  office_name: New Jersey Department of State - Division of Elections
+  office_url: https://nj.gov/state/elections/vote.shtml
+  office_phone: 1-877-658-6837                 # 1-877-NJ-VOTER (NJ Division of Elections voter hotline)
+  office_email: nj.elections@sos.nj.gov
+  office_address: |
+    NJ Division of Elections
+    P.O. Box 304
+    Trenton, NJ 08625-0304
+
+civic_urls:
+  register_to_vote: https://voter.svrs.nj.gov/register
+  register_by_mail: https://nj.gov/state/elections/voter-registration.shtml
+  check_registration: https://voter.svrs.nj.gov/registration-check
+  request_absentee_ballot: https://voter.svrs.nj.gov/mib-request   # vote-by-mail (mail-in ballot) application
+  find_polling_place: https://voter.svrs.nj.gov/polling-place-search
+  track_ballot: https://nj.gov/state/elections/vote-track-my-ballot.shtml
+  sample_ballot: https://ballotpedia.org/New_Jersey_Sample_Ballot   # NJ Division of Elections has no statewide sample-ballot tool; ballots are mailed by county clerks
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_New_Jersey
+  election_results: https://nj.gov/state/elections/election-results.shtml
+  military_overseas_voting: https://nj.gov/state/elections/vote-military-and-overseas.shtml
+
+ids:
+  wikidata: Q1408
+  wikipedia: New Jersey
+  ballotpedia: New_Jersey
+  fips_state: "34"
+  census_geoid: "04000US34"
+  osm_relation: "224951"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/New_Jersey
+    note: general reference
+  - url: https://ballotpedia.org/Voter_identification_laws_by_state
+    note: NJ row — "No ID required" (HAVA first-time-mail exception only); no separate ID requirement for absentee or early voting
+  - url: https://nj.gov/state/elections/vote.shtml
+    note: NJ Division of Elections — official source for registration, VBM, and early voting procedures
+  - url: https://ballotpedia.org/Elections_in_New_Jersey
+    note: primary type, AVR, early voting, no-excuse absentee, RCV (none), recall law
+  - url: https://ballotpedia.org/Voting_in_New_Jersey
+    note: primary source for registration policy, pre-registration age 17, deadline 21 days, semi-closed primaries, felon restoration upon release (A5823, eff. 2020-03-17)
