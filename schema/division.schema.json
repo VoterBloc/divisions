@@ -147,6 +147,21 @@
           "default": null,
           "title": "Check Registration"
         },
+        "election_results": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Election Results"
+        },
         "elections_calendar": {
           "anyOf": [
             {
