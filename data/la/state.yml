@@ -1,0 +1,99 @@
+id: ocd-division/country:us/state:la
+name: Louisiana
+type: state
+
+abbreviation: LA
+iso_3166_2: US-LA
+capital: Baton Rouge
+demonym: Louisianan
+motto: Union, Justice, and Confidence
+
+established: 1812-04-30                      # date of statehood (18th state); LA uses parishes instead of counties
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 144                                 # 39 Senate + 105 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # 12 consecutive years per chamber (Act 1995 + later refinements)
+  term_limit: 12
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    agriculture_commissioner: true           # Commissioner of Agriculture and Forestry
+    insurance_commissioner: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false               # LA LG elected separately
+
+direct_democracy:
+  citizen_initiative: false                  # LA does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: true                               # LA permits recall of elected officials
+
+elections_policy:
+  # LA uses a "majority-vote / nonpartisan blanket primary" — all candidates regardless of
+  # party run together in the primary; if any candidate gets >50% they win outright,
+  # otherwise the top two advance to a runoff. (Schema enum approximates this as "blanket".)
+  runoff: true
+  ranked_choice: false
+  primary_type: blanket
+  vote_by_mail: excuse-required              # LA requires an excuse for absentee voting
+  early_voting: true                         # in-person early voting available
+
+voter_registration:
+  automatic: false
+  online: true                               # LA OVR via voterportal.sos.la.gov
+  same_day: false
+  min_age: 18
+  pre_registration_age: 16                   # may register at 16 with a Louisiana driver's license; in person at registrar's office at any time
+  registration_deadline_days: 30             # per EAC form
+  voter_id_requirement: photo                # LA requires photo ID; affidavit alternative; voter may be challenged
+  felon_restoration: upon_completion         # rights restored when no longer under an order of imprisonment, OR not incarcerated under that order in the last 5 years (LA-specific 5-year rule)
+
+elections:
+  office_name: Louisiana Secretary of State - Elections Division
+  office_url: https://www.sos.la.gov/electionsandvoting/Pages/default.aspx
+  office_phone: 225-922-2880
+  office_address: |
+    Secretary of State
+    Attention: Elections Division
+    P.O. Box 94125
+    Baton Rouge, LA 70804-9125
+
+civic_urls:
+  register_to_vote: https://voterportal.sos.la.gov/VoterRegistration
+  register_by_mail: https://www.sos.la.gov/ElectionsAndVoting/PublishedDocuments/ApplicationToRegisterToVote.pdf
+  check_registration: https://voterportal.sos.la.gov/
+  find_polling_place: https://voterportal.sos.la.gov/
+  request_absentee_ballot: https://www.sos.la.gov/ElectionsAndVoting/Vote/VoteByMail/Pages/MilitaryAndOverseasVoters.aspx
+  track_ballot: https://voterportal.sos.la.gov/
+  sample_ballot: https://voterportal.sos.la.gov/Home/VoterLogin
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Louisiana
+  elections_calendar: https://www.sos.la.gov/electionsandvoting/getelectioninformation/searchelectiondates/pages/default.aspx
+  election_results: https://voterportal.sos.la.gov/Graphical
+
+ids:
+  wikidata: Q1588
+  wikipedia: Louisiana
+  ballotpedia: Louisiana
+  fips_state: "22"
+  census_geoid: "04000US22"
+  osm_relation: "224922"
+
+links:
+  - url: https://www.sos.la.gov/ElectionsAndVoting/PublishedDocuments/MilitaryOverseasApplicationForAbsenteeByMailBallot.pdf
+    note: LA military/overseas absentee ballot application PDF
+  - url: https://www.sos.la.gov/ElectionsAndVoting/Vote/FrequentlyAskedQuestions/Pages/VotingByMail.aspx?OwnershipName=VotingByMail&faqid=0
+    note: LA SOS — voting by mail FAQ
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Louisiana
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 30-day deadline; LA's 5-year felony incarceration rule for restoration; SOS Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Louisiana
+    note: photo ID required at the polls; affidavit alternative (voter may be challenged)
