@@ -1,0 +1,93 @@
+id: ocd-division/country:us/state:nv
+name: Nevada
+type: state
+
+abbreviation: NV
+iso_3166_2: US-NV
+capital: Carson City
+demonym: Nevadan
+motto: All for our country
+
+established: 1864-10-31                      # date of statehood (36th state)
+timezones:
+  - America/Los_Angeles                      # most of NV (Pacific)
+  - America/Denver                           # West Wendover (Mountain)
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: Assembly
+  seats: 63                                  # 21 Senate + 42 Assembly
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # 12 consecutive years per chamber
+  term_limit: 12
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    controller: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false               # NV LG elected separately
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true                               # NV permits recall of state and local elected officials
+
+elections_policy:
+  runoff: false
+  ranked_choice: false                       # NV Question 3 (2022) approved top-five primary + RCV general; requires second ratification in 2026
+  primary_type: closed                       # closed for major-party primaries; minor-party + nonpartisan voters get a nonpartisan ballot
+  vote_by_mail: universal                    # AB 4 (2020), made permanent — every active registered voter is automatically mailed a ballot
+  early_voting: true                         # in-person early voting available
+
+voter_registration:
+  automatic: true                            # NV AVR — Question 5 (2018) and AB 345 (2019)
+  online: true
+  same_day: true                             # SDR — AB 345 (2019); available during early voting and on Election Day
+  min_age: 18
+  pre_registration_age: 17                   # NV allows pre-registration at 17 (eligible to vote at 18)
+  registration_deadline_days: 28             # mail postmark by 4th Tuesday before election; in-person and online deadlines vary
+  voter_id_requirement: none                 # NV does not generally require voter ID at the polls
+  felon_restoration: automatic_upon_release  # AB 431 (2019) — rights restored upon release from prison
+
+elections:
+  office_name: Nevada Secretary of State - Elections Division
+  office_url: https://www.nvsos.gov/elections
+  office_phone: (775) 684-5708
+  office_email: sosmail@sos.nv.gov
+  office_address: |
+    Secretary of State
+    Elections Division
+    101 North Carson Street, Suite 3
+    Carson City, NV 89701-4786
+
+civic_urls:
+  register_to_vote: https://www.nvsos.gov/SOSVoterServices/start.aspx
+  register_by_mail: https://www.nvsos.gov/elections/voters/registering-to-vote
+  check_registration: https://www.nvsos.gov/votersearch/
+  find_polling_place: https://www.nvsos.gov/votersearch/
+  request_absentee_ballot: https://www.nvsos.gov/sos/elections/voters/mail-ballot-voting
+  track_ballot: https://www.nvsos.gov/votersearch/
+  sample_ballot: https://www.nvsos.gov/votersearch/
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Nevada
+  elections_calendar: https://www.nvsos.gov/sos/elections/election-information/2026-election-information
+  election_results: https://silverstateelection.nv.gov/
+  military_overseas_voting: https://www.nvsos.gov/sos/elections/voters/uniformed-overseas-citizens
+
+ids:
+  wikidata: Q1227
+  wikipedia: Nevada
+  ballotpedia: Nevada
+  fips_state: "32"
+  census_geoid: "04000US32"
+  osm_relation: "165473"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Nevada
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — deadlines vary by method (mail/in-person/online); NV SOS Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Nevada
+    note: NV does not generally require voter ID at the polls (HAVA exception only)
