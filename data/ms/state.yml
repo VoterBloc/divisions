@@ -1,0 +1,89 @@
+id: ocd-division/country:us/state:ms
+name: Mississippi
+type: state
+
+abbreviation: MS
+iso_3166_2: US-MS
+capital: Jackson
+demonym: Mississippian
+motto: Virtute et armis                      # "By valor and arms"
+
+established: 1817-12-10                      # date of statehood (20th state)
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 174                                 # 52 Senate + 122 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # MS has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    auditor: true
+    insurance_commissioner: true
+    agriculture_commissioner: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false               # MS LG elected separately
+
+direct_democracy:
+  citizen_initiative: false                  # MS Supreme Court invalidated the initiative process in 2021 (In re Initiative Measure No. 65); legislature has not restored it
+  citizen_referendum: false
+  recall: false                              # MS does not permit statewide recall
+
+elections_policy:
+  runoff: true                               # MS holds majority-vote primary runoffs
+  ranked_choice: false
+  primary_type: open                         # MS does not register voters by party
+  vote_by_mail: excuse-required              # MS requires an excuse for absentee voting
+  early_voting: false                        # MS is one of few states without traditional in-person early voting
+
+voter_registration:
+  automatic: false
+  online: false                              # MS does not have online voter registration (one of the few remaining holdout states)
+  same_day: false
+  min_age: 18
+  registration_deadline_days: 30             # per EAC form
+  voter_id_requirement: strict_photo         # photo ID required; provisional ballot must be cured with ID within 5 days
+  felon_restoration: application_required    # MS has a list of disqualifying felonies (Article XII § 241); restoration via individual legislative bill or governor's pardon
+
+elections:
+  office_name: Mississippi Secretary of State - Elections Division
+  office_url: https://www.sos.ms.gov/elections-voting
+  office_phone: 601-359-1358                  # voter ID hotline: 1-800-829-6786
+  office_email: MSVoterID@sos.ms.gov
+  office_address: |
+    Mississippi Secretary of State
+    P.O. Box 136
+    Jackson, MS 39205-0136
+
+civic_urls:
+  register_by_mail: https://www.sos.ms.gov/voter-id/register
+  check_registration: https://www.msegov.com/sos/voter_registration/amiregistered/Search
+  find_polling_place: https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VOSearch.aspx
+  request_absentee_ballot: https://www.sos.ms.gov/absentee-voting-information
+  track_ballot: https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VoterRegistrationCheck.aspx
+  sample_ballot: https://ballotpedia.org/Mississippi_Sample_Ballot
+  voter_id_info: https://www.sos.ms.gov/voter-id
+  elections_calendar: https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf
+  election_results: https://www.sos.ms.gov/elections-voting/election-results
+  military_overseas_voting: https://www.sos.ms.gov/elections-voting/military-overseas-voter-information
+
+ids:
+  wikidata: Q1494
+  wikipedia: Mississippi
+  ballotpedia: Mississippi
+  fips_state: "28"
+  census_geoid: "04000US28"
+  osm_relation: "161943"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Mississippi
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 30-day deadline; lists disqualifying felonies; MS SOS mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Mississippi
+    note: photo ID required at the polls; provisional ballot if no ID, must be cured within 5 days
