@@ -1,0 +1,88 @@
+id: ocd-division/country:us/state:nh
+name: New Hampshire
+type: state
+
+abbreviation: NH
+iso_3166_2: US-NH
+capital: Concord
+demonym: New Hampshirite
+motto: Live Free or Die
+
+established: 1788-06-21                      # 9th state to ratify the U.S. Constitution
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 424                                 # 24 Senate + 400 House (largest state legislature in the US)
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # NH has no legislative term limits
+  elected_offices:
+    # NH is unique: AG, SOS, Treasurer, and other major offices are not elected by voters.
+    # SOS and Treasurer are elected by the legislature; AG is appointed by the governor.
+    attorney_general: false
+    secretary_of_state: false
+    treasurer: false
+  executive:
+    has_lt_governor: false                   # NH has no Lt. Governor; Senate President first in succession
+
+direct_democracy:
+  citizen_initiative: false                  # NH does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: false                              # NH does not permit statewide recall
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: semi-closed                  # NH undeclared voters may pick a primary at the polls and revert to undeclared afterward
+  vote_by_mail: excuse-required              # NH requires an excuse for absentee voting
+  early_voting: false                        # NH is one of few states without traditional in-person early voting
+
+voter_registration:
+  automatic: false
+  online: false                              # NH does not have online voter registration
+  same_day: true                             # NH has Election Day Registration (in-person at the polls)
+  min_age: 18
+  registration_deadline_days: 10             # delivered to local clerk 10 days before election (varies by town); SDR available on Election Day
+  voter_id_requirement: photo                # NH requires photo ID; affidavit alternative for those without ID
+  felon_restoration: automatic_upon_release  # rights restored upon release from incarceration
+
+elections:
+  office_name: New Hampshire Secretary of State - Election Division
+  office_url: https://www.sos.nh.gov/elections
+  office_phone: 603-271-3242
+  office_email: elections@sos.nh.gov
+  office_address: |
+    NH Secretary of State - Election Division
+    State House
+    107 North Main Street, Room 204
+    Concord, NH 03301
+
+civic_urls:
+  register_by_mail: https://www.sos.nh.gov/elections/register-vote/absentee-voter-registration
+  request_absentee_ballot: https://www.sos.nh.gov/elections/absentee-ballots
+  track_ballot: https://app.sos.nh.gov/viphome
+  check_registration: https://app.sos.nh.gov/voterinformation
+  find_polling_place: https://app.sos.nh.gov/pollingplacesampleballot
+  sample_ballot: https://www.sos.nh.gov/elections/sample-ballots
+  voter_id_info: https://www.sos.nh.gov/elections/register-vote
+  elections_calendar: https://www.sos.nh.gov/elections/2026-2027-political-calendar
+  election_results: https://www.sos.nh.gov/elections
+  military_overseas_voting: https://www.sos.nh.gov/elections/uniformed-and-overseas-uocava-voters
+
+ids:
+  wikidata: Q759
+  wikipedia: New Hampshire
+  ballotpedia: New_Hampshire
+  fips_state: "33"
+  census_geoid: "04000US33"
+  osm_relation: "67213"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/New_Hampshire
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — NH town/city clerks accept this only as a request for the local mail-in registration form (not a direct registration form)
+  - url: https://ballotpedia.org/Voter_ID_in_New_Hampshire
+    note: photo ID required at the polls; affidavit alternative
