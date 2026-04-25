@@ -1,0 +1,97 @@
+id: ocd-division/country:us/state:me
+name: Maine
+type: state
+
+abbreviation: ME
+iso_3166_2: US-ME
+capital: Augusta
+demonym: Mainer
+motto: Dirigo                                # "I lead" / "I direct"
+
+established: 1820-03-15                      # date of statehood (23rd state)
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 186                                 # 35 Senate + 151 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # 4 consecutive terms (8 consecutive years) per chamber
+  term_limit: 8
+  elected_offices:
+    # ME is unique: AG, SOS, and Treasurer are APPOINTED by the legislature, not elected.
+    attorney_general: false
+    secretary_of_state: false
+    treasurer: false
+  executive:
+    has_lt_governor: false                   # ME has no Lt. Governor; the President of the Senate is first in succession
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true                   # ME has the "people's veto"
+  recall: false                              # ME does not permit statewide recall
+
+elections_policy:
+  runoff: false
+  ranked_choice: true                        # ME uses RCV for federal congressional + presidential elections (since 2018/2020)
+  primary_type: semi-closed                  # unaffiliated voters may declare a party at the polls
+  vote_by_mail: no-excuse                    # any ME voter may request an absentee ballot
+  early_voting: true                         # in-person absentee voting available
+
+voter_registration:
+  automatic: true                            # ME AVR — LD 1626 (2019)
+  online: true
+  same_day: true                             # Election Day Registration available
+  min_age: 18
+  pre_registration_age: 16                   # per EAC form
+  registration_deadline_days: 21             # delivered to municipality 21 days before election; in-person registration allowed up to and including Election Day
+  voter_id_requirement: none                 # ME does not require voter ID at the polls (HAVA exception only for first-time mail registrants and Election Day registrants)
+  felon_restoration: no_disenfranchisement   # ME, along with VT and DC, allows felons to vote even while incarcerated
+
+elections:
+  office_name: Maine Department of the Secretary of State - Elections Division
+  office_url: https://www.maine.gov/sos/elections-voting
+  office_phone: (207) 624-7650
+  office_email: cec.elections@maine.gov
+  office_address: |
+    Elections Division
+    Bureau of Corporations, Elections and Commissions
+    184 State House Station
+    Augusta, ME 04333-0184
+
+civic_urls:
+  register_to_vote: https://registertovote.sos.maine.gov/OnlineVoterRegistration/Registration
+  register_by_mail: https://www.maine.gov/sos/elections-voting/registering-to-vote
+  check_registration: https://www.maine.gov/portal/government/edemocracy/voter_lookup.php
+  find_polling_place: https://www.maine.gov/portal/government/edemocracy/voter_lookup.php
+  request_absentee_ballot: http://absenteeballotrequest.sos.maine.gov/
+  track_ballot: https://absenteeballotrequest.sos.maine.gov/BallotTracker/BallotTracker
+  sample_ballot: https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/Style%201%20-%202025%20Nov%20Ref%20Sample%2020250903.pdf   # ME does not publish a generic sample-ballot tool; this is a specific 2025 referendum sample PDF
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Maine
+  elections_calendar: https://www.maine.gov/sos/elections-voting/upcoming-elections
+  election_results: https://www.maine.gov/sos/elections-voting/election-results-data
+
+ids:
+  wikidata: Q724
+  wikipedia: Maine
+  ballotpedia: Maine
+  fips_state: "23"
+  census_geoid: "04000US23"
+  osm_relation: "63512"
+
+links:
+  - url: https://registertovote.sos.maine.gov/OnlineUOCAVARegistration/Registration
+    note: ME UOCAVA registration form (military and overseas voters)
+  - url: https://www.maine.gov/sos/elections-voting/registering-to-vote/maine-voting-residence-fact-sheet
+    note: ME voting residence fact sheet
+  - url: https://www.maine.gov/sos/elections-voting/voter-data
+    note: ME SOS voter data / statistics page
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Maine
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 21-day deadline; in-person registration through Election Day; pre-registration at 16; ME SOS Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Maine
+    note: ME does not require voter ID at the polls (HAVA exception only)
