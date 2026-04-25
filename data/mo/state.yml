@@ -1,0 +1,89 @@
+id: ocd-division/country:us/state:mo
+name: Missouri
+type: state
+
+abbreviation: MO
+iso_3166_2: US-MO
+capital: Jefferson City
+demonym: Missourian
+motto: Salus populi suprema lex esto         # "The welfare of the people shall be the supreme law"
+
+established: 1821-08-10                      # date of statehood (24th state)
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 197                                 # 34 Senate + 163 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # 8 years per chamber (16 lifetime in legislature) — Constitutional Amendment 12 (1992)
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    auditor: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false               # MO LG elected separately
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: false                              # MO does not permit statewide recall (some local jurisdictions allow it)
+
+elections_policy:
+  runoff: false
+  ranked_choice: false                       # MO Amendment 7 (2024) banned RCV statewide
+  primary_type: open                         # MO does not register voters by party
+  vote_by_mail: excuse-required              # MO requires an excuse for absentee voting by mail
+  early_voting: true                         # MO added 2 weeks of in-person no-excuse early voting in 2022
+
+voter_registration:
+  automatic: false
+  online: true                               # MO OVR
+  same_day: false
+  min_age: 17                                # may register at 17.5; must be 18 to vote
+  registration_deadline_days: 28             # per EAC form
+  voter_id_requirement: photo                # MO SB 631 (2022) — photo ID required; provisional ballot if no ID
+  felon_restoration: upon_completion         # rights restored after probation/parole completed; not while on probation/parole
+
+elections:
+  office_name: Missouri Secretary of State - Elections Division
+  office_url: https://www.sos.mo.gov/elections/
+  office_phone: (573) 751-2301                # toll-free: (800) 669-8683
+  office_email: elections@sos.mo.gov
+  office_address: |
+    Missouri Secretary of State
+    P.O. Box 1767
+    Jefferson City, MO 65102-1767
+
+civic_urls:
+  register_to_vote: https://s1.sos.mo.gov/elections/voterregistration/
+  register_by_mail: https://s1.sos.mo.gov/Elections/VoterRegistration/Home/Print
+  check_registration: https://voteroutreach.sos.mo.gov/portal/
+  find_polling_place: https://voteroutreach.sos.mo.gov/portal/
+  request_absentee_ballot: https://s1.sos.mo.gov/elections/goVoteMissouri/request
+  track_ballot: https://voteroutreach.sos.mo.gov/portal/
+  sample_ballot: https://voteroutreach.sos.mo.gov/portal/
+  voter_id_info: https://www.sos.mo.gov/voterid
+  elections_calendar: https://www.sos.mo.gov/elections/calendar
+  election_results: https://www.sos.mo.gov/elections/s_default
+  military_overseas_voting: https://www.sos.mo.gov/elections/goVoteMissouri/registeroverseas
+
+ids:
+  wikidata: Q1581
+  wikipedia: Missouri
+  ballotpedia: Missouri
+  fips_state: "29"
+  census_geoid: "04000US29"
+  osm_relation: "161638"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Missouri
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 28-day deadline; min age 17.5; MO SOS mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Missouri
+    note: photo ID required at the polls (SB 631, 2022)
