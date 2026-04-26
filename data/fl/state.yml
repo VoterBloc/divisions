@@ -1,0 +1,113 @@
+id: ocd-division/country:us/state:fl
+name: Florida
+type: state
+
+abbreviation: FL
+iso_3166_2: US-FL
+capital: Tallahassee
+demonym: Floridian
+motto: In God We Trust
+
+established: 1845-03-03                      # date of statehood (27th state)
+timezones:
+  - America/New_York                         # most of Florida (Eastern)
+  - America/Chicago                          # western Panhandle counties (Central)
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 160                                 # 40 Senate + 120 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # Amendment 9 (1992) — 8 consecutive years per chamber
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: false                # FL SOS has been APPOINTED since the 2003 restructuring
+    chief_financial_officer: true            # elected CFO (replaced the separate Comptroller + Treasurer roles)
+    agriculture_commissioner: true           # elected Commissioner of Agriculture and Consumer Services
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # FL gov & LG run on joint ticket
+
+direct_democracy:
+  citizen_initiative: true                   # FL permits citizen-initiated constitutional amendments
+  citizen_referendum: false                  # no citizen-initiated referendum; only legislatively-referred
+  recall: false                              # FL has local recall only; no statewide recall
+
+elections_policy:
+  runoff: false                              # FL eliminated primary runoffs in 2005
+  ranked_choice: false
+  primary_type: closed                       # per EAC form: must register with a party to vote in its primary
+  vote_by_mail: no-excuse                    # any FL voter may request a vote-by-mail ballot
+  early_voting: true                         # in-person early voting required by FL statute
+
+voter_registration:
+  automatic: false                           # no AVR
+  online: true                               # FL OVR since 2017 (HB 7013)
+  same_day: false
+  min_age: 18
+  pre_registration_age: 16                   # per EAC form
+  registration_deadline_days: 29             # per EAC form
+  voter_id_requirement: photo                # Ballotpedia — photo ID required; second ID for missing signature
+  felon_restoration: upon_completion
+  # FL Amendment 4 (2018) + SB 7066 (2019) + Fla. Const. Art VI § 4 + Fla. Stat. § 98.0751:
+  # "completion of sentence" = prison/jail + parole/probation + payment of all fines, fees, costs,
+  # and restitution ordered in the original sentence. 11th Circuit upheld this definition.
+  # Murder and sexual offenses require Clemency Board restoration (effectively application_required
+  # for those two categories). The "first dollar" policy treats post-sentence interest/surcharges
+  # as non-disqualifying once the original-order amount is paid.
+
+elections:
+  office_name: Florida Department of State - Division of Elections
+  office_url: https://dos.fl.gov/elections/
+  office_phone: 1-866-308-6739                # Voter Assistance Hotline
+  office_email: BVRSHelp@dos.fl.gov           # Bureau of Voter Registration Services
+  office_address: |
+    State of Florida
+    Department of State
+    Division of Elections
+    R.A. Gray Building
+    500 South Bronough St, Rm 316
+    Tallahassee, FL 32399-0250
+
+civic_urls:
+  register_to_vote: https://registertovoteflorida.gov/home
+  register_by_mail: https://dos.fl.gov/elections/for-voters/voter-registration/
+  check_registration: https://registration.dos.fl.gov/CheckVoterStatus
+  find_polling_place: https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/voter-precinct-lookup/
+  request_absentee_ballot: https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/
+  track_ballot: https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/vote-by-mail-ballot-information-and-status-lookup/
+  sample_ballot: https://ballotpedia.org/Sample_Ballot_Lookup
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Florida
+  elections_calendar: https://dos.fl.gov/elections/for-voters/election-dates/
+
+ids:
+  wikidata: Q812
+  wikipedia: Florida
+  ballotpedia: Florida
+  fips_state: "12"
+  census_geoid: "04000US12"
+  osm_relation: "162050"
+
+links:
+  - url: https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/
+    note: FL Division of Elections — voter status & polling place hub
+  - url: https://dos.fl.gov/elections/for-voters/voting/early-voting-and-secure-ballot-intake-stations/
+    note: FL early voting & ballot intake station info
+  - url: https://dos.fl.gov/elections/data-statistics/elections-data/absentee-and-early-voting/
+    note: FL absentee & early voting data / statistics
+  - url: https://dos.elections.myflorida.com/supervisors/
+    note: FL county Supervisors of Elections directory (elections are administered at the county level)
+  - url: https://dos.fl.gov/elections/for-voters/voter-registration/felon-voting-rights/
+    note: FL felon voting rights — Amendment 4 (2018) + SB 7066 (2019) financial-obligation rules
+  - url: https://dos.fl.gov/elections/laws-rules/constitutional-amendmentsinitiatives/
+    note: FL constitutional amendments & citizen initiatives process
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Florida
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 29-day deadline; closed primary; Division of Elections mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Florida
+    note: photo ID required; second form required if photo ID lacks signature
