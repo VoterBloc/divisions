@@ -41,14 +41,43 @@ direct_democracy:
 
 elections_policy:
   runoff: true                               # AR uses majority-vote primary runoffs
+  ranked_choice: false
+  primary_type: open                         # AR registers voters without party affiliation; any voter may choose a primary (EAC form: "Optional. You do not have to register with a party")
+  vote_by_mail: excuse-required              # NCSL Table 2 — AR requires an excuse for absentee voting
+  early_voting: true                         # AR has in-person early voting starting 15 days before election
 
 voter_registration:
   automatic: false
   online: false                              # AR SOS only offers a paper-form REQUEST, not end-to-end online registration
   same_day: false
+  min_age: 18
+  registration_deadline_days: 30             # per EAC form
+  voter_id_requirement: photo                # Ballotpedia — photo ID required; provisional ballot allowed with long-term-care residency exception
+  felon_restoration: upon_completion         # rights restored after full discharge of sentence or pardon (EAC form)
 
 elections:
   office_name: Arkansas Secretary of State - Elections Division
+  office_url: https://www.sos.arkansas.gov/elections
+  office_phone: 501-682-1010
+  office_address: |
+    Arkansas Secretary of State
+    Voter Services
+    P.O. Box 8111
+    Little Rock, AR 72203-8111
+
+civic_urls:
+  register_by_mail: https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/request-for-a-voter-registration-application
+  check_registration: https://www.voterview.ar-nova.org/VoterView
+  find_polling_place: https://www.voterview.ar-nova.org/VoterView
+  request_absentee_ballot: https://www.sos.arkansas.gov/elections/voter-information/absentee-voting
+  track_ballot: https://portal.arkansas.gov/service/ar-absentee-ballot-search/
+  sample_ballot: https://www.voterview.ar-nova.org/VoterView
+  voter_id_info: https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information
+  elections_calendar: https://www.sos.arkansas.gov/elections/for-voters
+
+links:
+  - url: https://www.sos.arkansas.gov/about-the-office/contact-us
+    note: AR SOS office contact page
 
 ids:
   wikidata: Q1612
@@ -71,3 +100,9 @@ sources:
     note: local recall only; no recall of state officials
   - url: https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/request-for-a-voter-registration-application
     note: AR offers a paper-form request only; no end-to-end online voter registration
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 30-day deadline; party registration optional; SOS Voter Services mailing address; felony restoration upon completion of sentence
+  - url: https://www.ncsl.org/elections-and-campaigns/table-2-excuses-to-vote-absentee
+    note: NCSL Table 2 — AR is excuse-required for absentee voting
+  - url: https://ballotpedia.org/Voter_ID_in_Arkansas
+    note: photo ID required; long-term-care residency exception
