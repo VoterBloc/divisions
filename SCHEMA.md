@@ -304,6 +304,8 @@ civic_urls:
   sample_ballot: https://...
   voter_id_info: https://...           # what IDs are accepted at the polls
   elections_calendar: https://...      # upcoming election dates / calendar
+  election_results: https://...        # official results portal / archive
+  military_overseas_voting: https://...  # UOCAVA / military and overseas voter resources hub
 ```
 
 `register_to_vote` is for true online registration (fill out and submit on
