@@ -1,0 +1,89 @@
+id: ocd-division/country:us/state:il
+name: Illinois
+type: state
+
+abbreviation: IL
+iso_3166_2: US-IL
+capital: Springfield
+demonym: Illinoisan
+motto: State Sovereignty, National Union
+
+established: 1818-12-03                      # date of statehood (21st state)
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 177                                 # 59 Senate + 118 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # IL has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    comptroller: true                        # IL elects both a Treasurer AND a Comptroller
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # IL governor & LG elected on joint ticket
+
+direct_democracy:
+  # IL permits very narrow citizen initiatives: only constitutional amendments to Article IV
+  # (legislative article), per the 1970 IL Constitution. No statutory initiative; no citizen
+  # referendum. Gubernatorial-recall-only after the Blagojevich amendment (2010).
+  citizen_initiative: true
+  citizen_referendum: false
+  recall: true                               # governor recall only
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: open                         # IL primaries are open — voter selects a party at the polls (no party registration)
+  vote_by_mail: no-excuse                    # any IL voter may request a vote-by-mail ballot
+  early_voting: true                         # IL has in-person early voting
+
+voter_registration:
+  automatic: true                            # HB 2301 (2017) — AVR via DMV and other state agencies
+  online: true                               # IL OVR
+  same_day: true                             # "Grace Period Registration" during early voting and Election Day
+  min_age: 18
+  pre_registration_age: 17                   # IL allows 17-year-olds to register and vote in primaries if 18 by general
+  registration_deadline_days: 16             # online deadline; in-person through Election Day (grace period) per EAC
+  voter_id_requirement: none                 # IL does not require ID at polls (HAVA exception for first-time mail registrants only)
+  felon_restoration: automatic_upon_release  # rights restored upon release from any penal institution
+
+elections:
+  office_name: Illinois State Board of Elections
+  office_url: https://elections.il.gov/Default.aspx
+  office_phone: 217-782-4141                  # Springfield office; Chicago office: 312-814-6440
+  office_address: |
+    State Board of Elections
+    2329 S. MacArthur Boulevard
+    Springfield, IL 62704
+
+civic_urls:
+  register_to_vote: https://ova.elections.il.gov/
+  check_registration: https://ova.elections.il.gov/RegistrationLookup.aspx
+  find_polling_place: https://ova.elections.il.gov/PollingPlaceLookup.aspx
+  request_absentee_ballot: https://elections.il.gov/ElectionOperations/VotingByMail.aspx
+  track_ballot: https://ova.elections.il.gov/Status.aspx
+  sample_ballot: https://votersguide.elections.il.gov/
+  voter_id_info: https://elections.il.gov/InformationForVoters.aspx
+  elections_calendar: https://www.elections.il.gov/Main/CalendarEventsAll.aspx
+  election_results: https://elections.il.gov/ElectionOperations/ElectionResults.aspx
+
+ids:
+  wikidata: Q1204
+  wikipedia: Illinois
+  ballotpedia: Illinois
+  fips_state: "17"
+  census_geoid: "04000US17"
+  osm_relation: "161833"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Illinois
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 16-day online deadline, in-person through Election Day (grace period); no party registration (open primary); IL SBE mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Illinois
+    note: IL does not generally require voter ID at the polls
