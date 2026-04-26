@@ -1,0 +1,90 @@
+id: ocd-division/country:us/state:mi
+name: Michigan
+type: state
+
+abbreviation: MI
+iso_3166_2: US-MI
+capital: Lansing
+demonym: Michigander
+motto: Si quaeris peninsulam amoenam circumspice    # "If you seek a pleasant peninsula, look about you"
+
+established: 1837-01-26                      # date of statehood (26th state)
+timezones:
+  - America/Detroit                          # most of MI (Eastern)
+  - America/Menominee                        # 4 western Upper Peninsula counties (Central)
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 148                                 # 38 Senate + 110 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                      # Proposal 1 of 2022 — 12 years total combined in legislature
+  term_limit: 12
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: false                         # MI Treasurer is appointed by the governor
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # MI gov & LG on joint ticket
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true                               # MI permits recall of state and local elected officials
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: open                         # MI does not register voters by party
+  vote_by_mail: no-excuse                    # Proposal 3 (2018) made absentee voting available to all
+  early_voting: true                         # Proposal 2 (2022) added 9 days of in-person early voting
+
+voter_registration:
+  automatic: true                            # Proposal 3 (2018) — AVR via Department of State (DMV)
+  online: true                               # MI OVR
+  same_day: true                             # Proposal 3 (2018) added Election Day Registration
+  min_age: 18
+  pre_registration_age: 16                   # MI allows 16-year-olds to pre-register at the DMV
+  registration_deadline_days: 15             # postmarked 15 days before election (mail); in-person through 8pm Election Day
+  voter_id_requirement: photo                # photo ID required at the polls; affidavit alternative available
+  felon_restoration: automatic_upon_release  # rights restored on release from confinement
+
+elections:
+  office_name: Michigan Department of State - Bureau of Elections
+  office_url: https://www.michigan.gov/sos/elections
+  office_phone: 888-767-6424                  # 888-SOS-MICH
+  office_address: |
+    Michigan Department of State
+    Bureau of Elections
+    P.O. Box 20126
+    Lansing, MI 48901-0726
+
+civic_urls:
+  register_to_vote: https://mvic.sos.state.mi.us/RegisterVoter?Length=0
+  register_by_mail: https://www.michigan.gov/sos/elections/voting/register-to-vote
+  check_registration: https://mvic.sos.state.mi.us/Voter/Index
+  find_polling_place: https://mvic.sos.state.mi.us/Voter/Index
+  request_absentee_ballot: https://mvic.sos.state.mi.us/AVApplication/Index
+  track_ballot: https://mvic.sos.state.mi.us/Voter/Index
+  sample_ballot: https://mvic.sos.state.mi.us/PublicBallot/Index
+  voter_id_info: https://mvic.sos.state.mi.us/Home/VoteInPerson/#id-required
+  elections_calendar: https://www.michigan.gov/sos/-/media/Project/Websites/sos/Election-Administrators/Election-Dates.pdf
+  election_results: https://www.michigan.gov/sos/elections/election-results-and-data
+
+ids:
+  wikidata: Q1166
+  wikipedia: Michigan
+  ballotpedia: Michigan
+  fips_state: "26"
+  census_geoid: "04000US26"
+  osm_relation: "165789"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Michigan
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 15-day deadline; in-person registration through 8pm Election Day; pre-registration at 16; MI Bureau of Elections mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Michigan
+    note: photo ID required at the polls; affidavit alternative
