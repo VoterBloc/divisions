@@ -1,0 +1,98 @@
+id: ocd-division/country:us/state:sc
+name: South Carolina
+type: state
+
+abbreviation: SC
+iso_3166_2: US-SC
+capital: Columbia
+demonym: South Carolinian
+nicknames:
+  - Palmetto State
+motto: Dum spiro spero                        # Latin: "While I breathe, I hope" (also "Animis opibusque parati" — "Prepared in mind and resources")
+
+established: 1788-05-23                       # 8th state to ratify the U.S. Constitution
+website: https://www.sc.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 170                                  # 46 Senate + 124 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # SC has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    comptroller: true                         # Comptroller General
+    superintendent_of_public_instruction: true   # Superintendent of Education
+    commissioner_of_agriculture: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 2014 constitutional amendment (effective 2018)
+
+direct_democracy:
+  citizen_initiative: false                   # SC does not permit citizen initiative
+  citizen_referendum: false                   # SC does not permit popular/veto referendum (only legislatively-referred amendments)
+  recall: false                               # SC has no recall provisions for any elected officials, state or local
+
+elections_policy:
+  runoff: true                                # primary runoff if no candidate receives >50%
+  primary_type: open                          # SC has no party registration; any voter may vote in any one party's primary
+  vote_by_mail: excuse-required               # SC requires an excuse for absentee voting; one of the few remaining excuse-required states
+  early_voting: true                          # in-person early voting since 2022 (Act 150 of 2022)
+  ranked_choice: false                        # SC does not use RCV in state-level elections
+
+voter_registration:
+  automatic: false                            # SC does not have AVR
+  online: true                                # SC OVR via scvotes.gov
+  same_day: false                             # SC does not have same-day registration
+  min_age: 18
+  pre_registration_age: 17                    # 17-year-olds may register if they will be 18 by the next general election
+  registration_deadline_days: 30              # 30 days before election (in-person, mail postmark, online)
+  voter_id_requirement: photo                 # photo ID required at the polls; reasonable-impediment affidavit and provisional ballot available
+  felon_restoration: upon_completion          # rights restored after completion of full sentence including parole/probation; financial obligations may delay restoration
+
+elections:
+  office_name: South Carolina State Election Commission
+  office_url: https://scvotes.gov/
+  office_phone: 803-734-9060
+  office_email: elections@elections.sc.gov
+  office_address: |
+    South Carolina State Election Commission
+    1122 Lady Street, Suite 500
+    Columbia, SC 29201
+
+civic_urls:
+  register_to_vote: https://vrems.scvotes.sc.gov/ovr/start
+  register_by_mail: https://scvotes.gov/voters/register-to-vote/                # SC SEC — registration overview including paper-form mail registration
+  check_registration: https://vrems.scvotes.sc.gov/Voter/Login?PageMode=VoterInformation        # SC voter portal (VREMS) — registration, absentee ballot status
+  find_polling_place: https://vrems.scvotes.sc.gov/Voter/Login?PageMode=PollingPlace
+  sample_ballot: https://vrems.scvotes.sc.gov/Voter/Login?PageMode=Sampleballot
+  track_ballot: https://vrems.scvotes.sc.gov/Voter/Login?PageMode=AbsenteeInfo
+  request_absentee_ballot: https://scvotes.gov/voters/absentee-voting/
+  voter_id_info: https://scvotes.gov/voters/photo-id-requirements/
+  elections_calendar: https://scvotes.gov/elections-statistics/general-election-calendars/
+  election_results: https://scvotes.gov/elections-statistics/election-results/
+  military_overseas_voting: https://scvotes.gov/voters/military-overseas-citizens/
+
+ids:
+  wikidata: Q1456
+  wikipedia: South Carolina
+  ballotpedia: South_Carolina
+  fips_state: "45"
+  census_geoid: "04000US45"
+  osm_relation: "224040"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/South_Carolina
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_South_Carolina
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://scvotes.gov/voters/register-to-vote/
+    note: SC State Election Commission — 30-day deadline, 17-year-old pre-registration, online registration
+  - url: https://ballotpedia.org/Primary_elections_in_South_Carolina
+    note: open primary; no party registration
+  - url: https://ballotpedia.org/Recall_campaigns_in_South_Carolina
+    note: SC has no recall provisions; legislative proposals to add recall have not been enacted
