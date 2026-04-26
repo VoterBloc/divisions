@@ -1,0 +1,98 @@
+id: ocd-division/country:us/state:wv
+name: West Virginia
+type: state
+
+abbreviation: WV
+iso_3166_2: US-WV
+capital: Charleston
+demonym: West Virginian
+nicknames:
+  - Mountain State
+motto: Montani semper liberi                  # Latin: "Mountaineers are always free"
+
+established: 1863-06-20                       # 35th state — created from Virginia during the Civil War
+website: https://www.wv.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Delegates
+  seats: 134                                  # 34 Senate + 100 House of Delegates
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # WV legislature has no term limits; Governor limited to 2 consecutive terms
+  elected_offices:
+    attorney_general: true
+    auditor: true
+    secretary_of_state: true
+    treasurer: true
+    commissioner_of_agriculture: true
+  executive:
+    has_lt_governor: true                     # established by 2000 amendment
+    lt_gov_joint_ticket: false                # WV Lt Governor is the President of the Senate (elected by senators, not by voters)
+
+direct_democracy:
+  citizen_initiative: false                   # WV does not permit statewide citizen initiative
+  citizen_referendum: false                   # WV does not permit popular/veto referendum (only legislatively-referred amendments)
+  recall: false                               # WV has no statewide recall mechanism; some charter cities (with explicit charter authorization) allow local recall
+
+elections_policy:
+  runoff: false
+  primary_type: closed                        # state law gives parties discretion; for 2026 the Republican Party closed its primary; the Democratic Party held a semi-closed primary (unaffiliated voters allowed)
+  vote_by_mail: excuse-required               # WV requires an excuse for absentee voting; one of the few remaining excuse-required states
+  early_voting: true                          # in-person early voting period before each election
+  ranked_choice: false                        # WV does not use RCV in state-level elections
+
+voter_registration:
+  automatic: true                             # AVR via DMV (2016)
+  online: true                                # WV OVR via ovr.sos.wv.gov
+  same_day: false                             # WV does not have same-day registration
+  min_age: 18
+  pre_registration_age: 17                    # 17-year-olds may register if 18 by next general; pre-registered 17-year-olds may vote in primaries to nominate
+  registration_deadline_days: 21              # 21 days before election (in-person and mail postmark)
+  voter_id_requirement: photo                 # photo ID required at the polls (HB 3016, 2025); expanded from 2018 ID law
+  felon_restoration: upon_completion          # rights restored after completion of full sentence including parole and probation
+
+elections:
+  office_name: West Virginia Secretary of State - Elections Division
+  office_url: https://sos.wv.gov/elections
+  office_phone: 304-558-6000                  # toll-free 1-866-767-8683 (1-866-SOS-VOTE)
+  office_email: elections@wvsos.gov
+  office_address: |
+    West Virginia Secretary of State - Elections Division
+    1900 Kanawha Boulevard East
+    Building 1, Suite 157-K
+    Charleston, WV 25305
+
+civic_urls:
+  register_to_vote: https://ovr.sos.wv.gov/Register/Landing#Qualifications
+  register_by_mail: https://sos.wv.gov/FormSearch/Elections/Voter/mail%20in%20voter%20registration%20application.pdf
+  check_registration: https://apps.sos.wv.gov/Elections/Voter/AmIRegisteredToVote
+  find_polling_place: https://apps.sos.wv.gov/Elections/Voter/FindMyPollingPlace
+  request_absentee_ballot: https://sos.wv.gov/absentee-voting-information
+  track_ballot: https://apps.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking
+  sample_ballot: https://wv.omniballot.us/sites/54/ballot/app/sb/vr
+  voter_id_info: https://sos.wv.gov/be-registered-and-ready
+  elections_calendar: https://sos.wv.gov/media/467/download?inline=
+  election_results: https://apps.sos.wv.gov/elections/results/
+  military_overseas_voting: https://sos.wv.gov/uniformed-and-overseas-citizens-absentee-voting-act
+
+ids:
+  wikidata: Q1371
+  wikipedia: West Virginia
+  ballotpedia: West_Virginia
+  fips_state: "54"
+  census_geoid: "04000US54"
+  osm_relation: "162068"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/West_Virginia
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_West_Virginia
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs
+    note: WV SoS Elections FAQ — 21-day deadline, 17-year-old pre-registration
+  - url: https://ballotpedia.org/Laws_governing_recall_in_West_Virginia
+    note: no statewide recall; only some charter cities authorize local recall
+  - url: https://ballotpedia.org/Primary_elections_in_West_Virginia
+    note: party-discretion primary; GOP closed for 2026, Dem semi-closed
