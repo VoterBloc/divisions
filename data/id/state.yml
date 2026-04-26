@@ -1,0 +1,90 @@
+id: ocd-division/country:us/state:id
+name: Idaho
+type: state
+
+abbreviation: ID
+iso_3166_2: US-ID
+capital: Boise
+demonym: Idahoan
+motto: Esto Perpetua                         # "Let it be perpetual"
+
+established: 1890-07-03                      # date of statehood (43rd state)
+timezones:
+  - America/Denver                           # southern ID (Mountain)
+  - America/Los_Angeles                      # 10 northern panhandle counties (Pacific)
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 105                                 # 35 Senate + 70 House (35 districts, each elects 1 senator + 2 reps)
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # ID voters passed term limits in 1994; legislature repealed them in 2002
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    controller: true                         # State Controller (elected)
+    superintendent_of_public_instruction: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false               # ID LG elected separately
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true                               # ID permits recall of state elected officials
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: closed                       # ID Republican primary is closed (since 2011); Democrats and minor parties hold open primaries
+  vote_by_mail: no-excuse                    # any ID voter may request absentee by mail
+  early_voting: true                         # ID has in-person early voting
+
+voter_registration:
+  automatic: false
+  online: true                               # ID OVR
+  same_day: true                             # ID has Election Day Registration
+  min_age: 18
+  registration_deadline_days: 25             # per EAC form
+  voter_id_requirement: photo                # Ballotpedia — photo ID required; affidavit alternative available
+  felon_restoration: upon_completion         # rights restored after completion of sentence
+
+elections:
+  office_name: Idaho Secretary of State - Elections Division
+  office_url: https://voteidaho.gov/
+  office_phone: (208) 334-2852
+  office_email: elections@sos.idaho.gov
+  office_address: |
+    Secretary of State — East Wing, Second Floor
+    700 W Jefferson, #E205
+    Boise, ID 83702
+    (Mail: P.O. Box 83720, Boise, ID 83720-0080)
+
+civic_urls:
+  register_to_vote: https://votertools.voteidaho.gov/electionlink/electionlink/ApplicationInstructions.aspx
+  register_by_mail: https://votertools.voteidaho.gov/electionlink/electionlink/ApplicationInstructions.aspx
+  check_registration: https://votertools.voteidaho.gov/electionlink/electionlink/VoterSearch.aspx
+  find_polling_place: https://votertools.voteidaho.gov/electionlink/electionlink/ViewPollingLocation.aspx
+  request_absentee_ballot: https://votertools.voteidaho.gov/electionlink/electionlink/BeginAbsenteeRequest.aspx
+  track_ballot: https://votertools.voteidaho.gov/electionlink/electionlink/VoterSearch.aspx
+  sample_ballot: https://voteidaho.gov/on-the-ballots/
+  voter_id_info: https://voteidaho.gov/frequently-asked-questions/
+  elections_calendar: https://voteidaho.gov/calendar/
+
+ids:
+  wikidata: Q1221
+  wikipedia: Idaho
+  ballotpedia: Idaho
+  fips_state: "16"
+  census_geoid: "04000US16"
+  osm_relation: "162116"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Idaho
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 25-day deadline; closed primary for registered parties; SOS mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Idaho
+    note: photo ID required at the polls; affidavit alternative available
