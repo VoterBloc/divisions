@@ -76,6 +76,7 @@ civic_urls:
   sample_ballot: https://myvoterportal.alaska.gov/
   voter_id_info: https://www.elections.alaska.gov/voter-information/#AlaskavoterID
   elections_calendar: https://www.elections.alaska.gov/calendar/
+  military_overseas_voting: https://www.elections.alaska.gov/voter-information/military-overseas-and-college-voters/
 
 ids:
   wikidata: Q797

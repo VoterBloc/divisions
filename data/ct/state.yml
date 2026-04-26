@@ -67,6 +67,7 @@ civic_urls:
   sample_ballot: https://portal.ct.gov/sots/election-services/town-ballots/ballots
   voter_id_info: https://portal.ct.gov/sots/election-services/faq/faq---voter-identification
   elections_calendar: https://portal.ct.gov/SOTS/Election-Services/Calendars/Election-Calendars
+  military_overseas_voting: https://portal.ct.gov/sots/election-services/voter-information/military-and-overseas-voters
 
 ids:
   wikidata: Q779
