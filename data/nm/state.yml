@@ -1,0 +1,93 @@
+id: ocd-division/country:us/state:nm
+name: New Mexico
+type: state
+
+abbreviation: NM
+iso_3166_2: US-NM
+capital: Santa Fe
+demonym: New Mexican
+nicknames:
+  - Land of Enchantment
+motto: Crescit eundo                          # Latin: "It grows as it goes"
+
+established: 1912-01-06                       # statehood (47th state)
+website: https://www.nm.gov
+timezone: America/Denver
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 112                                  # 42 Senate + 70 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # NM legislature has no term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    auditor: true
+    land_commissioner: true                   # Commissioner of Public Lands — unique to NM
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 1986 constitutional amendment (effective 1990)
+
+direct_democracy:
+  citizen_initiative: false                   # NM does not permit statewide citizen initiative
+  citizen_referendum: true                    # popular (veto) referendum permitted, with limits (no appropriations, emergency, public peace/health/safety)
+  recall: false                               # NM Constitution authorizes recall only of county officials (Art. X) and school district officials (Art. XII) — state officials not subject to recall
+
+elections_policy:
+  runoff: false
+  primary_type: semi-closed                   # SB 180 (2023) — unaffiliated voters can choose a party at the polls; effective 2024 primary
+  vote_by_mail: no-excuse                     # any registered voter may request an absentee ballot; not universal/all-mail
+  early_voting: true
+  ranked_choice: false                        # NM does not use RCV in state-level elections (Santa Fe and Las Cruces use it locally)
+
+voter_registration:
+  automatic: true                             # HB 4 (2019) — Voter Registration Modernization Act; MVD-triggered AVR
+  online: true
+  same_day: true                              # Election Day Registration permanent statewide via HB 4 (2023)
+  min_age: 18
+  pre_registration_age: 17                    # 17-year-olds may pre-register; may vote in primary if 18 by general election
+  registration_deadline_days: 28              # standard NM SoS deadline; SDR available after the 28-day mark through Election Day
+  voter_id_requirement: none                  # NM does not require ID at the polls
+  felon_restoration: automatic_upon_release   # HB 4 (2023) — voting rights restored upon release from incarceration
+
+civic_urls:
+  register_to_vote: https://portal1.sos.nm.gov/OVR/WebPages/InstructionsStep1.aspx
+  register_by_mail: https://www.sos.nm.gov/voting-and-elections/voting-faqs/voter-registration/
+  check_registration: https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx
+  find_polling_place: https://voterportal.servis.sos.state.nm.us/WhereToVoteAddress.aspx
+  request_absentee_ballot: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/absentee-and-early-voting/
+  track_ballot: https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx     # voter portal also surfaces ballot status
+  sample_ballot: https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx    # voter portal also surfaces sample ballot
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_New_Mexico
+  elections_calendar: https://www.sos.nm.gov/voting-and-elections/upcoming-elections/
+  election_results: https://www.sos.nm.gov/voting-and-elections/election-results/
+  military_overseas_voting: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/military-and-overseas-voting/
+
+elections:
+  office_name: New Mexico Secretary of State - Bureau of Elections
+  office_url: https://www.sos.nm.gov/voting-and-elections/
+  office_phone: 505-827-3600                  # Bureau of Elections — option 2
+  office_email: Elections@sos.nm.gov
+  office_address: |
+    New Mexico Secretary of State
+    325 Don Gaspar, Suite 300
+    Santa Fe, NM 87501
+
+ids:
+  wikidata: Q1522
+  wikipedia: New Mexico
+  ballotpedia: New_Mexico
+  fips_state: "35"
+  census_geoid: "04000US35"
+  osm_relation: "162014"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/New_Mexico
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_New_Mexico
+    note: registration policy, primary type, AVR, EDR, felon restoration, voter ID
+  - url: https://www.sos.nm.gov/voting-and-elections/voting-faqs/same-day-voter-registration-faq/
+    note: NM SoS — 28-day standard registration deadline; same-day registration after that through Election Day
