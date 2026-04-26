@@ -1,0 +1,99 @@
+id: ocd-division/country:us/state:sd
+name: South Dakota
+type: state
+
+abbreviation: SD
+iso_3166_2: US-SD
+capital: Pierre
+demonym: South Dakotan
+nicknames:
+  - Mount Rushmore State
+  - Coyote State
+motto: Under God, the People Rule
+
+established: 1889-11-02                       # 40th state (admitted same day as North Dakota)
+website: https://sd.gov
+timezone: America/Chicago                     # most of state is Central; western counties (west of the Missouri River) observe Mountain Time
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 105                                  # 35 Senate + 70 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                       # 4 consecutive terms (8 years) per chamber, enacted by 1992 ballot measure
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    auditor: true
+    secretary_of_state: true
+    treasurer: true
+    public_utilities_commission: true         # 3 commissioners elected statewide on staggered terms
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 1972 amendment
+
+direct_democracy:
+  citizen_initiative: true                    # SD was the first state to adopt the initiative (1898)
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: false                               # SD does not allow recall of state officials; municipal officials may be recalled (15% of electorate signatures)
+
+elections_policy:
+  runoff: false
+  primary_type: closed                        # state law gives parties discretion; Republican primary is closed to registered Republicans; Democratic primary allows Independents (party rule)
+  vote_by_mail: no-excuse                     # any registered voter may request an absentee ballot; not universal/all-mail
+  early_voting: true                          # in-person absentee voting at county auditor's office serves as early voting
+  ranked_choice: false                        # SD does not use RCV in state-level elections
+
+voter_registration:
+  automatic: false                            # SD does not have AVR
+  online: false                               # SD does not have online voter registration; paper form with original signature required
+  same_day: false                             # SD does not have same-day registration
+  min_age: 18
+  registration_deadline_days: 15              # 15 days before election (mail postmark or in-person)
+  voter_id_requirement: photo                 # photo ID required at the polls; voters without ID may sign a personal identification affidavit
+  felon_restoration: upon_completion          # rights restored after completion of full sentence including parole and probation
+
+elections:
+  office_name: South Dakota Secretary of State - Elections Division
+  office_url: https://sdsos.gov/elections-voting/default.aspx
+  office_phone: 605-773-3537
+  office_email: elections@state.sd.us
+  office_address: |
+    South Dakota Secretary of State
+    Capitol Building
+    500 East Capitol Avenue, Suite 204
+    Pierre, SD 57501-5070
+
+civic_urls:
+  register_to_vote: https://sdsos.gov/elections-voting/assets/VoterRegistrationFormFillable.pdf      # SD has no OVR — paper form only
+  register_by_mail: https://sdsos.gov/elections-voting/assets/VoterRegistrationFormFillable.pdf
+  check_registration: https://vip.sdsos.gov/                                          # SD voter info portal — registration, polling place, sample ballot, ballot status
+  find_polling_place: https://vip.sdsos.gov/VIPLogin.aspx
+  sample_ballot: https://vip.sdsos.gov/
+  track_ballot: https://vip.sdsos.gov/
+  request_absentee_ballot: https://sdsos.gov/elections-voting/voting/absentee-voting.aspx
+  voter_id_info: https://sdsos.gov/elections-voting/voting/default.aspx                # general voting landing page; voter ID info appears in the "Going to the Polls" section
+  elections_calendar: https://sdsos.gov/elections-voting/upcoming-elections/general-information/default.aspx
+  election_results: https://electionresults.sd.gov/
+  military_overseas_voting: https://sdsos.gov/elections-voting/voting/military-members.aspx
+
+ids:
+  wikidata: Q1211
+  wikipedia: South Dakota
+  ballotpedia: South_Dakota
+  fips_state: "46"
+  census_geoid: "04000US46"
+  osm_relation: "161652"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/South_Dakota
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_South_Dakota
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx
+    note: SD SoS — 15-day deadline; paper-only registration (no OVR)
+  - url: https://ballotpedia.org/Laws_governing_recall_in_South_Dakota
+    note: no recall of state officials; municipal recall available
+  - url: https://ballotpedia.org/Primary_elections_in_South_Dakota
+    note: party-discretion primary; GOP closed, Dem semi-closed (Independents allowed)
