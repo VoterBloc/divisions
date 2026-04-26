@@ -1,0 +1,93 @@
+id: ocd-division/country:us/state:ny
+name: New York
+type: state
+
+abbreviation: NY
+iso_3166_2: US-NY
+capital: Albany
+demonym: New Yorker
+nicknames:
+  - Empire State
+motto: Excelsior                              # Latin: "Ever Upward"
+
+established: 1788-07-26                       # 11th state to ratify the U.S. Constitution
+website: https://www.ny.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: Assembly
+  seats: 213                                  # 63 Senate + 150 Assembly
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # NY legislature has no term limits
+  elected_offices:
+    attorney_general: true
+    comptroller: true                         # NY Comptroller serves as the state's chief fiscal officer; there is no separate elected state treasurer
+    secretary_of_state: false                 # appointed by the Governor with Senate confirmation
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 1953 amendment
+
+direct_democracy:
+  citizen_initiative: false                   # NY does not permit statewide citizen initiative
+  citizen_referendum: false                   # NY does not permit statewide popular/veto referendum (legislatively-referred amendments only)
+  recall: false                               # NY has no recall mechanism for any elected officials, state or local
+
+elections_policy:
+  runoff: false
+  primary_type: closed                        # only registered party members can vote in primaries
+  vote_by_mail: no-excuse                     # NY Early Mail Voter Act (2023, ch. 481); upheld by NY Court of Appeals 2024
+  early_voting: true                          # in-person early voting since 2020
+  ranked_choice: false                        # NY does not use RCV in state-level elections (NYC uses RCV in primaries since 2021)
+
+voter_registration:
+  automatic: true                             # AVR enacted 2020 (S.6457A); MVD-triggered system went live in 2023
+  online: true
+  same_day: false                             # NY does not have same-day registration (2021 ballot proposal failed)
+  min_age: 18
+  pre_registration_age: 16                    # 16- and 17-year-olds may pre-register; auto-converts at 18
+  registration_deadline_days: 15              # mail postmark deadline; in-person/online deadline 10 days before election (Hochul-signed 2024 reform shortened from 25 days)
+  voter_id_requirement: none                  # NY does not require ID at the polls (HAVA exception for first-time mail registrants only)
+  felon_restoration: automatic_upon_release   # S.830/A.4448 (2021) — restored upon release from incarceration
+
+civic_urls:
+  register_to_vote: https://my.ny.gov/LoginV4/login.xhtml         # NY SBOE routes OVR through my.ny.gov SSO
+  register_by_mail: https://voterregformrequest.elections.ny.gov/voterregistration
+  check_registration: https://voterlookup.elections.ny.gov/
+  find_polling_place: https://voterlookup.elections.ny.gov/        # voter lookup also surfaces polling place
+  track_ballot: https://voterlookup.elections.ny.gov/              # voter lookup also surfaces absentee/early-mail ballot status
+  request_absentee_ballot: https://elections.ny.gov/request-ballot
+  sample_ballot: https://voterlookup.elections.ny.gov/             # voter lookup also surfaces sample ballot
+  elections_calendar: https://elections.ny.gov/registration-and-voting-deadlines
+  election_results: https://nyenr.elections.ny.gov/
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_New_York
+  military_overseas_voting: https://elections.ny.gov/military-and-overseas-federal-voting
+
+elections:
+  office_name: New York State Board of Elections
+  office_url: https://elections.ny.gov/
+  office_phone: 518-474-6220
+  office_email: info@elections.ny.gov
+  office_address: |
+    New York State Board of Elections
+    40 North Pearl Street, Suite 5
+    Albany, NY 12207-2729
+
+ids:
+  wikidata: Q1356
+  wikipedia: New York (state)
+  ballotpedia: New_York
+  fips_state: "36"
+  census_geoid: "04000US36"
+  osm_relation: "61320"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/New_York_(state)
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_New_York
+    note: registration policy, voter ID, felon restoration
+  - url: https://elections.ny.gov/registration-and-voting-deadlines
+    note: NY SBOE — registration and voting deadlines (10-day in-person/online; 15-day mail postmark)
+  - url: https://ballotpedia.org/Laws_governing_recall_in_New_York
+    note: NY has no recall mechanism for state or local officials

@@ -1,0 +1,98 @@
+id: ocd-division/country:us/state:tn
+name: Tennessee
+type: state
+
+abbreviation: TN
+iso_3166_2: US-TN
+capital: Nashville
+demonym: Tennessean
+nicknames:
+  - Volunteer State
+motto: Agriculture and Commerce
+
+established: 1796-06-01                       # 16th state
+website: https://www.tn.gov
+timezone: America/Chicago                     # most of state (incl. Nashville, Memphis) is Central; eastern third (Knoxville, Chattanooga) observes Eastern
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 132                                  # 33 Senate + 99 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # TN has no legislative term limits
+  elected_offices:
+    # TN is unusual: the Governor is the only directly-elected statewide executive.
+    # SoS, AG, Treasurer, and Comptroller are all elected by joint convention of the legislature (not voters).
+    attorney_general: false                   # appointed by the TN Supreme Court
+    secretary_of_state: false                 # elected by joint convention of the legislature
+    treasurer: false                          # elected by joint convention of the legislature
+    comptroller: false                        # elected by joint convention of the legislature
+  executive:
+    has_lt_governor: true                     # Speaker of the Senate serves as Lt Governor
+    lt_gov_joint_ticket: false                # Lt Governor is elected by the state senators (not by voters)
+
+direct_democracy:
+  citizen_initiative: false                   # TN does not permit statewide citizen initiative
+  citizen_referendum: false                   # TN does not permit popular/veto referendum (only legislatively-referred constitutional amendments)
+  recall: false                               # TN has no statewide recall mechanism; some home-rule cities (e.g. Nashville-Davidson, Memphis) allow local recall
+
+elections_policy:
+  runoff: false
+  primary_type: open                          # TN has no party registration; voters request a party ballot at the polls
+  vote_by_mail: excuse-required               # TN requires an excuse for absentee voting; one of the few remaining excuse-required states
+  early_voting: true
+  ranked_choice: false                        # RCV banned by SB 1820, signed 2022-02-28 — TN was the first state to ban RCV
+
+voter_registration:
+  automatic: false                            # TN does not have AVR
+  online: true                                # TN OVR via ovr.govote.tn.gov (since 2017)
+  same_day: false                             # TN does not have same-day registration
+  min_age: 18
+  registration_deadline_days: 30              # 30 days before election (in-person, mail postmark, online)
+  voter_id_requirement: photo                 # photo ID required at the polls; limited exceptions for indigent voters, religious objection, voters at state-licensed care facilities
+  felon_restoration: application_required     # one of the most restrictive in the U.S.; both citizenship restoration (court order) and certificate of restoration are required (TN Supreme Court 2024); homicide and certain other felonies result in permanent disenfranchisement
+
+elections:
+  office_name: Tennessee Secretary of State - Division of Elections
+  office_url: https://sos.tn.gov/elections
+  office_phone: 615-741-7956                  # toll-free 1-877-850-4959
+  office_email: tennessee.elections@tn.gov
+  office_address: |
+    Tennessee Secretary of State - Division of Elections
+    William R. Snodgrass Tennessee Tower
+    312 Rosa L. Parks Avenue
+    Nashville, TN 37243-1102
+
+civic_urls:
+  register_to_vote: https://ovr.govote.tn.gov/
+  register_by_mail: https://sos.tn.gov/elections/services/register-to-vote-paper-form-mail-in-or-hand-deliver
+  check_registration: https://tnmap.tn.gov/voterlookup/                              # TN voter lookup — registration, polling place, sample ballot, ballot status
+  find_polling_place: https://tnmap.tn.gov/voterlookup/
+  sample_ballot: https://tnmap.tn.gov/voterlookup/
+  track_ballot: https://tnmap.tn.gov/voterlookup/
+  request_absentee_ballot: https://sos.tn.gov/elections/guides/guide-to-absentee-voting
+  voter_id_info: https://sos.tn.gov/elections/faqs/what-id-is-required-when-voting
+  elections_calendar: https://sos.tn.gov/elections/calendar
+  election_results: https://www.elections.tn.gov/                                    # TN Election Night Reporting Dashboard
+  military_overseas_voting: https://sos.tn.gov/elections/guides/how-to-vote-absentee-for-military-and-overseas-voters
+
+ids:
+  wikidata: Q1509
+  wikipedia: Tennessee
+  ballotpedia: Tennessee
+  fips_state: "47"
+  census_geoid: "04000US47"
+  osm_relation: "161838"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Tennessee
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Tennessee
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://sos.tn.gov/elections/guides/how-to-register-to-vote
+    note: TN SoS — 30-day deadline, online and mail registration
+  - url: https://sos.tn.gov/elections/guides/restoration-of-voting-rights
+    note: TN SoS — felon voting rights restoration process (court order + certificate of restoration)
+  - url: https://news.ballotpedia.org/2022/03/02/ballot-bulletin-ranked-choice-voting-barred-from-state-and-local-elections-in-tennessee/
+    note: SB 1820 (signed 2022-02-28) — TN was the first state to ban RCV

@@ -1,0 +1,95 @@
+id: ocd-division/country:us/state:ut
+name: Utah
+type: state
+
+abbreviation: UT
+iso_3166_2: US-UT
+capital: Salt Lake City
+demonym: Utahn
+nicknames:
+  - Beehive State
+motto: Industry
+
+established: 1896-01-04                       # 45th state
+website: https://www.utah.gov
+timezone: America/Denver
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 104                                  # 29 Senate + 75 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # UT has no legislative or executive term limits
+  elected_offices:
+    attorney_general: true
+    auditor: true
+    treasurer: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 1976 constitutional amendment
+
+direct_democracy:
+  citizen_initiative: true                    # statutory and constitutional initiative permitted
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: false                               # UT has no statewide recall mechanism; only Grand and Morgan counties allow local recall (grandfathered before 2000 statutory change)
+
+elections_policy:
+  runoff: false
+  primary_type: closed                        # state law gives parties discretion; the Republican Party (dominant) holds closed primaries; the Democratic Party holds open primaries
+  vote_by_mail: universal                     # every active registered voter is automatically mailed a ballot (statewide universal mail voting since 2020)
+  early_voting: true
+  ranked_choice: false                        # UT Municipal Alternate Voting Methods Pilot Project (HB35 2018, extended 2019) ended 2026-01-01; not used in state-level elections
+
+voter_registration:
+  automatic: false                            # UT does not have AVR
+  online: true                                # UT OVR via secure.utah.gov/voterreg
+  same_day: true                              # Election Day Registration available at early voting locations and on Election Day with two forms of ID
+  min_age: 18
+  pre_registration_age: 16                    # 16- and 17-year-olds may pre-register; ballot is auto-sent when they become eligible
+  registration_deadline_days: 11              # mail/online deadline 11 days before election; SDR available after that with two forms of ID
+  voter_id_requirement: non_photo             # photo ID OR two forms of non-photo ID accepted at the polls
+  felon_restoration: automatic_upon_release   # rights restored upon release from incarceration; voters on probation/parole may also vote
+
+elections:
+  office_name: Utah Lieutenant Governor's Office - Elections Division
+  office_url: https://vote.utah.gov/
+  office_phone: 801-538-1041                  # toll-free 800-995-VOTE (800-995-8683)
+  office_address: |
+    Utah Lieutenant Governor's Office - Elections Division
+    Utah State Capitol, Suite 220
+    350 N. State Street
+    Salt Lake City, UT 84114
+
+civic_urls:
+  register_to_vote: https://voter.utah.gov/
+  register_by_mail: https://vote.utah.gov/wp-content/uploads/2021/06/2021-Voter-Registration-Form-06-01-21-1.pdf
+  check_registration: https://votesearch.utah.gov/voter-search/
+  find_polling_place: https://votesearch.utah.gov/voter-search/search/search-by-address/how-and-where-can-i-vote
+  sample_ballot: https://votesearch.utah.gov/voter-search/search/search-by-address/candidates-and-issues
+  request_absentee_ballot: https://vote.utah.gov/update-your-ballot-mailing-address/    # UT is universal VBM (auto-mailed); this page updates mailing address for the auto-sent ballot
+  track_ballot: https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot
+  voter_id_info: https://voteinfo.utah.gov/voter-id-requirements/
+  elections_calendar: https://www.usvotefoundation.org/utah-election-dates-and-deadlines
+  election_results: https://electionresults.utah.gov/
+  military_overseas_voting: https://vote.utah.gov/military-and-overseas-voters/
+
+ids:
+  wikidata: Q829
+  wikipedia: Utah
+  ballotpedia: Utah
+  fips_state: "49"
+  census_geoid: "04000US49"
+  osm_relation: "161993"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Utah
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Utah
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://vote.utah.gov/learn-about-registering-to-vote/
+    note: UT Lt Gov's Office — 11-day deadline, 16-year-old pre-registration, SDR with 2 IDs
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Utah
+    note: no statewide recall; Grand and Morgan counties have grandfathered local recall
+  - url: https://www.sightline.org/2026/01/21/ranked-choice-voting-the-utah-way/
+    note: UT Municipal Alternate Voting Methods Pilot Project — ended 2026-01-01

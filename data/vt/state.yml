@@ -1,0 +1,95 @@
+id: ocd-division/country:us/state:vt
+name: Vermont
+type: state
+
+abbreviation: VT
+iso_3166_2: US-VT
+capital: Montpelier
+demonym: Vermonter
+nicknames:
+  - Green Mountain State
+motto: Freedom and Unity
+
+established: 1791-03-04                       # 14th state — first state admitted after the original 13
+website: https://www.vermont.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 180                                  # 30 Senate + 150 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # VT has no legislative or executive term limits
+  elected_offices:
+    attorney_general: true
+    auditor: true
+    secretary_of_state: true
+    treasurer: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # VT Lt Governor is elected separately
+
+direct_democracy:
+  citizen_initiative: false                   # VT does not permit statewide citizen initiative
+  citizen_referendum: false                   # VT does not permit popular/veto referendum (only legislatively-referred constitutional amendments)
+  recall: false                               # VT has no statewide recall mechanism; ~16 towns have charter recall provisions for local officials
+
+elections_policy:
+  runoff: false                               # if no gubernatorial candidate receives a majority, the General Assembly (not voters) chooses among the top candidates per VT Const. Ch. II §47
+  primary_type: open                          # VT has no party registration; voters select a party's ballot at the polls
+  vote_by_mail: universal                     # Act 60 of 2021 — every active registered voter is automatically mailed a ballot for general elections
+  early_voting: true                          # in-person early voting at town clerk's office
+  ranked_choice: false                        # VT does not use RCV in state-level elections; Burlington has used RCV for some local elections
+
+voter_registration:
+  automatic: true                             # AVR enacted 2017
+  online: true                                # VT OVR via olvr.vermont.gov
+  same_day: true                              # Election Day Registration available; no fixed registration deadline
+  min_age: 18
+  pre_registration_age: 17                    # pre-registration permitted before age 18; registration auto-activates on 18th birthday
+  voter_id_requirement: none                  # VT does not require ID at the polls (HAVA first-time-mail exception only)
+  felon_restoration: no_disenfranchisement    # VT is one of three U.S. jurisdictions (with ME and DC) where people retain voting rights even while incarcerated for a felony
+
+elections:
+  office_name: Vermont Secretary of State - Elections Division
+  office_url: https://sos.vermont.gov/elections/
+  office_phone: 802-828-2363
+  office_email: sos.elections@vermont.gov
+  office_address: |
+    Vermont Secretary of State - Elections Division
+    128 State Street
+    Montpelier, VT 05633
+
+civic_urls:
+  register_to_vote: https://olvr.vermont.gov/
+  register_by_mail: https://outside.vermont.gov/dept/sos/Elections_Division/voters/vermont_voter_registration_form.pdf
+  check_registration: https://vote.vermont.gov/public/dashboard          # VT Voter Portal — registration status, absentee ballot, polling place, sample ballot, voter guide
+  find_polling_place: https://sos.vermont.gov/elections/voters/polling-places
+  request_absentee_ballot: https://sos.vermont.gov/elections/voters/early-absentee-voting/
+  track_ballot: https://vote.vermont.gov/public/dashboard
+  sample_ballot: https://vote.vermont.gov/public/dashboard
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Vermont
+  elections_calendar: https://sos.vermont.gov/elections/elections-calendar
+  election_results: https://electionarchive.vermont.gov/
+  military_overseas_voting: https://sos.vermont.gov/elections/voters/early-absentee-voting#military
+
+ids:
+  wikidata: Q16551
+  wikipedia: Vermont
+  ballotpedia: Vermont
+  fips_state: "50"
+  census_geoid: "04000US50"
+  osm_relation: "60759"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Vermont
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Vermont
+    note: registration policy, voter ID, primary type, felon retention of rights
+  - url: https://sos.vermont.gov/elections/voters/registration
+    note: VT SoS — no fixed deadline (EDR), pre-registration before 18, online registration
+  - url: https://ballotpedia.org/Primary_elections_in_Vermont
+    note: open primary; nonpartisan voter rolls
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Vermont
+    note: no statewide recall; ~16 towns have charter recall

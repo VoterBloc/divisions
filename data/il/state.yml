@@ -71,6 +71,7 @@ civic_urls:
   voter_id_info: https://elections.il.gov/InformationForVoters.aspx
   elections_calendar: https://www.elections.il.gov/Main/CalendarEventsAll.aspx
   election_results: https://elections.il.gov/ElectionOperations/ElectionResults.aspx
+  military_overseas_voting: https://www.elections.il.gov/VotingAndRegistrationSystems/Military.aspx
 
 ids:
   wikidata: Q1204

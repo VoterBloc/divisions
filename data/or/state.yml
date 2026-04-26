@@ -1,0 +1,98 @@
+id: ocd-division/country:us/state:or
+name: Oregon
+type: state
+
+abbreviation: OR
+iso_3166_2: US-OR
+capital: Salem
+demonym: Oregonian
+nicknames:
+  - Beaver State
+motto: Alis volat propriis                    # Latin: "She flies with her own wings"
+
+established: 1859-02-14                       # 33rd state
+website: https://www.oregon.gov
+timezone: America/Pacific                     # most of state is Pacific; Malheur County (eastern OR) observes Mountain Time
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 90                                   # 30 Senate + 60 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # 1992 Measure 3 imposed term limits; struck down by OR Supreme Court in Lehman v. Bradbury (2002)
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true                  # OR SoS is first in line of succession (no Lt Gov)
+    treasurer: true
+    commissioner_of_labor: true               # Bureau of Labor and Industries (BOLI) Commissioner
+  executive:
+    has_lt_governor: false                    # OR has no Lt Governor; SoS is first in line of succession to the Governor
+
+direct_democracy:
+  citizen_initiative: true                    # OR was the first state to adopt the citizen initiative (1902); among most active in the U.S.
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: true                                # OR Constitution Art. II §18 — recall available for state and local officials
+
+elections_policy:
+  runoff: false
+  primary_type: closed                        # registered party members vote in their party's primary; major parties have not opened to unaffiliated voters
+  vote_by_mail: universal                     # OR was the first universal vote-by-mail state (2000); every active registered voter is automatically mailed a ballot
+  early_voting: true                          # ballots arrive ~2-3 weeks before election day; voters can drop off ballots at county offices or drop boxes
+  ranked_choice: false                        # OR Measure 117 (statewide RCV) failed in Nov 2024 (~60% opposed); some local jurisdictions (Portland, Multnomah Co., Benton Co.) use RCV
+
+voter_registration:
+  automatic: true                             # Oregon Motor Voter Act (2015) — first state to enact AVR
+  online: true
+  same_day: false                             # OR does not have same-day registration
+  min_age: 18
+  pre_registration_age: 16
+  registration_deadline_days: 21              # 21 days before election
+  voter_id_requirement: none                  # OR has no voter ID requirement; universal mail voting uses signature comparison
+  felon_restoration: automatic_upon_release   # rights restored upon release from incarceration (2007)
+
+elections:
+  office_name: Oregon Secretary of State - Elections Division
+  office_url: https://sos.oregon.gov/voting-elections/Pages/default.aspx
+  office_phone: 503-986-1518                  # toll-free 1-866-673-VOTE (1-866-673-8683); TTY 800-735-2900
+  office_email: elections.sos@sos.oregon.gov
+  office_address: |
+    Oregon Secretary of State - Elections Division
+    Public Service Building, Suite 126
+    255 Capitol St. NE
+    Salem, OR 97310
+
+civic_urls:
+  register_to_vote: https://secure.sos.state.or.us/orestar/vr/register.do?lang=eng&source=SOS
+  register_by_mail: https://sos.oregon.gov/elections/Documents/SEL500.pdf            # SEL500 — paper voter registration form
+  check_registration: https://sos.oregon.gov/voting/pages/myvote.aspx?lang=en        # OR My Vote — check registration, polling/drop box, ballot status
+  find_polling_place: https://sos.oregon.gov/voting/Pages/drop-box-locator.aspx      # OR is all-mail; drop boxes serve as the in-person voting destination
+  request_absentee_ballot: https://sos.oregon.gov/elections/Pages/voteinor.aspx      # in-state voters auto-receive ballots (universal VBM); page covers absentee voting for out-of-state/traveling voters
+  track_ballot: https://sos.oregon.gov/voting/pages/myvote.aspx?lang=en
+  sample_ballot: https://sos.oregon.gov/voting/pages/myvote.aspx?lang=en             # OR My Vote also surfaces the voter's sample ballot
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Oregon
+  elections_calendar: https://sos.oregon.gov/voting/Pages/current-election.aspx
+  election_results: https://sos.oregon.gov/elections/Pages/electionhistory.aspx
+  military_overseas_voting: https://sos.oregon.gov/voting/Pages/militaryoverseas.aspx
+
+links:
+  - url: https://sos.oregon.gov/elections/Documents/SEL111.pdf
+    note: SEL111 — Oregon absentee ballot request form (for out-of-state/traveling voters)
+
+ids:
+  wikidata: Q824
+  wikipedia: Oregon
+  ballotpedia: Oregon
+  fips_state: "41"
+  census_geoid: "04000US41"
+  osm_relation: "165476"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Oregon
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Oregon
+    note: registration policy, AVR, voter ID, felon restoration, primary type
+  - url: https://ballotpedia.org/Oregon_Measure_117,_Ranked-Choice_Voting_for_Federal_and_State_Elections_Measure_(2024)
+    note: Measure 117 (statewide RCV) — failed Nov 2024 with ~60% opposed
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Oregon
+    note: OR Constitution Art. II §18 — recall available for state and local officials

@@ -1,0 +1,103 @@
+id: ocd-division/country:us/state:nc
+name: North Carolina
+type: state
+
+abbreviation: NC
+iso_3166_2: US-NC
+capital: Raleigh
+demonym: North Carolinian
+nicknames:
+  - Tar Heel State
+  - Old North State
+motto: Esse quam videri                       # Latin: "To be, rather than to seem"
+
+established: 1789-11-21                       # 12th state to ratify the U.S. Constitution
+website: https://www.nc.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 170                                  # 50 Senate + 120 House (General Assembly)
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # NC General Assembly has no term limits
+  elected_offices:
+    # NC has a "Council of State" of 10 statewide-elected executive officers
+    attorney_general: true
+    auditor: true
+    secretary_of_state: true
+    treasurer: true
+    superintendent_of_public_instruction: true
+    commissioner_of_agriculture: true
+    commissioner_of_insurance: true
+    commissioner_of_labor: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # NC Lt Governor is elected separately from the Governor
+
+direct_democracy:
+  citizen_initiative: false                   # NC does not permit statewide citizen initiative
+  citizen_referendum: false                   # NC does not permit statewide popular/veto referendum
+  recall: false                               # NC has no statewide recall mechanism; ~25 municipalities have local recall by special act of the General Assembly
+
+elections_policy:
+  runoff: true                                # NC holds second primaries (runoffs) when no candidate receives at least 30% (G.S. 163-111)
+  primary_type: semi-closed                   # registered party voters vote in their party; unaffiliated voters may pick any party's primary
+  vote_by_mail: no-excuse                     # any registered voter may request an absentee ballot; not universal/all-mail
+  early_voting: true                          # in-person early voting via the "One-Stop" period
+  ranked_choice: false                        # NC does not use RCV in state-level elections
+
+voter_registration:
+  automatic: false                            # NC does not have AVR
+  online: true                                # NC OVR via DMV
+  same_day: true                              # same-day registration available during the in-person early voting period (not on Election Day itself)
+  min_age: 18
+  pre_registration_age: 16                    # 16- and 17-year-olds may pre-register
+  registration_deadline_days: 25              # civilian registration deadline; same-day registration available during early voting after this date
+  voter_id_requirement: photo                 # photo ID required (NC Const. amend. 2018; upheld 2023); reasonable-impediment exception form available
+  felon_restoration: upon_completion          # rights restored after completion of full sentence including parole/probation (CSI v. Moore, NC Supreme Court 2023)
+
+elections:
+  office_name: North Carolina State Board of Elections
+  office_url: https://www.ncsbe.gov/
+  office_phone: 919-814-0700
+  office_email: elections.sboe@ncsbe.gov
+  office_address: |
+    North Carolina State Board of Elections
+    Dobbs Building, 3rd Floor
+    430 N. Salisbury St.
+    Raleigh, NC 27603-1362
+
+civic_urls:
+  register_to_vote: https://payments.ncdot.gov/service/nc_voter_registration/workflow/nc_voter_reg_standalone_entry/5   # NC OVR via NCDMV
+  register_by_mail: https://www.ncsbe.gov/registering/how-register/complete-your-registration-mail
+  check_registration: https://vt.ncsbe.gov/reglkup/      # NC SBOE voter search — registration, jurisdictions, polling place, sample ballot, absentee status, voter history
+  find_polling_place: https://vt.ncsbe.gov/reglkup/
+  sample_ballot: https://vt.ncsbe.gov/reglkup/
+  track_ballot: https://vt.ncsbe.gov/reglkup/
+  request_absentee_ballot: https://votebymail.ncsbe.gov/app/home
+  voter_id_info: https://www.ncsbe.gov/voting/voter-id
+  elections_calendar: https://www.ncsbe.gov/voting/upcoming-election
+  election_results: https://www.ncsbe.gov/results-data/election-results
+  military_overseas_voting: https://www.ncsbe.gov/voting/military-and-overseas-voting
+
+ids:
+  wikidata: Q1454
+  wikipedia: North Carolina
+  ballotpedia: North_Carolina
+  fips_state: "37"
+  census_geoid: "04000US37"
+  osm_relation: "224045"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/North_Carolina
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_North_Carolina
+    note: registration policy, primary type, voter ID, felon restoration, semi-closed primaries
+  - url: https://www.ncsbe.gov/registering/how-register/voter-registration-deadlines
+    note: NC SBOE — 25-day civilian registration deadline; same-day registration during early voting
+  - url: https://www.ncsbe.gov/registering/who-can-register/preregistering-vote-when-you-are-16-or-17-years-old
+    note: NC SBOE — pre-registration for 16- and 17-year-olds
+  - url: https://ballotpedia.org/Laws_governing_recall_in_North_Carolina
+    note: no statewide recall; ~25 municipalities have local recall by special act

@@ -70,6 +70,7 @@ civic_urls:
   sample_ballot: https://myballot.coloradosos.gov/app/home
   voter_id_info: https://www.sos.state.co.us/pubs/elections/vote/acceptableFormsOfID.html
   elections_calendar: https://www.coloradosos.gov/pubs/elections/vote/officeUpForElection.html
+  military_overseas_voting: https://www.sos.state.co.us/pubs/elections/UOCAVA.html
 
 ids:
   wikidata: Q1261

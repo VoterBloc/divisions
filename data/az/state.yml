@@ -68,6 +68,7 @@ civic_urls:
   find_polling_place: https://my.arizona.vote/WhereToVote.aspx?s=address&language=en
   request_absentee_ballot: https://azsos.gov/elections/voters/early-voting   # same URL covers Active Early Voting List (AEVL) sign-up
   track_ballot: https://www.azcleanelections.gov/election-and-ballot-tracking
+  military_overseas_voting: https://www.fvap.gov/arizona  # AZ SOS has no dedicated UOCAVA hub; FVAP federal page is the authoritative statewide fallback
 
 ids:
   wikidata: Q816

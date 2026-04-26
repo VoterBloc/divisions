@@ -1,0 +1,99 @@
+id: ocd-division/country:us/state:wa
+name: Washington
+type: state
+
+abbreviation: WA
+iso_3166_2: US-WA
+capital: Olympia
+demonym: Washingtonian
+nicknames:
+  - Evergreen State
+motto: Al-ki                                  # Chinook Wawa: "By and By"
+
+established: 1889-11-11                       # 42nd state
+website: https://www.wa.gov
+timezone: America/Los_Angeles
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 147                                  # 49 Senate + 98 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # WA passed legislative term limits in 1992; struck down by WA Supreme Court in Gerberding v. Munro (1998)
+  elected_offices:
+    attorney_general: true
+    auditor: true
+    secretary_of_state: true
+    treasurer: true
+    superintendent_of_public_instruction: true
+    insurance_commissioner: true
+    land_commissioner: true                   # Commissioner of Public Lands
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # WA Lt Governor is elected separately
+
+direct_democracy:
+  citizen_initiative: true                    # WA has both Initiative to the People (direct) and Initiative to the Legislature (indirect); among the most active in the U.S.
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: true                                # WA Const. Art. I §§33-34 — recall of state and local officials (except judges of courts of record); only on grounds of malfeasance, misfeasance, or oath violation, with court review
+
+elections_policy:
+  runoff: false                               # top-two primary advances two candidates regardless of party to the general
+  primary_type: top-two                       # WA was the first state to adopt top-two primary (2004); voters do not declare party affiliation
+  vote_by_mail: universal                     # all-mail voting state since 2011; every active registered voter is automatically mailed a ballot
+  early_voting: true                          # ballots arrive 18 days before election; in-person vote centers also available
+  ranked_choice: false                        # WA does not use RCV in state-level elections
+
+voter_registration:
+  automatic: true                             # AVR via Department of Licensing (HB 2595, 2018; effective 2019)
+  online: true                                # WA OVR via VoteWA.gov
+  same_day: true                              # in-person same-day registration through Election Day; online/mail deadline 8 days before election
+  min_age: 18
+  pre_registration_age: 16                    # Future Voter Program — 16- and 17-year-olds may pre-register via Department of Licensing
+  registration_deadline_days: 8               # 8 days before election (online/mail); SDR available in person through Election Day
+  voter_id_requirement: non_photo             # WA is all-mail (signature comparison); voters at in-person vote centers may present non-photo ID OR sign a ballot declaration
+  felon_restoration: automatic_upon_release   # rights restored upon release from incarceration (since 2009; expanded by 2021 law to also remove disenfranchisement during community supervision)
+
+elections:
+  office_name: Washington Secretary of State - Elections Division
+  office_url: https://www.sos.wa.gov/elections
+  office_phone: 360-902-4180                  # toll-free 1-800-448-4881
+  office_email: elections@sos.wa.gov
+  office_address: |
+    Washington Secretary of State - Elections Division
+    416 Sid Snyder Avenue SW
+    Olympia, WA 98501
+
+civic_urls:
+  register_to_vote: https://voter.votewa.gov/                                          # WA voter portal (VoteWA) — registration, ballot status, polling/drop box, sample ballot
+  register_by_mail: https://www.sos.wa.gov/sites/default/files/2023-07/VRF_English.pdf
+  check_registration: https://voter.votewa.gov/
+  find_polling_place: https://voter.votewa.gov/
+  sample_ballot: https://voter.votewa.gov/
+  track_ballot: https://voter.votewa.gov/
+  request_absentee_ballot: https://www.sos.wa.gov/elections/voters/voter-eligibility-resources/how-receive-absentee-ballot
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Washington
+  elections_calendar: https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlines
+  election_results: https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets
+  military_overseas_voting: https://www.sos.wa.gov/elections/voters/voter-eligibility-resources/military-and-overseas-voters
+
+ids:
+  wikidata: Q1223
+  wikipedia: Washington (state)
+  ballotpedia: Washington
+  fips_state: "53"
+  census_geoid: "04000US53"
+  osm_relation: "165479"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Washington_(state)
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Washington
+    note: registration policy, voter ID, top-two primary, felon restoration
+  - url: https://www.sos.wa.gov/elections/voters/voter-eligibility-resources/future-voter-program
+    note: WA Future Voter Program — 16- and 17-year-old pre-registration
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Washington
+    note: WA Const. Art. I §§33-34 — recall of state and local officials except judges
+  - url: https://www.sos.wa.gov/elections/voters/helpful-information/top-2-primary-faqs-voters
+    note: WA top-two primary (since 2004) — no party affiliation required
