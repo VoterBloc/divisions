@@ -1,0 +1,96 @@
+id: ocd-division/country:us/state:pa
+name: Pennsylvania
+type: state
+
+abbreviation: PA
+iso_3166_2: US-PA
+capital: Harrisburg
+demonym: Pennsylvanian
+nicknames:
+  - Keystone State
+motto: Virtue, Liberty, and Independence
+
+established: 1787-12-12                       # 2nd state to ratify the U.S. Constitution
+website: https://www.pa.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 253                                  # 50 Senate + 203 House — largest fully-paid full-time legislature in the U.S.
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # PA has gubernatorial term limits (2 terms) but no legislative term limits
+  elected_offices:
+    attorney_general: true
+    auditor: true                             # Auditor General
+    treasurer: true
+    secretary_of_state: false                 # PA Secretary of the Commonwealth is appointed by the Governor with Senate confirmation
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # candidates run together on a joint ticket in the general election (since 1968 amendment); nominated separately in the primary
+
+direct_democracy:
+  citizen_initiative: false                   # PA does not permit citizen initiative
+  citizen_referendum: false                   # PA does not permit popular/veto referendum (only legislatively-referred amendments)
+  recall: false                               # PA does not allow recall of any elected officials, state or local — among the most restrictive in the U.S.
+
+elections_policy:
+  runoff: false
+  primary_type: closed                        # only registered Democrats and Republicans may vote in primaries; Independents excluded
+  vote_by_mail: no-excuse                     # Act 77 of 2019 created no-excuse mail-in voting; in effect since 2020
+  early_voting: true                          # in-person mail ballot request and completion at county election offices ("in-person mail voting")
+  ranked_choice: false                        # PA does not use RCV in state-level elections
+
+voter_registration:
+  automatic: true                             # AVR enacted via Gov. Shapiro executive directive (Sept 2023); opt-out at PennDOT
+  online: true                                # PA OVR via pavoterservices.pa.gov
+  same_day: false                             # PA does not have same-day registration
+  min_age: 18
+  pre_registration_age: 17                    # 17-year-olds may register if they will be 18 by Election Day (and may vote in primaries to nominate)
+  registration_deadline_days: 15              # 15 days before election
+  voter_id_requirement: none                  # PA does not generally require voter ID at the polls (HAVA first-time-mail exception only)
+  felon_restoration: automatic_upon_release   # rights restored upon release from prison; voters on probation/parole may also register and vote
+
+elections:
+  office_name: Pennsylvania Department of State - Bureau of Elections
+  office_url: https://www.pa.gov/agencies/vote
+  office_phone: 1-877-868-3772                # 1-877-VOTESPA — year-round PA voter hotline
+  office_email: voterreg@pa.gov
+  office_address: |
+    Pennsylvania Department of State - Bureau of Elections
+    401 North Street, Suite 210
+    Harrisburg, PA 17120
+
+civic_urls:
+  register_to_vote: https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx
+  register_by_mail: https://www.pavoterservices.pa.gov/documents/voterapplication_english.pdf
+  check_registration: https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx
+  find_polling_place: https://www.pa.gov/services/vote/find-your-local-polling-place
+  request_absentee_ballot: https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot
+  track_ballot: https://www.pavoterservices.pa.gov/pages/ballottracking.aspx
+  sample_ballot: https://ballotpedia.org/Pennsylvania_Sample_Ballot
+  voter_id_info: https://www.pa.gov/agencies/vote/voter-support/new-voters             # voter ID info appears in the "What to bring" section near the bottom
+  elections_calendar: https://www.pa.gov/agencies/vote/elections/upcoming-elections
+  election_results: https://www.electionreturns.pa.gov/
+  military_overseas_voting: https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot/military-and-overseas-voters
+
+ids:
+  wikidata: Q1400
+  wikipedia: Pennsylvania
+  ballotpedia: Pennsylvania
+  fips_state: "42"
+  census_geoid: "04000US42"
+  osm_relation: "162109"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Pennsylvania
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Pennsylvania
+    note: registration policy, voter ID, felon restoration, primary type
+  - url: https://www.pa.gov/agencies/vote/voter-registration/voter-registration-requirements
+    note: PA Department of State — 15-day deadline, 17-year-old pre-registration
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Pennsylvania
+    note: PA does not allow recall of any elected officials, state or local
+  - url: https://ballotpedia.org/Primary_elections_in_Pennsylvania
+    note: closed primary; Independents excluded from major-party primaries
