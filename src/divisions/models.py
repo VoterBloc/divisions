@@ -224,6 +224,8 @@ class CivicUrls(_Base):
     sample_ballot: HttpUrl | None = None
     voter_id_info: HttpUrl | None = None
     elections_calendar: HttpUrl | None = None
+    election_results: HttpUrl | None = None     # official results portal / archive
+    military_overseas_voting: HttpUrl | None = None   # UOCAVA / military and overseas voter resources hub
 
 
 class Population(_Base):
