@@ -1,0 +1,107 @@
+id: ocd-division/country:us/state:ok
+name: Oklahoma
+type: state
+
+abbreviation: OK
+iso_3166_2: US-OK
+capital: Oklahoma City
+demonym: Oklahoman
+nicknames:
+  - Sooner State
+motto: Labor omnia vincit                     # Latin: "Labor conquers all things"
+
+established: 1907-11-16                       # 46th state
+website: https://oklahoma.gov
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 149                                  # 48 Senate + 101 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                       # SQ 632 (1990) — 12 years total combined legislative service
+  term_limit: 12
+  elected_offices:
+    attorney_general: true
+    auditor: true                             # Auditor and Inspector
+    treasurer: true
+    superintendent_of_public_instruction: true
+    insurance_commissioner: true
+    commissioner_of_labor: true
+    secretary_of_state: false                 # SQ 750 (2010) — SoS is now appointed by the Governor with Senate confirmation
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # OK Lt Governor is elected separately
+
+direct_democracy:
+  citizen_initiative: true                    # statutory and constitutional initiative since 1907
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: false                               # no state-level recall; some home-rule charter municipalities (OKC, Tulsa) allow local recall
+
+elections_policy:
+  runoff: true                                # primary runoff held if no candidate receives >50%
+  primary_type: closed                        # only registered party members vote in primaries; for 2026-2027, no party opted to allow Independents
+  vote_by_mail: no-excuse                     # any registered voter may request an absentee ballot; not universal/all-mail
+  early_voting: true
+  ranked_choice: false                        # OK does not use RCV in state-level elections
+
+voter_registration:
+  automatic: false                            # OK does not have AVR
+  online: true                                # OK OVR via oklahoma.gov
+  same_day: false                             # OK does not have same-day registration
+  min_age: 18
+  pre_registration_age: 17                    # specifically 17½ — applicants may pre-register at age 17.5; activated at 18
+  registration_deadline_days: 25              # 25 days before election
+  voter_id_requirement: non_photo             # government-issued photo ID OR county election board voter ID card (which has no photo)
+  felon_restoration: upon_completion          # rights restored after full sentence including parole/probation; pardons/commutations restore immediately (HB 2138, eff. 2025-01-01)
+
+elections:
+  office_name: Oklahoma State Election Board
+  office_url: https://oklahoma.gov/elections.html
+  office_phone: 405-521-2391
+  office_email: info@elections.ok.gov
+  office_address: |
+    Oklahoma State Election Board
+    2300 N. Lincoln Blvd., Room G28
+    State Capitol Building
+    Oklahoma City, OK 73105
+
+civic_urls:
+  register_to_vote: https://okvoterportal.okelections.gov/Home/RegWizard
+  register_by_mail: https://oklahoma.gov/elections/voter-registration/register-to-vote.html
+  check_registration: https://okvoterportal.okelections.gov/
+  find_polling_place: https://okvoterportal.okelections.gov/        # OK voter portal — unified lookup for polling place, sample ballot, ballot status
+  sample_ballot: https://okvoterportal.okelections.gov/
+  track_ballot: https://okvoterportal.okelections.gov/
+  request_absentee_ballot: https://oklahoma.gov/elections/voters/absentee-voting.html
+  voter_id_info: https://oklahoma.gov/elections/voters/proof-of-identity.html
+  elections_calendar: https://oklahoma.gov/elections/elections-results/next-election.html
+  election_results: https://oklahoma.gov/elections/elections-results/election-results.html
+  military_overseas_voting: https://oklahoma.gov/elections/voters/military-overseas-voters.html
+
+links:
+  - url: https://oklahoma.gov/elections/voter-registration/request-voter-id-card.html
+    note: how to request the county-issued OK voter ID card (one of the accepted non-photo IDs)
+
+ids:
+  wikidata: Q1649
+  wikipedia: Oklahoma
+  ballotpedia: Oklahoma
+  fips_state: "40"
+  census_geoid: "04000US40"
+  osm_relation: "161645"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Oklahoma
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Oklahoma
+    note: registration policy, voter ID, felon restoration
+  - url: https://oklahoma.gov/elections/voter-registration/register-to-vote.html
+    note: OK State Election Board — 25-day deadline, 17½ pre-registration, online registration
+  - url: https://ballotpedia.org/Primary_elections_in_Oklahoma
+    note: closed primary; no party opted to allow Independents for 2026-2027
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Oklahoma
+    note: no state-level recall; some home-rule charter municipalities allow local recall
+  - url: https://oklahoma.gov/elections/elections-results/recalls.html
+    note: OK State Election Board — recall is a local matter only
