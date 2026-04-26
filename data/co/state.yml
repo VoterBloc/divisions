@@ -35,17 +35,41 @@ direct_democracy:
 
 elections_policy:
   runoff: false                              # plurality general elections
+  ranked_choice: false
+  primary_type: semi-closed                  # Prop 108 (2016): unaffiliated voters may vote in one major-party primary; partisans restricted to their own
+  vote_by_mail: universal                    # every active registered voter is automatically mailed a ballot (CO was one of the first universal-VBM states)
+  early_voting: true                         # in-person voting centers open ~22 days before election
 
 voter_registration:
   automatic: true                            # AVR enacted by HB19-1278
   online: true                               # via CO SOS GoVoteColorado
   same_day: true                             # Voter Access and Modernized Elections Act (HB13-1303)
+  min_age: 18
+  pre_registration_age: 16                   # per EAC form
+  registration_deadline_days: 8              # 8 days to be mailed a ballot; in-person registration allowed through Election Day
+  voter_id_requirement: non_photo            # Ballotpedia — ID required for in-person; mail voters do not need to show ID
+  felon_restoration: automatic_upon_release  # HB19-1266 — rights restored on release from prison
 
 elections:
   office_name: Colorado Secretary of State - Elections Division
+  office_url: https://www.coloradosos.gov/pubs/elections/main.html
+  office_phone: 303-894-2200 x6333
+  office_email: ballot.access@coloradosos.gov
+  office_address: |
+    Colorado Secretary of State
+    1700 Broadway, Suite 550
+    Denver, CO 80290
 
 civic_urls:
   register_to_vote: https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml
+  register_by_mail: https://www.sos.state.co.us/voter/pages/pub/olvr/verifyNewVoter.xhtml   # this page links to the paper-form PDF
+  check_registration: https://www.coloradosos.gov/voter/pages/pub/olvr/findVoterReg.xhtml
+  find_polling_place: https://www.coloradosos.gov/voter/pages/pub/home.xhtml
+  request_absentee_ballot: https://www.sos.state.co.us/pubs/elections/FAQs/mailBallotsFAQ.html   # CO is universal VBM — this is the FAQ rather than a standalone request form
+  track_ballot: https://ballottrax.coloradosos.gov/voter/
+  sample_ballot: https://myballot.coloradosos.gov/app/home
+  voter_id_info: https://www.sos.state.co.us/pubs/elections/vote/acceptableFormsOfID.html
+  elections_calendar: https://www.coloradosos.gov/pubs/elections/vote/officeUpForElection.html
 
 ids:
   wikidata: Q1261
@@ -70,3 +94,7 @@ sources:
     note: citizen referendum permitted
   - url: https://ballotpedia.org/Laws_governing_recall_in_Colorado
     note: recall of state elected officials permitted (used 2013 vs. two state senators)
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 8-day mail / Election Day in-person; pre-registration at 16; felony rights restored on release
+  - url: https://ballotpedia.org/Voter_ID_in_Colorado
+    note: non-photo ID required for in-person voting; mail voters need no ID
