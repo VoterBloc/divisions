@@ -1,0 +1,95 @@
+id: ocd-division/country:us/state:ri
+name: Rhode Island
+type: state
+
+abbreviation: RI
+iso_3166_2: US-RI
+capital: Providence
+demonym: Rhode Islander
+nicknames:
+  - Ocean State
+motto: Hope
+
+established: 1790-05-29                       # 13th state — last of the original 13 to ratify the U.S. Constitution
+website: https://www.ri.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 113                                  # 38 Senate + 75 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # RI has gubernatorial term limits (2 consecutive terms) but no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true                           # General Treasurer
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # RI Lt Governor is elected separately
+
+direct_democracy:
+  citizen_initiative: false                   # RI does not permit citizen initiative
+  citizen_referendum: false                   # RI does not permit popular/veto referendum (only legislatively-referred constitutional amendments)
+  recall: true                                # limited — RI Const. Art. IV §1: applies only to statewide officers (Gov, Lt Gov, SoS, AG, Treasurer) and only on grounds of felony indictment/conviction, misdemeanor conviction, or ethics commission probable-cause finding
+
+elections_policy:
+  runoff: false
+  primary_type: semi-closed                   # registered party members vote in their party only; unaffiliated voters may vote in any party primary while remaining unaffiliated
+  vote_by_mail: no-excuse                     # any registered voter may request a mail ballot; not universal/all-mail
+  early_voting: true                          # in-person early voting since 2018
+  ranked_choice: false                        # RI does not use RCV in state-level elections
+
+voter_registration:
+  automatic: true                             # AVR enacted 2017
+  online: true
+  same_day: false                             # RI does not have same-day registration
+  min_age: 18
+  pre_registration_age: 16                    # 16- and 17-year-olds may pre-register
+  registration_deadline_days: 30              # 30 days before election (in-person, mail postmark, and online all 30 days)
+  voter_id_requirement: photo                 # photo ID required at the polls; provisional ballot available without ID
+  felon_restoration: automatic_upon_release   # rights restored upon release from incarceration (2006 amendment)
+
+elections:
+  office_name: Rhode Island Department of State - Elections Division
+  office_url: https://vote.sos.ri.gov/
+  office_phone: 401-222-2340
+  office_email: elections@sos.ri.gov
+  office_address: |
+    Rhode Island Department of State - Elections Division
+    148 West River Street
+    Providence, RI 02904-2615
+
+civic_urls:
+  register_to_vote: https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1
+  register_by_mail: https://vote.sos.ri.gov/Forms/elections/Forms/VoterRegFormEng.pdf
+  check_registration: https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=0
+  find_polling_place: https://vote.sos.ri.gov/Home/PollingPlaces?ActiveFlag=2
+  request_absentee_ballot: https://vote.sos.ri.gov/Voter/VotebyMail
+  voter_id_info: https://elections.ri.gov/voter-registration/voter-id
+  track_ballot: https://ballottrax.sos.ri.gov/voter/
+  sample_ballot: https://vote.sos.ri.gov/Home/PollingPlaces?ActiveFlag=2            # polling place lookup also surfaces sample ballot
+  elections_calendar: https://elections.ri.gov/elections/upcoming-elections
+  election_results: https://www.ri.gov/election/results/
+  military_overseas_voting: https://www.fvap.gov/rhode-island                       # FVAP — Federal Voting Assistance Program, RI-specific page
+
+ids:
+  wikidata: Q1387
+  wikipedia: Rhode Island
+  ballotpedia: Rhode_Island
+  fips_state: "44"
+  census_geoid: "04000US44"
+  osm_relation: "392915"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Rhode_Island
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Rhode_Island
+    note: registration policy, voter ID, primary type, AVR, felon restoration
+  - url: https://vote.sos.ri.gov/Voter/RegisterToVote
+    note: RI SoS — 30-day deadline, 16-year-old pre-registration
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Rhode_Island
+    note: limited recall via RI Const. Art. IV §1; statewide officers only, on enumerated grounds
+  - url: https://ballotpedia.org/Primary_elections_in_Rhode_Island
+    note: semi-closed primary; unaffiliated voters retain unaffiliated status
