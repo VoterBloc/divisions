@@ -1,0 +1,97 @@
+id: ocd-division/country:us/state:wy
+name: Wyoming
+type: state
+
+abbreviation: WY
+iso_3166_2: US-WY
+capital: Cheyenne
+demonym: Wyomingite
+nicknames:
+  - Equality State
+  - Cowboy State
+motto: Equal Rights
+
+established: 1890-07-10                       # 44th state
+website: https://www.wyo.gov
+timezone: America/Denver
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 93                                   # 31 Senate + 62 House — smallest legislature of any state
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # WY passed legislative term limits in 1992; struck down by WY Supreme Court in 2004
+  elected_offices:
+    secretary_of_state: true                  # WY SoS is first in line of succession (no Lt Governor)
+    treasurer: true
+    auditor: true
+    superintendent_of_public_instruction: true
+    attorney_general: false                   # WY AG is appointed by the Governor
+  executive:
+    has_lt_governor: false                    # WY has no Lt Governor; Secretary of State is first in line of succession to the Governor
+
+direct_democracy:
+  citizen_initiative: true                    # WY permits citizen initiative
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: false                               # WY has no statewide recall; limited municipal recall only in commission-form cities/towns (none currently use that form)
+
+elections_policy:
+  runoff: false
+  primary_type: closed                        # only registered party members may vote in their party's primary; 2023 crossover ban requires party-affiliation change 96+ days before primary
+  vote_by_mail: no-excuse                     # any registered voter may request an absentee ballot; not universal/all-mail
+  early_voting: true                          # in-person absentee voting at county clerk's office
+  ranked_choice: false                        # WY does not use RCV in state-level elections
+
+voter_registration:
+  automatic: false                            # WY does not have AVR
+  online: false                               # WY does not have online voter registration; one of the few remaining states without OVR
+  same_day: true                              # in-person registration through Election Day
+  min_age: 18
+  registration_deadline_days: 14              # 14 days before election (online/mail); SDR available in person through Election Day
+  voter_id_requirement: photo                 # photo ID required at the polls (HB0075, eff. 2022); Medicare/Medicaid card exceptions expire 2029
+  felon_restoration: upon_completion          # rights restored after completion of full sentence; certain felonies require gubernatorial pardon
+
+elections:
+  office_name: Wyoming Secretary of State - Elections Division
+  office_url: https://sos.wyo.gov/elections/
+  office_phone: 307-777-5860
+  office_email: Elections@wyo.gov
+  office_address: |
+    Wyoming Secretary of State - Elections Division
+    Herschler Building East, Suite 100
+    122 West 25th Street
+    Cheyenne, WY 82002-0020
+
+civic_urls:
+  register_to_vote: https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx                       # WY has no OVR; this is the info page covering all registration methods
+  register_by_mail: https://sos.wyo.gov/Forms/Elections/General/VoterRegistrationForm.pdf
+  check_registration: https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx                  # WY voter portal — registration, polling place, sample ballot
+  find_polling_place: https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx
+  sample_ballot: https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx
+  request_absentee_ballot: https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx
+  track_ballot: https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx
+  voter_id_info: https://sos.wyo.gov/Elections/VoterID/
+  elections_calendar: https://sos.wyo.gov/Elections/2026ElectionInformation.aspx
+  election_results: https://sos.wyo.gov/Elections/ElectionResults.aspx
+  military_overseas_voting: https://sos.wyo.gov/Elections/MOVE_Overview.aspx
+
+ids:
+  wikidata: Q1214
+  wikipedia: Wyoming
+  ballotpedia: Wyoming
+  fips_state: "56"
+  census_geoid: "04000US56"
+  osm_relation: "161991"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Wyoming
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Wyoming
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://sos.wyo.gov/elections/state/registeringtovote.aspx
+    note: WY SoS — 14-day deadline; SDR through Election Day; no online registration
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Wyoming
+    note: no statewide recall; limited municipal recall (commission-form cities/towns only — currently unused)
+  - url: https://ballotpedia.org/Primary_elections_in_Wyoming
+    note: closed primary; 2023 crossover ban (96-day affiliation deadline)
