@@ -1,0 +1,96 @@
+id: ocd-division/country:us/state:tx
+name: Texas
+type: state
+
+abbreviation: TX
+iso_3166_2: US-TX
+capital: Austin
+demonym: Texan
+nicknames:
+  - Lone Star State
+motto: Friendship
+
+established: 1845-12-29                       # 28th state
+website: https://www.texas.gov
+timezone: America/Chicago                     # most of state is Central; El Paso and Hudspeth counties (westernmost) observe Mountain Time
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 181                                  # 31 Senate + 150 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # TX has no legislative or executive term limits
+  elected_offices:
+    attorney_general: true
+    comptroller: true                         # Comptroller of Public Accounts
+    commissioner_of_agriculture: true
+    land_commissioner: true                   # Commissioner of the General Land Office
+    railroad_commission: true                 # 3 commissioners elected statewide on staggered terms (despite the name, regulates oil and gas)
+    secretary_of_state: false                 # SoS is appointed by the Governor with Senate confirmation
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # TX Lt Governor is elected separately and is one of the most powerful in the country (presides over the Senate)
+
+direct_democracy:
+  citizen_initiative: false                   # TX does not permit statewide citizen initiative
+  citizen_referendum: false                   # TX does not permit popular/veto referendum (only legislatively-referred constitutional amendments)
+  recall: false                               # TX has no statewide recall mechanism; some home-rule charter cities (the majority of TX's 352 home-rule cities) authorize local recall
+
+elections_policy:
+  runoff: true                                # primary runoff if no candidate receives >50%
+  primary_type: open                          # TX has no party registration; voters request a party ballot at the polls
+  vote_by_mail: excuse-required               # TX requires an excuse for absentee voting (e.g. age 65+, disability, out-of-county); one of the strictest excuse-required states
+  early_voting: true                          # in-person early voting period before each election
+  ranked_choice: false                        # TX does not use RCV in state-level elections
+
+voter_registration:
+  automatic: false                            # TX does not have AVR
+  online: false                               # TX does not have online voter registration; one of the few remaining states without OVR
+  same_day: false                             # TX does not have same-day registration
+  min_age: 18
+  pre_registration_age: 17                    # TX allows registration at 17 years and 10 months; voter must be 18 on Election Day
+  registration_deadline_days: 30              # 30 days before election
+  voter_id_requirement: photo                 # photo ID required at the polls; reasonable-impediment declaration available with non-photo ID
+  felon_restoration: upon_completion          # rights restored after completion of full sentence including parole and probation
+
+elections:
+  office_name: Texas Secretary of State - Elections Division
+  office_url: https://www.sos.state.tx.us/elections/
+  office_phone: 512-463-5650                  # toll-free 1-800-252-VOTE (1-800-252-8683)
+  office_email: elections@sos.texas.gov
+  office_address: |
+    Texas Secretary of State - Elections Division
+    P.O. Box 12060
+    Austin, TX 78711-2060
+
+civic_urls:
+  register_to_vote: https://vrrequest.sos.texas.gov/VoterApplication/ConfirmStatusEN     # TX has no true OVR; SoS mails a pre-filled application based on info you submit
+  register_by_mail: https://webservices.sos.state.tx.us/forms/6-1f.pdf                   # direct PDF of the TX voter registration application (Form 6-1)
+  check_registration: https://goelect.txelections.civixapps.com/ivis-mvp-ui/#/login      # TX voter portal — registration, polling place, sample ballot
+  find_polling_place: https://goelect.txelections.civixapps.com/ivis-mvp-ui/#/login
+  sample_ballot: https://goelect.txelections.civixapps.com/ivis-mvp-ui/#/login
+  request_absentee_ballot: https://www.sos.state.tx.us/elections/voter/reqabbm.shtml
+  track_ballot: https://goelect.txelections.civixapps.com/ivis-oab-ui/#/login
+  voter_id_info: https://www.votetexas.gov/voting/need-id.html
+  elections_calendar: https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml
+  election_results: https://goelect.txelections.civixapps.com/ivis-enr-ui/races
+  military_overseas_voting: https://www.votetexas.gov/voting-by-mail/military-and-overseas-voters.html
+
+ids:
+  wikidata: Q1439
+  wikipedia: Texas
+  ballotpedia: Texas
+  fips_state: "48"
+  census_geoid: "04000US48"
+  osm_relation: "114690"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Texas
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Texas
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://www.votetexas.gov/register-to-vote/eligibility-for-registration.html
+    note: TX SoS — 30-day deadline, 17 years 10 months registration eligibility
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Texas
+    note: no statewide recall; some home-rule charter cities authorize local recall
