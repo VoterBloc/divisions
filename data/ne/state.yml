@@ -1,0 +1,92 @@
+id: ocd-division/country:us/state:ne
+name: Nebraska
+type: state
+
+abbreviation: NE
+iso_3166_2: US-NE
+capital: Lincoln
+demonym: Nebraskan
+motto: Equality before the law
+
+established: 1867-03-01                      # date of statehood (37th state)
+timezones:
+  - America/Chicago                          # most of NE (Central)
+  - America/Denver                           # 13 western Panhandle counties (Mountain)
+
+governance:
+  # NE is the ONLY state with a unicameral legislature.
+  lower_chamber: Nebraska Legislature
+  seats: 49                                  # 49 senators in a single chamber
+  is_unicameral: true
+  partisan: false                            # NE legislature is officially nonpartisan; senators run without party labels on the ballot
+  has_term_limits: true                      # 8 consecutive years (two 4-year terms)
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    auditor: true                            # State Auditor of Public Accounts
+    public_service_commissioner: true        # 5-member elected Public Service Commission
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # NE gov & LG on joint ticket
+
+direct_democracy:
+  citizen_initiative: true
+  citizen_referendum: true
+  recall: true                               # NE permits recall of state and local elected officials
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: closed                       # closed for partisan offices (gov, AG, etc.); legislature is nonpartisan top-two
+  vote_by_mail: no-excuse                    # NE allows no-excuse absentee voting; some counties hold all-mail elections
+  early_voting: true                         # in-person early voting available
+
+voter_registration:
+  automatic: false
+  online: true                               # NE OVR
+  same_day: false
+  min_age: 18
+  registration_deadline_days: 11             # delivered to county election office by 6pm 11 days before election (third Friday before)
+  voter_id_requirement: photo                # NE photo ID required — Initiative 432 (2022), implemented 2024
+  felon_restoration: upon_completion         # LB 53 (2024) eliminated the 2-year waiting period — rights now restored upon completion of sentence
+
+elections:
+  office_name: Nebraska Secretary of State - Elections Division
+  office_url: https://sos.nebraska.gov/elections
+  office_phone: 1-888-727-0007
+  office_email: sos.elect@nebraska.gov
+  office_address: |
+    Nebraska Secretary of State
+    Suite 2300, State Capitol Bldg.
+    Lincoln, NE 68509-4608
+
+civic_urls:
+  register_to_vote: https://www.nebraska.gov/apps-sos-voter-registration/
+  register_by_mail: https://sos.nebraska.gov/voter-forms
+  check_registration: https://www.votercheck.necvr.ne.gov/VoterView/
+  find_polling_place: https://www.votercheck.necvr.ne.gov/VoterView/
+  request_absentee_ballot: https://sos.nebraska.gov/elections/early-voting
+  track_ballot: https://www.votercheck.necvr.ne.gov/VoterView/
+  sample_ballot: https://www.votercheck.necvr.ne.gov/VoterView/
+  voter_id_info: https://sos.nebraska.gov/voter-id
+  elections_calendar: https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf
+  election_results: https://sos.nebraska.gov/previous-elections
+  military_overseas_voting: https://sos.nebraska.gov/elections/overseas-voters
+
+ids:
+  wikidata: Q1553
+  wikipedia: Nebraska
+  ballotpedia: Nebraska
+  fips_state: "31"
+  census_geoid: "04000US31"
+  osm_relation: "161648"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Nebraska
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — third-Friday-before-election (11 day) deadline; NE SOS mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Nebraska
+    note: photo ID required at the polls; Initiative 432 (2022), implemented 2024

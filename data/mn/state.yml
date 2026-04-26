@@ -1,0 +1,95 @@
+id: ocd-division/country:us/state:mn
+name: Minnesota
+type: state
+
+abbreviation: MN
+iso_3166_2: US-MN
+capital: Saint Paul
+demonym: Minnesotan
+motto: L'Étoile du Nord                      # French — "The Star of the North"
+
+established: 1858-05-11                      # date of statehood (32nd state)
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 201                                 # 67 Senate + 134 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # MN has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    state_auditor: true
+    treasurer: false                         # MN eliminated the elected Treasurer position in 2003
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # MN gov & LG on joint ticket
+
+direct_democracy:
+  citizen_initiative: false                  # MN does not permit citizen initiative
+  citizen_referendum: false
+  recall: true                               # MN permits recall of state elected officials with grounds (serious malfeasance/nonfeasance)
+
+elections_policy:
+  runoff: false
+  ranked_choice: false                       # MN uses RCV in some local elections (Minneapolis, St. Paul) but not statewide
+  primary_type: open                         # MN does not register voters by party
+  vote_by_mail: no-excuse                    # MN allows no-excuse absentee voting since 2014
+  early_voting: true                         # in-person early voting available
+
+voter_registration:
+  automatic: true                            # MN AVR — Democracy for the People Act (2023)
+  online: true
+  same_day: true                             # MN famously had the first Election Day Registration in the country (since 1973)
+  min_age: 18
+  pre_registration_age: 16
+  registration_deadline_days: 21             # delivered by 5 p.m. 21 days before election (EAC); SDR available through Election Day
+  voter_id_requirement: none                 # MN does not generally require voter ID at the polls
+  felon_restoration: automatic_upon_release  # Restore the Vote Act (2023) — rights restored for felons not currently incarcerated
+
+elections:
+  office_name: Minnesota Office of the Secretary of State - Elections Division
+  office_url: https://www.sos.mn.gov/elections-voting/
+  office_phone: 651-215-1440                  # metro; greater MN: 1-877-600-VOTE
+  office_email: secretary.state@state.mn.us
+  office_address: |
+    Office of the Minnesota Secretary of State
+    First National Bank Building
+    332 Minnesota Street, Suite N201
+    Saint Paul, MN 55101
+
+civic_urls:
+  register_to_vote: https://mnvotes.sos.mn.gov/VoterRegistration/index
+  register_by_mail: https://www.sos.mn.gov/elections-voting/register-to-vote/register-on-paper/
+  check_registration: https://mnvotes.sos.mn.gov/voterstatuscheck/index
+  find_polling_place: https://pollfinder.sos.mn.gov/
+  request_absentee_ballot: https://mnvotes.sos.mn.gov/abrequest/index
+  track_ballot: https://mnvotes.sos.mn.gov/abstatus/index
+  sample_ballot: https://myballotmn.sos.mn.gov/
+  voter_id_info: https://www.sos.mn.gov/elections-voting/register-to-vote/register-on-election-day/
+  elections_calendar: https://www.sos.mn.gov/election-administration-campaigns/elections-calendar/
+  election_results: https://www.sos.mn.gov/elections-voting/election-results/
+
+ids:
+  wikidata: Q1527
+  wikipedia: Minnesota
+  ballotpedia: Minnesota
+  fips_state: "27"
+  census_geoid: "04000US27"
+  osm_relation: "165471"
+
+links:
+  - url: https://www.sos.mn.gov/elections-voting/other-ways-to-vote/vote-from-military-or-abroad/
+    note: MN military and overseas voting (move to civic_urls.military_overseas_voting once #22 lands)
+  - url: https://www.sos.mn.gov/elections-voting/other-ways-to-vote/ballot-drop-box-locations/
+    note: MN ballot drop-box locations
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Minnesota
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 21-day deadline; pre-registration at 16; SDR; MN SOS Elections mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Minnesota
+    note: MN does not generally require voter ID at the polls (HAVA exception only)

@@ -1,0 +1,93 @@
+id: ocd-division/country:us/state:md
+name: Maryland
+type: state
+
+abbreviation: MD
+iso_3166_2: US-MD
+capital: Annapolis
+demonym: Marylander
+motto: Fatti maschii, parole femine          # Italian — "Strong deeds, gentle words"
+
+established: 1788-04-28                      # 7th state to ratify the U.S. Constitution
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Delegates           # MD calls its lower chamber "House of Delegates"
+  seats: 188                                 # 47 Senate + 141 House of Delegates
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # MD has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: false                # MD SOS is appointed by the governor
+    treasurer: false                         # MD Treasurer is appointed by the General Assembly
+    comptroller: true                        # MD elects a State Comptroller
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # MD gov & LG on joint ticket
+
+direct_democracy:
+  citizen_initiative: false                  # MD does not permit citizen-initiated laws
+  citizen_referendum: true                   # MD permits petition referendum (people's veto on laws passed by legislature)
+  recall: false                              # MD does not permit statewide recall
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: closed                       # MD is a closed-primary state
+  vote_by_mail: no-excuse                    # any MD voter may request a mail-in ballot
+  early_voting: true                         # in-person early voting required (8 days)
+
+voter_registration:
+  automatic: true                            # MD AVR via MVA
+  online: true                               # MD OVR
+  same_day: true                             # SDR available during early voting and on Election Day
+  min_age: 18
+  pre_registration_age: 16                   # may pre-register at 16; eligible to vote at 18
+  registration_deadline_days: 21             # per EAC form (in-person, online by 11:59pm; mail postmarked 21 days before)
+  voter_id_requirement: none                 # MD does not generally require voter ID
+  felon_restoration: automatic_upon_release  # MD restores voting rights upon release from incarceration
+
+elections:
+  office_name: Maryland State Board of Elections
+  office_url: https://elections.maryland.gov/
+  office_phone: 410-269-2840                  # toll-free: 800-222-8683
+  office_email: info.sbe@maryland.gov
+  office_address: |
+    Maryland State Board of Elections
+    151 West Street, Suite 200
+    Annapolis, MD 21401
+    (Mail: P.O. Box 6486, Annapolis, MD 21401-0486)
+
+civic_urls:
+  register_to_vote: https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1
+  register_by_mail: https://elections.maryland.gov/voter_registration/application.html
+  check_registration: https://voterservices.elections.maryland.gov/VoterSearch
+  find_polling_place: https://voterservices.elections.maryland.gov/PollingPlaceSearch
+  request_absentee_ballot: https://voterservices.elections.maryland.gov/OnlineMailinRequest/InstructionsStep1
+  track_ballot: https://voterservices.elections.maryland.gov/VoterSearch
+  sample_ballot: https://elections.maryland.gov/elections/2026/index.html
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Maryland
+  elections_calendar: https://elections.maryland.gov/elections/2026/index.html
+  election_results: https://elections.maryland.gov/elections/
+
+ids:
+  wikidata: Q1391
+  wikipedia: Maryland
+  ballotpedia: Maryland
+  fips_state: "24"
+  census_geoid: "04000US24"
+  osm_relation: "162112"
+
+links:
+  - url: https://voterservices.elections.maryland.gov/OnlineVoterUpdate/InstructionsStep1
+    note: MD update existing voter registration (online)
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Maryland
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 21-day deadline; closed primary; pre-registration at 16; SBE mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Maryland
+    note: MD does not generally require voter ID at the polls (HAVA exception only)

@@ -1,0 +1,107 @@
+id: ocd-division/country:us/state:in
+name: Indiana
+type: state
+
+abbreviation: IN
+iso_3166_2: US-IN
+capital: Indianapolis
+demonym: Hoosier
+motto: The Crossroads of America
+
+established: 1816-12-11                      # date of statehood (19th state)
+timezones:
+  - America/Indiana/Indianapolis             # most of Indiana (Eastern)
+  - America/Indiana/Knox                     # 6 western counties (Central)
+  - America/Indiana/Tell_City                # Tell City area (Central)
+  - America/Indiana/Vincennes
+  - America/Indiana/Marengo
+  - America/Indiana/Petersburg
+  - America/Indiana/Vevay
+  - America/Indiana/Winamac
+  - America/Indiana/Indianapolis             # split-zone state — see IANA tz database for full list
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 150                                 # 50 Senate + 100 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # IN has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    auditor: true
+    treasurer: true
+    # Note: IN's State Superintendent of Public Instruction was an elected office until
+    # the 2021 reorganization made it an appointed Secretary of Education.
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # IN gov & LG on joint ticket since 1972
+
+direct_democracy:
+  citizen_initiative: false                  # IN does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: false
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: open                         # IN voters do not register by party; choose a primary ballot at the polling place
+  vote_by_mail: excuse-required              # NCSL Table 2 — IN requires an excuse for absentee voting
+  early_voting: true                         # in-person early ("absentee in-person") voting available
+
+voter_registration:
+  automatic: false
+  online: true                               # IN OVR
+  same_day: false
+  min_age: 18
+  registration_deadline_days: 29             # per EAC form
+  voter_id_requirement: photo                # Ballotpedia — photo ID required; care-center and religious-objection exemptions
+  felon_restoration: automatic_upon_release  # rights restored upon release from incarceration
+
+elections:
+  office_name: Indiana Election Division
+  office_url: https://www.in.gov/sos/elections/
+  office_phone: 317-232-3939                   # toll-free in IN: 800-622-4941; Hoosier Voter Hotline: 866-IN-1-VOTE
+  office_email: elections@iec.in.gov
+  office_address: |
+    Indiana Election Division
+    302 W. Washington St., Rm E204
+    Indianapolis, IN 46204
+
+civic_urls:
+  # IN runs voter registration, status check, polling place, absentee ballot,
+  # and sample-ballot tools as JS popups on a single portal URL. A few
+  # tools have dedicated sub-paths.
+  register_to_vote: https://indianavoters.in.gov/
+  register_by_mail: https://indianavoters.in.gov/MVPHome/PrintDocuments
+  check_registration: https://indianavoters.in.gov/
+  find_polling_place: https://indianavoters.in.gov/
+  request_absentee_ballot: https://indianavoters.in.gov/
+  track_ballot: https://indianavoters.in.gov/
+  sample_ballot: https://indianavoters.in.gov/
+  voter_id_info: https://www.in.gov/sos/elections/voter-information/photo-id-law/
+  elections_calendar: https://www.in.gov/sos/elections/files/2026-Election-Calendar-Election-Administrators-Edition-Revised-March-2026.pdf
+  election_results: https://enr.indianavoters.in.gov/site/index.html
+
+ids:
+  wikidata: Q1415
+  wikipedia: Indiana
+  ballotpedia: Indiana
+  fips_state: "18"
+  census_geoid: "04000US18"
+  osm_relation: "161816"
+
+links:
+  - url: https://enr.indianavoters.in.gov/site/index.html
+    note: IN election night results portal — TODO move to civic_urls.election_results after #12 merges
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Indiana
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 29-day deadline; no party registration (open primary); IN SOS Election Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Indiana
+    note: photo ID required at the polls; care-center and religious-objection exemptions
+  - url: https://www.ncsl.org/elections-and-campaigns/table-2-excuses-to-vote-absentee
+    note: NCSL Table 2 — IN is excuse-required for absentee voting

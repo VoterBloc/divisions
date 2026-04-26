@@ -1,0 +1,95 @@
+id: ocd-division/country:us/state:ma
+name: Massachusetts
+type: state
+
+abbreviation: MA
+iso_3166_2: US-MA
+capital: Boston
+demonym: Bay Stater
+motto: Ense petit placidam sub libertate quietem    # "By the sword we seek peace, but peace only under liberty"
+
+established: 1788-02-06                      # 6th state to ratify the U.S. Constitution; officially the "Commonwealth of Massachusetts"
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 200                                 # 40 Senate + 160 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # MA has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true                 # MA: "Secretary of the Commonwealth"
+    treasurer: true
+    auditor: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # MA gov & LG on joint ticket
+
+direct_democracy:
+  citizen_initiative: true                   # MA has citizen initiative
+  citizen_referendum: true
+  recall: false                              # MA does not permit statewide recall (some municipalities allow local recall)
+
+elections_policy:
+  runoff: false
+  ranked_choice: false                       # MA RCV initiative failed in 2020
+  primary_type: semi-closed                  # unaffiliated voters may choose a party at the polls
+  vote_by_mail: no-excuse                    # VOTES Act (2022) made no-excuse mail-in voting permanent
+  early_voting: true                         # in-person early voting available (made permanent by VOTES Act 2022)
+
+voter_registration:
+  automatic: true                            # MA AVR — Act of 2018
+  online: true                               # MA OVR
+  same_day: true                             # SDR via VOTES Act (2022)
+  min_age: 18
+  pre_registration_age: 16
+  registration_deadline_days: 20             # per EAC form; in-person through Election Day (SDR)
+  voter_id_requirement: none                 # MA does not generally require voter ID at the polls
+  felon_restoration: automatic_upon_release  # rights restored on release from incarceration
+
+elections:
+  office_name: Massachusetts Secretary of the Commonwealth - Elections Division
+  office_url: https://www.sec.state.ma.us/
+  office_phone: 617-727-7030                  # toll-free: 1-800-392-6090
+  office_email: CIS@sec.state.ma.us
+  office_address: |
+    Secretary of the Commonwealth
+    Elections Division, Room 1705
+    1 Ashburton Place
+    Boston, MA 02108
+
+civic_urls:
+  register_to_vote: https://www.sec.state.ma.us/OVR/
+  register_by_mail: https://www.sec.state.ma.us/divisions/elections/voting-information/vote-by-mail.htm
+  check_registration: https://www.sec.state.ma.us/VoterRegistrationSearch/MyVoterRegStatus.aspx
+  find_polling_place: https://www.sec.state.ma.us/WhereDoIVoteMA/WhereDoIVote
+  request_absentee_ballot: https://www.sec.state.ma.us/divisions/elections/voting-information/absentee-voting.htm
+  track_ballot: https://www.sec.state.ma.us/WhereDoIVoteMA/TrackMyBallot
+  sample_ballot: https://www.sec.state.ma.us/WhereDoIVoteMA/ShowBallot/ViewMyBallot/BallotOut/ST/154/0/1?ipid=promo-link-block1
+  voter_id_info: https://www.sec.state.ma.us/divisions/elections/voting-information/identification-requirements.htm
+  elections_calendar: https://www.sec.state.ma.us/CalendarWeb/Pages/MonthWeekCalendar.aspx
+  election_results: https://electionstats.state.ma.us/
+
+ids:
+  wikidata: Q771
+  wikipedia: Massachusetts
+  ballotpedia: Massachusetts
+  fips_state: "25"
+  census_geoid: "04000US25"
+  osm_relation: "61315"
+
+links:
+  - url: https://www.sec.state.ma.us/divisions/elections/voter-resources/when-where-how-do-i-vote.htm
+    note: MA "when, where, how to vote" voter resources hub
+  - url: https://www.sec.state.ma.us/divisions/elections/voter-resources/find-my-local-election-office.htm
+    note: MA local election office locator (city/town clerks)
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Massachusetts
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 20-day deadline; pre-registration at 16; Secretary of the Commonwealth Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Massachusetts
+    note: MA does not generally require voter ID at the polls (HAVA exception only)

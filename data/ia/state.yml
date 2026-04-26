@@ -1,0 +1,97 @@
+id: ocd-division/country:us/state:ia
+name: Iowa
+type: state
+
+abbreviation: IA
+iso_3166_2: US-IA
+capital: Des Moines
+demonym: Iowan
+motto: Our liberties we prize and our rights we will maintain
+
+established: 1846-12-28                      # date of statehood (29th state)
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 150                                 # 50 Senate + 100 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # IA has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    state_auditor: true
+    agriculture_commissioner: true           # Secretary of Agriculture
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # IA gov & LG joint ticket since 1988
+
+direct_democracy:
+  citizen_initiative: false                  # IA does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: false                              # IA does not permit statewide recall
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: open                         # per EAC form: "You may change or declare a party affiliation at the polls on primary election day"
+  vote_by_mail: no-excuse                    # IA allows any voter to request absentee
+  early_voting: true                         # in-person early voting available
+
+voter_registration:
+  automatic: false
+  online: true                               # IA OVR
+  same_day: true                             # Election Day Registration available
+  min_age: 18
+  pre_registration_age: 17                   # 17-year-olds may register if they will be 18 by election day; eligible to vote in a primary if 18 by the corresponding general
+  registration_deadline_days: 15             # delivered by 5 p.m. 15 days before election (EAC)
+  voter_id_requirement: non_photo            # Ballotpedia — non-photo ID accepted; voter attestation alternative available
+  felon_restoration: upon_completion         # Gov. Reynolds 2020 executive order restored rights upon completion of felony sentence
+
+elections:
+  office_name: Iowa Secretary of State - Elections Division
+  office_url: https://sos.iowa.gov/elections-voting
+  office_phone: (515) 281-0145                # toll-free: 1-888-SOS-VOTE
+  office_email: elections@sos.iowa.gov
+  office_address: |
+    Elections Division
+    Office of the Iowa Secretary of State
+    Lucas Building - First Floor
+    321 E. 12th Street
+    Des Moines, IA 50319
+
+civic_urls:
+  register_to_vote: https://mymvd.iowadot.gov/Account/Login?ReturnUrl=/VoterRegistration   # IA OVR is via the IA DOT MyMVD portal
+  register_by_mail: https://sos.iowa.gov/voters/voter-registration
+  check_registration: https://sos.iowa.gov/voters/am-i-registered-vote
+  find_polling_place: https://apps.sos.iowa.gov/elections/voterreg/pollingplace/search.aspx
+  request_absentee_ballot: https://sos.iowa.gov/voters/absentee-voting
+  track_ballot: https://apps.sos.iowa.gov/elections/absenteeballotstatus/absentee/search
+  sample_ballot: https://www.iowa.gov/how-do-i-view-sample-ballot
+  voter_id_info: https://sos.iowa.gov/voters/voter-id-faq
+  elections_calendar: https://sos.iowa.gov/three-year-election-calendar
+  election_results: https://electionresults.iowa.gov/IA/
+
+ids:
+  wikidata: Q1546
+  wikipedia: Iowa
+  ballotpedia: Iowa
+  fips_state: "19"
+  census_geoid: "04000US19"
+  osm_relation: "161650"
+
+links:
+  - url: https://sos.iowa.gov/voters/restoring-voter-rights
+    note: IA SOS — restoring voting rights for people with felony convictions
+  - url: https://sos.iowa.gov/terms-offices-elected-officials
+    note: IA SOS — terms of office for elected officials reference
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Iowa
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 15-day deadline (5pm); voters may declare/change party affiliation at the polls; IA SOS Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Iowa
+    note: non-photo ID required; voter attestation alternative available
