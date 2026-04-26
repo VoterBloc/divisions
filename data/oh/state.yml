@@ -1,0 +1,102 @@
+id: ocd-division/country:us/state:oh
+name: Ohio
+type: state
+
+abbreviation: OH
+iso_3166_2: US-OH
+capital: Columbus
+demonym: Ohioan
+nicknames:
+  - Buckeye State
+motto: With God, all things are possible
+
+established: 1803-03-01                       # 17th state
+website: https://ohio.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 132                                  # 33 Senate + 99 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                       # 2 consecutive terms in each chamber (8 years Senate, 8 years House)
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    auditor: true
+    secretary_of_state: true
+    treasurer: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 1979 amendment
+
+direct_democracy:
+  citizen_initiative: true                    # both statutory and constitutional initiative since 1912
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: false                               # no state-level recall; municipal officials may be recalled under ORC §705.92, but state officials and school boards cannot
+
+elections_policy:
+  runoff: false
+  primary_type: semi-closed                   # voter requests one party's ballot at the polls; that choice designates affiliation for ~2 years
+  vote_by_mail: no-excuse                     # any registered voter may request an absentee ballot; not universal/all-mail
+  early_voting: true
+  ranked_choice: false                        # RCV banned statewide and locally by HB 1 (signed 2026-03-17); municipalities adopting RCV lose state local-government-fund distributions
+
+voter_registration:
+  automatic: false                            # OH does not have AVR
+  online: true                                # OH OVR via olvr.ohiosos.gov
+  same_day: false                             # OH does not have same-day registration
+  min_age: 18
+  pre_registration_age: 17                    # 17-year-olds may register if they will be 18 by the next general election (and may vote in primaries to nominate)
+  registration_deadline_days: 30              # 30 days before election
+  voter_id_requirement: photo                 # photo ID required (HB 458, eff. April 2023); provisional ballot available without ID
+  felon_restoration: automatic_upon_release   # rights restored upon release from incarceration; parole/probation does not disenfranchise
+
+elections:
+  office_name: Ohio Secretary of State - Elections Division
+  office_url: https://www.ohiosos.gov/elections
+  office_phone: 614-466-2655                  # toll-free 877-SOS-OHIO (877-767-6446); TTY 614-466-0562 / 877-644-6889
+  office_address: |
+    Ohio Secretary of State
+    180 Civic Center Drive
+    Columbus, OH 43215
+
+civic_urls:
+  register_to_vote: https://olvr.ohiosos.gov/
+  register_by_mail: https://www.ohiosos.gov/elections/elections-administration/forms-and-petitions/voter-registration-form-html-to-pdf
+  check_registration: https://voterlookup.ohiosos.gov/voterlookup.aspx
+  find_polling_place: https://www.ohiosos.gov/directories/find-my-polling-location
+  request_absentee_ballot: https://www.ohiosos.gov/elections/request-an-absentee-ballot
+  track_ballot: https://www.ohiosos.gov/directories/ballot-tracking
+  sample_ballot: https://www.ohiosos.gov/directories/sample-ballot
+  voter_id_info: https://www.ohiosos.gov/elections/voter-ID-requirements
+  elections_calendar: https://www.ohiosos.gov/elections/voting-schedule
+  election_results: https://www.ohiosos.gov/data
+  military_overseas_voting: https://www.ohiosos.gov/elections/military-and-overseas-voters
+
+links:
+  - url: https://www.ohiosos.gov/directories/early-voting-locations
+    note: OH SoS — directory of early voting locations by county
+
+ids:
+  wikidata: Q1397
+  wikipedia: Ohio
+  ballotpedia: Ohio
+  fips_state: "39"
+  census_geoid: "04000US39"
+  osm_relation: "162061"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Ohio
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Ohio
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://www.ohiosos.gov/elections/voters/register/
+    note: OH SoS — 30-day deadline, 17-year-old registration, online registration
+  - url: https://ballotpedia.org/Primary_elections_in_Ohio
+    note: semi-closed primary; party affiliation set by primary ballot choice
+  - url: https://news.ballotpedia.org/2026/03/19/ohio-becomes-second-state-this-year-to-ban-ranked-choice-voting/
+    note: HB 1 (signed 2026-03-17) — RCV/IRV banned statewide and locally
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Ohio
+    note: no state recall; municipal recall under ORC §705.92
