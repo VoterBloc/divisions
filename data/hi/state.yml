@@ -1,0 +1,91 @@
+id: ocd-division/country:us/state:hi
+name: Hawaii
+type: state
+
+abbreviation: HI
+iso_3166_2: US-HI
+capital: Honolulu
+motto: Ua Mau ke Ea o ka 'Āina i ka Pono    # "The life of the land is perpetuated in righteousness"
+
+established: 1959-08-21                      # date of statehood (50th state)
+timezone: Pacific/Honolulu
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 76                                  # 25 Senate + 51 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # HI has no legislative term limits
+  elected_offices:
+    # HI has very few elected statewide officers: AG is APPOINTED by the governor, and HI
+    # has NO Secretary of State (LG performs those duties, similar to AK).
+    attorney_general: false
+    secretary_of_state: false                # position doesn't exist
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # HI governor & LG on joint ticket in the general election
+
+direct_democracy:
+  citizen_initiative: false                  # HI does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: false                              # no statewide recall; some counties permit local recall
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: open                         # HI voters do not register by party; any voter may choose a primary ballot
+  vote_by_mail: universal                    # HI moved to all-mail voting in 2020 (Act 136, 2019)
+  early_voting: true                         # HI has in-person early voting / voter service centers
+
+voter_registration:
+  automatic: true                            # Act 156 (2022) — AVR via driver license applications
+  online: true
+  same_day: true                             # HI has same-day registration at voter service centers
+  min_age: 18
+  pre_registration_age: 16                   # per EAC form
+  registration_deadline_days: 10             # per EAC form
+  voter_id_requirement: none                 # Ballotpedia — HI does not generally require ID to vote (HAVA exception for first-time mail registrants)
+  felon_restoration: automatic_upon_release  # rights restored upon release from prison
+
+elections:
+  office_name: Hawaii Office of Elections    # standalone agency (HI has no SOS)
+  office_url: https://elections.hawaii.gov/
+  office_phone: 808-453-8683                 # (808) 453-VOTE — toll-free for neighbor islands: 1-800-442-VOTE
+  office_email: elections@hawaii.gov
+  office_address: |
+    Office of Elections
+    State of Hawaii
+    802 Lehua Avenue
+    Pearl City, HI 96782
+
+civic_urls:
+  register_to_vote: https://olvr.hawaii.gov/register.aspx
+  register_by_mail: https://elections.hawaii.gov/register-to-vote/registration/
+  check_registration: https://olvr.hawaii.gov/register.aspx
+  find_polling_place: https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/
+  request_absentee_ballot: https://elections.hawaii.gov/voting/absentee-voting/
+  track_ballot: https://elections.hawaii.gov/news-release/hawaii-voters-can-track-their-mail-ballot/   # HI publishes tracker info via news release; no dedicated tracker page
+  sample_ballot: https://elections.hawaii.gov/general-election-sample-ballots-2024/   # year-specific; latest sample-ballots page available
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Hawaii
+  elections_calendar: https://elections.hawaii.gov/about-us/calendar/
+
+ids:
+  wikidata: Q782
+  wikipedia: Hawaii
+  ballotpedia: Hawaii
+  fips_state: "15"
+  census_geoid: "04000US15"
+  osm_relation: "166563"
+
+links:
+  - url: https://elections.hawaii.gov/voting/voters-with-a-felony-conviction/
+    note: HI Office of Elections — voters with a felony conviction
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Hawaii
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 10-day deadline; no party registration; pre-registration at 16; HI Office of Elections mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Hawaii
+    note: HI does not generally require voter ID (HAVA exception only for first-time mail registrants)

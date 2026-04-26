@@ -68,6 +68,7 @@ civic_urls:
   sample_ballot: https://www.sos.alabama.gov/alabama-votes/2026-primary-election-sample-ballots
   voter_id_info: https://www.sos.alabama.gov/alabama-votes/photo-voter-id/valid-ids
   elections_calendar: https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026
+  military_overseas_voting: https://www.sos.alabama.gov/alabama-votes/voter/military-overseas-voting
 
 ids:
   wikidata: Q173

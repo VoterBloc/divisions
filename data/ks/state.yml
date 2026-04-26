@@ -1,0 +1,90 @@
+id: ocd-division/country:us/state:ks
+name: Kansas
+type: state
+
+abbreviation: KS
+iso_3166_2: US-KS
+capital: Topeka
+demonym: Kansan
+motto: Ad astra per aspera                  # "To the stars through difficulties"
+
+established: 1861-01-29                      # date of statehood (34th state)
+timezones:
+  - America/Chicago                          # most of Kansas (Central)
+  - America/Denver                           # 4 western counties (Mountain)
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 165                                 # 40 Senate + 125 House
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                     # KS has no legislative term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    insurance_commissioner: true
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                # KS gov & LG on joint ticket
+
+direct_democracy:
+  citizen_initiative: false                  # KS does not permit statewide citizen initiative
+  citizen_referendum: false
+  recall: true                               # KS permits recall of state and local elected officials
+
+elections_policy:
+  runoff: false
+  ranked_choice: false
+  primary_type: closed                       # per EAC form: must register with a party to vote in its primary
+  vote_by_mail: no-excuse                    # KS allows no-excuse advance voting by mail
+  early_voting: true                         # in-person advance voting available
+
+voter_registration:
+  automatic: false
+  online: true                               # KS OVR
+  same_day: false
+  min_age: 18
+  registration_deadline_days: 21             # postmarked or delivered 21 days before election (EAC)
+  voter_id_requirement: strict_photo         # Ballotpedia — KS has strict photo ID requirements
+  felon_restoration: upon_completion         # rights restored after completion of felony sentence
+
+elections:
+  office_name: Kansas Secretary of State - Elections Division
+  office_url: https://sos.ks.gov/elections/voter-information.html
+  office_phone: 1-800-262-8683                # 1-800-262-VOTE
+  office_email: election@ks.gov
+  office_address: |
+    Secretary of State
+    1st Floor, Memorial Hall
+    120 SW 10th Ave.
+    Topeka, KS 66612-1594
+
+civic_urls:
+  register_to_vote: https://www.kdor.ks.gov/Apps/VoterReg/Registration/Index   # KS OVR via KS Department of Revenue
+  register_by_mail: https://sos.ks.gov/forms/elections/voterregistration.pdf
+  check_registration: https://kansasvoterinfo.gov/
+  find_polling_place: https://kansasvoterinfo.gov/
+  request_absentee_ballot: https://sos.ks.gov/forms/elections/AV1.pdf
+  track_ballot: https://kansasvoterinfo.gov/
+  sample_ballot: https://kansasvoterinfo.gov/
+  voter_id_info: https://sos.ks.gov/elections/photo-id.html
+  elections_calendar: https://sos.ks.gov/elections/important-election-dates.html
+  election_results: https://sos.ks.gov/elections/election-results.html
+
+ids:
+  wikidata: Q1558
+  wikipedia: Kansas
+  ballotpedia: Kansas
+  fips_state: "20"
+  census_geoid: "04000US20"
+  osm_relation: "161644"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Kansas
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 21-day deadline; closed primary; KS SOS mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Kansas
+    note: strict photo ID required at the polls

@@ -1,0 +1,94 @@
+id: ocd-division/country:us/district:dc
+name: District of Columbia
+type: district                               # federal district; OCD treats DC as `district:dc` rather than `state:`
+
+abbreviation: DC
+iso_3166_2: US-DC
+motto: Justitia Omnibus                      # "Justice for all"
+
+established: 1801-02-27                      # Organic Act of 1801; DC became the seat of federal government in 1800
+website: https://dc.gov/
+timezone: America/New_York
+
+governance:
+  # DC has a unicameral Council and an elected Mayor (mayor-council form).
+  lower_chamber: Council of the District of Columbia
+  seats: 13                                  # 8 ward + 4 at-large + Council Chairman
+  is_unicameral: true
+  partisan: true
+  has_term_limits: false                     # no legislative term limits
+  elected_offices:
+    attorney_general: true                   # elected since 2014
+    council_chairman: true
+    mayor: true
+  executive:
+    has_lt_governor: false                   # DC has no LG; Council Chairman is next in line
+
+direct_democracy:
+  citizen_initiative: true                   # DC Charter permits citizen initiative
+  citizen_referendum: true
+  recall: true                               # DC permits recall of elected officials
+
+elections_policy:
+  runoff: false
+  ranked_choice: false                       # Initiative 83 (2024) approved RCV, but implementation is pending as of 2026
+  primary_type: closed                       # per EAC form: must register with a party to vote in its primary
+  vote_by_mail: no-excuse                    # DC mails a ballot to every active registered voter since 2020
+  early_voting: true                         # DC has in-person early voting
+
+voter_registration:
+  automatic: true                            # DC AVR via DMV and other agencies (since 2021)
+  online: true                               # via DC Board of Elections
+  same_day: true                             # available during early voting and on Election Day
+  min_age: 18
+  pre_registration_age: 16                   # per EAC form — 16 year olds may pre-register; 17 year olds may vote in primary if 18 by next general
+  registration_deadline_days: 21             # 21 days before election if registering by mail, online, or via mobile app (EAC); in-person during early voting + Election Day
+  voter_id_requirement: none                 # DC does not require ID from most voters; HAVA exception for first-time mail/online registrants
+  felon_restoration: no_disenfranchisement   # DC, along with ME and VT, allows felons to vote even while incarcerated
+
+elections:
+  office_name: District of Columbia Board of Elections
+  office_url: https://dcboe.org/
+  office_phone: (202) 727-2525
+  office_email: communications@dcboe.org
+  office_address: |
+    District of Columbia Board of Elections
+    1015 Half Street, SE, Suite 750
+    Washington, DC 20003
+
+civic_urls:
+  register_to_vote: https://vr.dcboe.org/213324797239968   # trailing identifier is required — DC's OVR portal returns an error without it
+  register_by_mail: https://dcboe.org/voters/register-to-vote/register-update-voter-registration
+  check_registration: https://apps.dcboe.org/vrs
+  find_polling_place: https://dcboe.org/voters/find-out-where-to-vote/vote-center-locator-tool
+  track_ballot: https://apps.dcboe.org/sbs   # DC's "Special Ballot Status" tracker (provisional ballots); no equivalent lookup for regular mail ballots
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_the_District_of_Columbia
+  request_absentee_ballot: https://dcboe.org/voters/casting-your-vote/mail-ballot-request
+  elections_calendar: https://dcboe.org/elections/2026-elections
+
+
+ids:
+  wikidata: Q61
+  wikipedia: Washington, D.C.
+  ballotpedia: Washington,_D.C.
+  fips_state: "11"
+  census_geoid: "04000US11"
+  osm_relation: "166542"
+
+links:
+  - url: https://earlyvoting.dcboe.org/
+    note: DC early voting info
+  - url: https://dcboe.org/voters/find-out-where-to-vote/mail-ballot-drop-box-locations
+    note: DC mail-ballot drop-box locations
+  - url: https://dcboe.org/faqs/voter-registration
+    note: DC BOE voter registration FAQs
+  - url: https://electionresults.dcboe.org/
+    note: DC election results
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Washington,_D.C.
+    note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 21-day mail/online deadline; in-person during early voting + Election Day; DC Board of Elections mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_the_District_of_Columbia
+    note: DC does not require ID from most voters; HAVA exception for first-time mail registrants

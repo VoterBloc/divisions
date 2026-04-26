@@ -75,6 +75,7 @@ civic_urls:
   sample_ballot: https://voterguide.sos.ca.gov/
   voter_id_info: https://ballotpedia.org/Voter_ID_in_California
   elections_calendar: https://www.sos.ca.gov/elections/upcoming-elections
+  military_overseas_voting: https://www.sos.ca.gov/elections/voter-registration/military-overseas-voters
 
 ids:
   wikidata: Q99
