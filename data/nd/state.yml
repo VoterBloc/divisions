@@ -1,0 +1,98 @@
+id: ocd-division/country:us/state:nd
+name: North Dakota
+type: state
+
+abbreviation: ND
+iso_3166_2: US-ND
+capital: Bismarck
+demonym: North Dakotan
+nicknames:
+  - Peace Garden State
+  - Roughrider State
+motto: Liberty and Union, Now and Forever, One and Inseparable
+
+established: 1889-11-02                       # 39th state (admitted same day as South Dakota)
+website: https://www.nd.gov
+timezone: America/Chicago                     # most of state is Central; southwest counties (Adams, Billings, Bowman, etc.) observe Mountain Time
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Representatives
+  seats: 141                                  # 47 Senate + 94 House (47 districts each elect 1 senator and 2 representatives)
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                       # 2022 ballot measure 1: 8 years total in each chamber
+  term_limit: 8
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    auditor: true
+    superintendent_of_public_instruction: true
+    tax_commissioner: true
+    insurance_commissioner: true
+    commissioner_of_agriculture: true
+    public_service_commission: true           # 3 commissioners elected statewide on staggered terms
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 1994 constitutional amendment
+
+direct_democracy:
+  citizen_initiative: true                    # ND voters have had statutory and constitutional initiative since 1914
+  citizen_referendum: true                    # popular (veto) referendum permitted
+  recall: true                                # constitutional recall since 1920; first US gubernatorial recall (Lynn Frazier, 1921)
+
+elections_policy:
+  runoff: false
+  primary_type: open                          # ND has no party registration; voters select a party ballot at the polls
+  vote_by_mail: no-excuse                     # all voters eligible for absentee/mail voting
+  early_voting: true
+  ranked_choice: false                        # ND does not use RCV in state-level elections
+
+voter_registration:
+  # ND is the only state in the U.S. without voter registration. Eligible voters present
+  # ID at the polls; there is no registration roll, no online or same-day registration,
+  # no AVR, and no pre-registration. Residency requirement is 30 days in precinct.
+  automatic: false
+  online: false
+  same_day: false
+  min_age: 18
+  voter_id_requirement: non_photo             # ID with name, ND residential address, and date of birth required (photo not required)
+  felon_restoration: automatic_upon_release   # ND Century Code 12.1-33-01 — disenfranchisement only during incarceration
+
+elections:
+  office_name: North Dakota Secretary of State - Elections Division
+  office_url: https://www.sos.nd.gov/elections
+  office_phone: 701-328-2900
+  office_address: |
+    Office of the North Dakota Secretary of State
+    600 E Boulevard Avenue Dept 108
+    Bismarck, ND 58505
+
+civic_urls:
+  find_polling_place: https://vip.sos.nd.gov/WhereToVote.aspx
+  request_absentee_ballot: https://vip.sos.nd.gov/absentee/Default.aspx
+  track_ballot: https://vip.sos.nd.gov/AbsenteeTracker.aspx
+  sample_ballot: https://www.sos.nd.gov/elections/voter/ballot-information
+  voter_id_info: https://www.sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id
+  elections_calendar: https://www.sos.nd.gov/elections/voter/elections-currentpast
+  election_results: https://www.sos.nd.gov/elections/election-results
+  military_overseas_voting: https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/military-and-overseas-us-citizens
+
+ids:
+  wikidata: Q1207
+  wikipedia: North Dakota
+  ballotpedia: North_Dakota
+  fips_state: "38"
+  census_geoid: "04000US38"
+  osm_relation: "161653"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/North_Dakota
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_North_Dakota
+    note: voter ID, no-registration system, primary type, felon restoration
+  - url: https://www.sos.nd.gov/elections/voter/voting-north-dakota
+    note: ND SoS — official voting overview confirming no-registration system and ID requirements
+  - url: https://ballotpedia.org/Lynn_Frazier_recall,_Governor_of_North_Dakota_(1921)
+    note: first US gubernatorial recall; ND has had constitutional recall since 1920 amendment
