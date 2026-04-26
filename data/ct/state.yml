@@ -32,16 +32,41 @@ direct_democracy:
 
 elections_policy:
   runoff: false                              # plurality general elections
+  ranked_choice: false
+  primary_type: closed                       # per EAC form: must register with a party to vote in that party's primary
+  vote_by_mail: excuse-required              # NCSL Table 2 — CT traditionally required an excuse; 2024 constitutional amendment authorized no-excuse but implementation varies by election type
+  early_voting: true                         # CT approved in-person early voting via 2022 constitutional amendment; first used in 2024
 
 voter_registration:
   online: true                               # CT SOTS online voter registration
   same_day: true                             # Election Day Registration available
+  min_age: 18
+  pre_registration_age: 17                   # per EAC form — 17-year-olds who turn 18 by Election Day may participate in general primaries
+  registration_deadline_days: 18             # postmarked 18 days before election/primary (EAC form)
+  voter_id_requirement: non_photo            # Ballotpedia — non-photo ID required; affidavit alternative exists
+  felon_restoration: automatic_upon_release  # CT Public Act 21-32 (2021) — rights restored upon release from prison
 
 elections:
   office_name: Connecticut Secretary of the State - Elections Division
+  office_url: https://portal.ct.gov/sots/common-elements/v5-template---redesign/elections--voting--home-page
+  office_phone: 1-866-733-2463                # CT Election Day Hotline
+  office_email: elections@ct.gov
+  office_address: |
+    Secretary of the State of Connecticut
+    Elections Division
+    P.O. Box 150470
+    Hartford, CT 06115-0470
 
 civic_urls:
   register_to_vote: https://voterregistration.ct.gov/
+  register_by_mail: https://portal.ct.gov/sots/election-services/register-to-vote/voter-registration-application-english-and-spanish
+  check_registration: https://portaldir.ct.gov/sots/lookup.aspx
+  find_polling_place: https://portal.ct.gov/sots/election-services/voter-information/where-and-how-do-i-vote
+  request_absentee_ballot: https://oabr-sots.ct.gov/OABR/absenteeBallotReqPortalHome.do
+  track_ballot: https://portaldir.ct.gov/sots/lookup.aspx
+  sample_ballot: https://portal.ct.gov/sots/election-services/town-ballots/ballots
+  voter_id_info: https://portal.ct.gov/sots/election-services/faq/faq---voter-identification
+  elections_calendar: https://portal.ct.gov/SOTS/Election-Services/Calendars/Election-Calendars
 
 ids:
   wikidata: Q779
@@ -51,6 +76,26 @@ ids:
   census_geoid: "04000US09"
   osm_relation: "165794"
 
+links:
+  - url: https://portal.ct.gov/SOTS/Election-Services/Voter-Information/Voter-Fact-Sheet
+    note: CT SOTS Voter Fact Sheet — general voter info
+  - url: https://portal.ct.gov/SOTS/Election-Services/Voter-Information/Voter-Registration-Information
+    note: CT SOTS Voter Registration Information hub
+  - url: https://portal.ct.gov/sots/election-services/voter-information/voting-eligibility
+    note: CT voting eligibility rules
+  - url: https://portal.ct.gov/sots/election-services/election-day-registration/election-day-registration
+    note: CT Election Day Registration (same-day) explainer
+  - url: https://portal.ct.gov/sots/election-services/voter-information/absentee-voting
+    note: CT SOTS absentee voting info hub
+  - url: https://portal.ct.gov/sots/education/civics-101/civics-101-your-civic-engagement-toolkit
+    note: SOTS Civics 101 civic-engagement toolkit
+
 sources:
   - url: https://en.wikipedia.org/wiki/Connecticut
     note: general reference
+  - url: https://www.eac.gov/sites/default/files/eac_assets/1/6/Federal_Voter_Registration_ENG.pdf
+    note: EAC National Mail Voter Registration Form (OMB 3265-0015) — 18-day deadline; closed primary; pre-registration at 17; SOTS Elections Division mailing address
+  - url: https://ballotpedia.org/Voter_ID_in_Connecticut
+    note: non-photo ID required; affidavit alternative
+  - url: https://ballotpedia.org/Voting_rights_in_Connecticut
+    note: Public Act 21-32 (2021) restored voting rights upon release from prison
