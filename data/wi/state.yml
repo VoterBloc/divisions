@@ -1,0 +1,98 @@
+id: ocd-division/country:us/state:wi
+name: Wisconsin
+type: state
+
+abbreviation: WI
+iso_3166_2: US-WI
+capital: Madison
+demonym: Wisconsinite
+nicknames:
+  - Badger State
+  - America's Dairyland
+motto: Forward
+
+established: 1848-05-29                       # 30th state
+website: https://www.wisconsin.gov
+timezone: America/Chicago
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: State Assembly
+  seats: 132                                  # 33 Senate + 99 State Assembly
+  is_unicameral: false
+  partisan: true
+  has_term_limits: false                      # WI has no legislative or executive term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: true
+    treasurer: true
+    superintendent_of_public_instruction: true   # nonpartisan
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: true                 # joint ticket since 1967 constitutional amendment
+
+direct_democracy:
+  citizen_initiative: false                   # WI does not permit statewide citizen initiative
+  citizen_referendum: false                   # WI does not permit popular/veto referendum (only legislatively-referred constitutional amendments)
+  recall: true                                # WI Const. Art. XIII §12 — recall of state and local officials after first year of term; famously used in 2012 against Gov. Scott Walker (first U.S. governor to survive a recall)
+
+elections_policy:
+  runoff: false
+  primary_type: open                          # WI has no party registration; voters cast a ballot in one party's primary on a single combined ballot
+  vote_by_mail: no-excuse                     # any registered voter may request an absentee ballot; not universal/all-mail
+  early_voting: true                          # in-person absentee voting (functionally early voting) at municipal clerk's office before Election Day
+  ranked_choice: false                        # WI does not use RCV in state-level elections
+
+voter_registration:
+  automatic: false                            # WI does not have AVR
+  online: true                                # WI OVR via myvote.wi.gov
+  same_day: true                              # in-person same-day registration through Election Day; online/mail deadline 20 days before election
+  min_age: 18
+  pre_registration_age: 17                    # 17-year-olds who will be 18 by Election Day may register
+  registration_deadline_days: 20              # 20 days before election (online/mail); SDR available in person through Election Day
+  voter_id_requirement: photo                 # photo ID required at the polls; absentee voters must provide a photo ID copy with first request
+  felon_restoration: upon_completion          # rights restored after completion of full sentence including parole, probation, and extended supervision
+
+elections:
+  office_name: Wisconsin Elections Commission
+  office_url: https://elections.wi.gov/
+  office_phone: 608-266-8005
+  office_email: elections@wi.gov
+  office_address: |
+    Wisconsin Elections Commission
+    212 East Washington Avenue, Third Floor
+    P.O. Box 7984
+    Madison, WI 53707-7984
+
+civic_urls:
+  register_to_vote: https://myvote.wi.gov/en-us/Register-To-Vote
+  register_by_mail: https://www.manitowoc.org/DocumentCenter/View/12858/EL-131-Voter-Registration-Application?bidId=        # statewide EL-131 voter registration form (county-hosted)
+  check_registration: https://myvote.wi.gov/en-us/My-Voter-Info       # WI MyVote — registration, polling place, absentee status, ballot info
+  find_polling_place: https://myvote.wi.gov/en-us/My-Voter-Info
+  request_absentee_ballot: https://myvote.wi.gov/en-us/Request-An-Absentee-Ballot
+  track_ballot: https://myvote.wi.gov/en-us/Track-My-Ballot
+  sample_ballot: https://myvote.wi.gov/en-us/Whats-On-My-Ballot
+  voter_id_info: https://ballotpedia.org/Voter_ID_in_Wisconsin
+  elections_calendar: https://elections.wi.gov/calendar
+  election_results: https://elections.wi.gov/wisconsin-county-election-websites          # WI does not centralize results; each county reports separately
+  military_overseas_voting: https://myvote.wi.gov/Military-Overseas-Voters
+
+ids:
+  wikidata: Q1537
+  wikipedia: Wisconsin
+  ballotpedia: Wisconsin
+  fips_state: "55"
+  census_geoid: "04000US55"
+  osm_relation: "165466"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Wisconsin
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Wisconsin
+    note: registration policy, voter ID, primary type, felon restoration
+  - url: https://myvote.wi.gov/en-us/Voter-Deadlines
+    note: WI Elections Commission — 20-day deadline; SDR through Election Day
+  - url: https://ballotpedia.org/Laws_governing_recall_in_Wisconsin
+    note: WI Const. Art. XIII §12 — recall of state and local officials
+  - url: https://ballotpedia.org/2012_Wisconsin_gubernatorial_recall_election
+    note: 2012 Walker recall — first U.S. governor to survive a recall
