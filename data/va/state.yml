@@ -1,0 +1,96 @@
+id: ocd-division/country:us/state:va
+name: Virginia
+type: state
+
+abbreviation: VA
+iso_3166_2: US-VA
+capital: Richmond
+demonym: Virginian
+nicknames:
+  - Old Dominion
+  - Mother of Presidents
+motto: Sic semper tyrannis                    # Latin: "Thus always to tyrants"
+
+established: 1788-06-25                       # 10th state to ratify the U.S. Constitution
+website: https://www.virginia.gov
+timezone: America/New_York
+
+governance:
+  upper_chamber: Senate
+  lower_chamber: House of Delegates
+  seats: 140                                  # 40 Senate + 100 House of Delegates
+  is_unicameral: false
+  partisan: true
+  has_term_limits: true                       # Governor cannot serve consecutive terms (VA Const. Art. V §1); legislature has no term limits
+  elected_offices:
+    attorney_general: true
+    secretary_of_state: false                 # VA Secretary of the Commonwealth is appointed by the Governor
+  executive:
+    has_lt_governor: true
+    lt_gov_joint_ticket: false                # VA Lt Governor is elected separately
+
+direct_democracy:
+  citizen_initiative: false                   # VA does not permit citizen initiative
+  citizen_referendum: false                   # VA does not permit popular/veto referendum
+  recall: false                               # VA has no voter-initiated recall election; "recall trial" is a judicial process before a circuit court, not a special election
+
+elections_policy:
+  runoff: false
+  primary_type: open                          # VA has no party registration; voters request a party ballot at the polls
+  vote_by_mail: no-excuse                     # any registered voter may request a mail ballot; not universal/all-mail
+  early_voting: true                          # 45 days of in-person early voting at general registrar's office
+  ranked_choice: false                        # VA does not use RCV in state-level elections; Arlington County and some local jurisdictions use RCV
+
+voter_registration:
+  automatic: true                             # AVR via DMV (enacted 2020)
+  online: true                                # VA OVR via vote.virginia.gov
+  same_day: true                              # same-day registration with provisional ballot through Election Day
+  min_age: 18
+  pre_registration_age: 16                    # 16- and 17-year-olds may pre-register; 17-year-olds may vote in primaries if 18 by next general
+  registration_deadline_days: 21              # 21 days before election (mail/online); SDR/provisional ballot available after that through Election Day
+  voter_id_requirement: non_photo             # voter ID required; photo not required — accepts utility bills, bank statements, paychecks, voter registration confirmation; statement-of-identity affidavit available
+  felon_restoration: application_required     # Gov. Youngkin (2022-) rolled back automatic restoration; case-by-case gubernatorial review; HJ 2/SJ 2 amendment on Nov 2026 ballot would restore on release
+
+elections:
+  office_name: Virginia Department of Elections
+  office_url: https://www.elections.virginia.gov/
+  office_phone: 804-864-8901
+  office_email: info@elections.virginia.gov
+  office_address: |
+    Virginia Department of Elections
+    Washington Building, First Floor
+    1100 Bank Street
+    Richmond, VA 23219
+
+civic_urls:
+  register_to_vote: https://www.elections.virginia.gov/citizen-portal/
+  register_by_mail: https://www.elections.virginia.gov/media/formswarehouse/veris-voter-registration/applications/VA-NVRA-1-Voter-Registration-Application-rev-5-2024.pdf
+  check_registration: https://www.elections.virginia.gov/citizen-portal/         # VA Citizen Portal — registration, polling place, sample ballot, ballot status
+  find_polling_place: https://www.elections.virginia.gov/casting-a-ballot/polling-place-lookup/
+  request_absentee_ballot: https://www.elections.virginia.gov/casting-a-ballot/early-absentee/
+  voter_id_info: https://www.elections.virginia.gov/registration/voterid/
+  sample_ballot: https://www.elections.virginia.gov/citizen-portal/
+  track_ballot: https://www.elections.virginia.gov/citizen-portal/
+  elections_calendar: https://www.elections.virginia.gov/casting-a-ballot/calendars-schedules/
+  election_results: https://www.elections.virginia.gov/resultsreports/election-results/
+  military_overseas_voting: https://www.elections.virginia.gov/casting-a-ballot/military-overseas/
+
+ids:
+  wikidata: Q1370
+  wikipedia: Virginia
+  ballotpedia: Virginia
+  fips_state: "51"
+  census_geoid: "04000US51"
+  osm_relation: "224042"
+
+sources:
+  - url: https://en.wikipedia.org/wiki/Virginia
+    note: general reference
+  - url: https://ballotpedia.org/Voting_in_Virginia
+    note: registration policy, voter ID, primary type
+  - url: https://www.elections.virginia.gov/registration/how-to-register/
+    note: VA Dept of Elections — 21-day deadline, 16-year-old pre-registration
+  - url: https://www.elections.virginia.gov/registration/same-day-voter-registration/
+    note: VA Dept of Elections — same-day registration with provisional ballot
+  - url: https://ballotpedia.org/Virginia_Voting_Rights_Restoration_for_Felons_Upon_Release_Amendment_(2026)
+    note: HJ 2/SJ 2 — voting rights restoration upon release amendment, on Nov 2026 ballot
